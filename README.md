@@ -1,2 +1,2 @@
 # Delayed-Fairness-Project
-Longterm Networked Fariness Project - Citizen Centric Workshop 2024
+Longterm Networked Fairness Project - Citizen Centric Workshop 2024
