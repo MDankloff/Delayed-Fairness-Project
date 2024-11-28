@@ -13,7 +13,7 @@ pandas
 recsim
 seaborn
 simplejson
-sklearn
+scikit-learn
 statsmodels
 tensorflow
 tqdm
