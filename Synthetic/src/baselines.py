@@ -60,7 +60,26 @@ class CvxFairModel:
         loss = self.compute_loss(s, X, y)
         c1, c2 = self.compute_constraint(s, X)
         prob = cp.Problem(cp.Minimize(loss), [c1 <= self.tao, c2 <= self.tao])
-        prob.solve(solver=cp.SCS)
+        installed = set(cp.installed_solvers())
+        solver_attempts = [
+            ("ECOS", {"max_iters": 10_000}),
+            ("SCS", {"max_iters": 50_000, "eps": 1e-5}),
+        ]
+
+        last_err = None
+        for solver_name, opts in solver_attempts:
+            if solver_name not in installed:
+                continue
+            try:
+                prob.solve(solver=getattr(cp, solver_name), warm_start=True, **opts)
+                if prob.status in (cp.OPTIMAL, cp.OPTIMAL_INACCURATE):
+                    last_err = None
+                    break
+            except cp.SolverError as e:
+                last_err = e
+
+        if last_err is not None:
+            raise last_err
 
     def predict(self, s, X):
         Z = self.add_features(s, X)
@@ -68,6 +87,16 @@ class CvxFairModel:
         yhat = (h >= 0).astype(float)
         p = 1/(1+np.exp(-h))
         return yhat, p
+
+    @property
+    def params(self):
+        """Return parameters in the common convention used by generator.Agent.
+
+        Format: [w_s, w_x1, ..., w_xd, b]
+        """
+        if self.w.value is None or self.b.value is None:
+            return None
+        return np.r_[self.w.value, float(self.b.value)]
 
 
 # class CvxFairModel:
