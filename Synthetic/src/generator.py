@@ -127,13 +127,14 @@ class Agent:
 
         return X_next, Y_next.astype(int)
     
+    @staticmethod
     def compute_observed_rejection_gap(
         adj,
         decisions,
         s,
         active=None,
         *,
-        exclude_inactive_from_denominator=False,
+        exclude_inactive_from_denominator=True,
     ):
         """Compute observed peer-outcome signal O_t based on demographic rejection rates.
 
@@ -205,7 +206,6 @@ def run_simulation(
     seed=2026,
     decision_coef=0.8,
     repayment_coef=0.8,
-    exclude_inactive_neighbors_from_O_denominator=False,
 ):
     """
 
@@ -288,7 +288,7 @@ def run_simulation(
             D_t,
             s,
             active=A_t,
-            exclude_inactive_from_denominator=exclude_inactive_neighbors_from_O_denominator,
+            exclude_inactive_from_denominator=True,
         )
 
         # compute U_t and choose A_{t+1}
