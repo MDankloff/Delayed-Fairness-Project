@@ -109,16 +109,21 @@ def compute_post_long_cond_fairness(s, Xs, model, prob=None):
     return fairness
 
 
-def compute_statistics(s, Xs, Ys, model, OYs=None):
+def compute_statistics(s, Xs, Ys, model, OYs=None, As=None):
+
+    retention = compute_retention_rate(Xs, As)
 
     for i, (X, y) in enumerate(zip(Xs, Ys)):
         print("-" * 30, f"Step {i + 1} - {model.name}", "-" * 30)
 
-        if OYs:
+        if OYs is not None:
             acc = compute_accuracy(s, X, OYs[i], model)
         else:
             acc = compute_accuracy(s, X, y, model)
         print(f"Acc: {acc * 100:.1f}%")
+
+        if retention.size:
+            print(f"Retention: {retention[i] * 100:.1f}%")
 
         # op_fair = compute_equal_opportunity(s, X, y, model)
         # print(f"Equal Oppertunity: {abs(op_fair):.3f}")
@@ -137,3 +142,39 @@ def compute_statistics(s, Xs, Ys, model, OYs=None):
 
         print(f"Long fairness: {abs(post_long_cond_fairness):.3f}")
     print("\n")
+
+
+def compute_retention_rate(Xs, As=None):
+    """Compute applicant retention rate over time.
+
+    Definition (per your description):
+      retention[t] = (# applicants applying at step t) / (# applicants at step 1)
+
+    Inputs:
+      - Xs: list of feature matrices per step.
+            If `As` is None, we treat `len(Xs[t])` (rows) as the number applying.
+      - As: optional list of activity/apply indicators per step (0/1). If provided,
+            we count applicants applying as `sum(As[t] == 1)`.
+
+    Returns:
+      - np.ndarray of shape (T,) with retention rates.
+    """
+    if Xs is None or len(Xs) == 0:
+        return np.asarray([], dtype=float)
+
+    T = len(Xs)
+
+    if As is not None:
+        if len(As) != T:
+            raise ValueError("As must have the same length as Xs")
+        denom = int(np.sum(np.asarray(As[0]).astype(int) == 1))
+        numerators = [int(np.sum(np.asarray(a).astype(int) == 1)) for a in As]
+    else:
+        denom = int(np.asarray(Xs[0]).shape[0])
+        numerators = [int(np.asarray(X).shape[0]) for X in Xs]
+
+    if denom <= 0:
+        return np.full(T, np.nan, dtype=float)
+
+    return np.asarray([n / denom for n in numerators], dtype=float)
+
