@@ -45,6 +45,16 @@ def combine_tuples(s, Xs, Ys):
         Y = np.hstack([Y, y])
     return S, X, Y
 
+def combine_tuples_active_only(s, Xs, Ys, As):
+    s_all, X_all, Y_all = [], [], []
+    T = len(Xs)
+    for t in range(T):
+        A_t = np.asarray(As[t]).astype(int)
+        mask = (A_t == 1)
+        s_all.append(s[mask])
+        X_all.append(Xs[t][mask])
+        Y_all.append(Ys[t][mask])
+    return np.concatenate(s_all), np.vstack(X_all), np.concatenate(Y_all)
 
 def plot_data(s, X, y, n_samples=500, lines=None):
     """
