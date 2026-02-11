@@ -7,7 +7,7 @@ class Bank:
     name = 'Bank'
     params = np.array([2.5, 2, -1, -4.0])
 
-    def __init__(self, params=None, seed=2021):
+    def __init__(self, params=None, seed=2026):
         self.seed = seed
         if params is not None:
             self.params = params
@@ -21,7 +21,7 @@ class Bank:
 
 class Agent:
 
-    def __init__(self, n_samples, protect_ratio, eps, base, seed=2021):
+    def __init__(self, n_samples, protect_ratio, eps, base, seed=2026):
         self.n_samples = n_samples
         self.protect_ratio = protect_ratio
         self.eps = eps
@@ -232,7 +232,6 @@ def run_simulation(
         Us: [U_1..U_steps],
         As: [A_1..A_steps]
     """
-
     # Default repayment model is the Bank model from generator.py
     if repayment_model is None:
         from src.simulator import Bank
@@ -279,7 +278,7 @@ def run_simulation(
         _, p_dec = decision_model.predict(s, X_t)
         D_t = sampling(np.asarray(p_dec, dtype=float), values=[0.0, 1.0], coef=float(decision_coef)).astype(int)
         D_t = np.asarray(D_t, dtype=int)
-        D_t[A_t == 0] = 0
+        D_t[A_t == 0] = -1  # not applicable for inactive agents
         denied = ((A_t == 1) & (D_t == 0)).astype(int)
 
         # agents observe O_t

@@ -10,7 +10,7 @@ class LR:
     name = 'Logistic Regression'
 
     def __init__(self, l2_reg):
-        self.model = LogisticRegression(C=1.0/l2_reg, random_state=2021)
+        self.model = LogisticRegression(C=1.0/l2_reg, max_iter=1000, random_state=2021)
 
     def train(self, s, X, y):
         Xs = np.c_[s, X]
@@ -42,7 +42,7 @@ class CvxFairModel:
         Z = self.add_features(s, X)
         n = Z.shape[0]
         h = Z @ self.w + self.b
-        t1 = (1/n) * cp.sum(cp.logistic(-cp.multiply(y, h)))
+        t1 = (1/n) * cp.sum(-cp.multiply(y, h) + cp.logistic(h))
         t2 = self.l2_reg * cp.sum_squares(self.w)
         return t1 + t2
 
@@ -80,6 +80,8 @@ class CvxFairModel:
 
         if last_err is not None:
             raise last_err
+
+        print(f"[{self.name}] status: {prob.status}, loss: {prob.value:.4f}")
 
     def predict(self, s, X):
         Z = self.add_features(s, X)
@@ -197,7 +199,7 @@ class EOFairModel:
         obj = cp.Minimize(loss)
         prob = cp.Problem(obj, cons)
         prob.solve()
-        print(prob.status)
+        print(f"[{self.name}] status: {prob.status}, loss: {prob.value:.4f}")
 
     def predict(self, s, X):
         X = self.add_intercept(s, X)
