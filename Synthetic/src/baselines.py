@@ -81,6 +81,8 @@ class CvxFairModel:
         if last_err is not None:
             raise last_err
 
+        print(f"[{self.name}] status: {prob.status}, loss: {prob.value:.4f}")
+
     def predict(self, s, X):
         Z = self.add_features(s, X)
         h = Z @ self.w.value + self.b.value
@@ -197,7 +199,7 @@ class EOFairModel:
         obj = cp.Minimize(loss)
         prob = cp.Problem(obj, cons)
         prob.solve()
-        print(prob.status)
+        print(f"[{self.name}] status: {prob.status}, loss: {prob.value:.4f}")
 
     def predict(self, s, X):
         X = self.add_intercept(s, X)
