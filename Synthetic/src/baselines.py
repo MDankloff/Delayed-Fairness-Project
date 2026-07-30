@@ -181,15 +181,17 @@ class EOFairModel:
 
     def compute_constraint(self, s, X, y):
         X = self.add_intercept(s, X)
-        n = X.shape[0]
-        
-        X_pos = X[(y == 1) == (s == 1)]
-        X_neg = X[(y == 1) == (s == 0)]
+
+        # Equal Opportunity conditions on qualified applicants (y == 1) only.
+        X_pos = X[(y == 1) & (s == 1)]
+        X_neg = X[(y == 1) & (s == 0)]
+        n_pos = max(1, len(X_pos))
+        n_neg = max(1, len(X_neg))
 
         h_pos = X_pos @ self.w
         h_neg = X_neg @ self.w
-        c1 = 1.0 / len(X_pos) * cp.sum(cp.logistic(h_pos)) + 1.0 / len(X_neg) * cp.sum(cp.logistic(-h_neg))
-        c2 = 1.0 / len(X_pos) * cp.sum(cp.logistic(-h_pos)) + 1.0 / len(X_neg) * cp.sum(cp.logistic(h_neg))
+        c1 = 1.0 / n_pos * cp.sum(cp.logistic(h_pos)) + 1.0 / n_neg * cp.sum(cp.logistic(-h_neg))
+        c2 = 1.0 / n_pos * cp.sum(cp.logistic(-h_pos)) + 1.0 / n_neg * cp.sum(cp.logistic(h_neg))
         return c1, c2
 
     def train(self, s, X, y):
