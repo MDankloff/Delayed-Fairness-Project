@@ -159,7 +159,7 @@ class CvxFairModel:
 
 class EOFairModel:
 
-    name = 'Fair Model with Equal Oppertunity'
+    name = 'Fair Model with Equal Opportunity'
 
     def __init__(self, n_features, l2_reg, tao):
         self.l2_reg = l2_reg
