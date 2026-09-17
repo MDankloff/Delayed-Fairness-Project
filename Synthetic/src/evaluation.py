@@ -112,6 +112,7 @@ def compute_post_long_cond_fairness(s, Xs, model, prob=None):
 
 def compute_statistics(s, Xs, Ys, model, OYs=None, As=None):
 
+    records = []
     retention = compute_retention_rate(Xs, As)
     ret_disparity = compute_retention_disparity(s, As) if As is not None else np.array([])
 
@@ -145,7 +146,11 @@ def compute_statistics(s, Xs, Ys, model, OYs=None, As=None):
             post_long_cond_fairness = compute_post_long_cond_fairness(s, Xs[:i+1], model, post_long_cond_prob)
 
         print(f"Long fairness: {abs(post_long_cond_fairness):.3f}")
+        records.append(dict(step=i + 1, accuracy=acc,
+                            short_fairness=abs(short_fair_cond),
+                            long_fairness=abs(post_long_cond_fairness)))
     print("\n")
+    return records
 
 
 def compute_retention_rate(Xs, As=None):
