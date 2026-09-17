@@ -61,13 +61,13 @@ class FairModel(nn.Module):
         Xs = combine_featuers(s, X)
         h = self.linear(Xs)
         p = self.sigmoid(h)
-        return h.squeeze(), p.squeeze()
+        return h.squeeze(-1), p.squeeze(-1)
 
     def prev_forward(self, s, X):
         Xs = combine_featuers(s, X)
         h = F.linear(Xs, self.old_linear_weight, self.old_linear_bias)
         p = self.sigmoid(h)
-        return h.squeeze(), p.squeeze()
+        return h.squeeze(-1), p.squeeze(-1)
 
     def predict(self, s, X):
         _, p = self.forward(s, X)
