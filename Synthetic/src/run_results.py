@@ -106,7 +106,7 @@ class RunResults:
         for context, trajectory in self.trajectories.values():
             s, Xs, Ys, Ds, As = trajectory
             model = experiments[context['dataset']]['models'][context['model']]
-            self.series(context, 'evaluation_clipped_repayment_labels', extract_metrics(trajectory, model))
+            self.series(context, 'evaluation_probability_policy_repayment_labels', extract_metrics(trajectory, model))
             with contextlib.redirect_stdout(io.StringIO()):
                 details = detailed_metrics(s, As, Ds, Ys)
             self.series(context, 'detailed_evaluation', details)
@@ -114,7 +114,7 @@ class RunResults:
                 A, D, Y = np.asarray(A), np.asarray(D), np.asarray(Y)
                 self.add(context, 'evaluation', 'accuracy_full_population_model_prediction',
                          compute_accuracy(s, X, Y, model), step=t)
-                self.add(context, 'evaluation', 'short_fairness_full_population',
+                self.add(context, 'evaluation', 'short_fairness_probability_full_population',
                          abs(compute_short_cond_fairness(s, X, model)), step=t)
                 for group in ('all', 'S=0', 'S=1'):
                     mask = np.ones(len(s), dtype=bool) if group == 'all' else s == int(group[-1])
@@ -132,6 +132,8 @@ class RunResults:
                     self.series(dict(dataset=dataset, model=model, opt_out=opt_out, seed=2026,
                                      graph_seed=2026), 'figure_' + key, metrics)
         table = pd.DataFrame(self.rows.values())
+        for setting in ('fairness_denominator_clip', 'decision_policy', 'fairness_policy'):
+            table[setting] = metadata.get(setting)
         first = ['run_id', 'dataset', 'model', 'opt_out', 'seed', 'graph_seed', 'source',
                  'step', 'group', 'metric', 'statistic', 'value', 'unit']
         table = table[first + [c for c in table if c not in first]]
@@ -141,8 +143,8 @@ class RunResults:
         (self.folder / 'README.txt').write_text(
             'all_results.csv: one numeric value per row. Filter by source before comparing.\n'
             'figure_* rows are the exact plotted arrays (seed 2026).\n'
-            'evaluation_clipped_repayment_labels uses the notebook probability clipping and Y labels.\n'
-            'diagnostic_* rows reproduce early compute_statistics, whose long fairness uses D labels.\n'
+            'evaluation_probability_policy_repayment_labels uses shared clipping, policy probabilities and Y labels.\n'
+            'diagnostic_* rows use the same probability policy and repayment labels as the evaluation.\n'
             'Summary rows include individual seeds, mean and population std (ddof=0).\n'
             'Step numbers start at 1. Average retention disparity excludes step 1.\n'
             'Percent values range from 0 to 100; disparity is in percentage points.\n'

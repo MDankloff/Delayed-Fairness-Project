@@ -38,8 +38,9 @@ class FairModel(nn.Module):
 
     name = 'Long-term Fair Model'
 
-    def __init__(self, n_features, lr, l2_reg, sf_reg, lf_reg):
+    def __init__(self, n_features, lr, l2_reg, sf_reg, lf_reg, probability_clip=0.05):
         super().__init__()
+        self.probability_clip = validate_probability_clip(probability_clip)
         self.l2_reg = l2_reg
         self.sf_reg = sf_reg
         self.lf_reg = lf_reg
@@ -138,7 +139,7 @@ class FairModel(nn.Module):
 
     def train(self, s, OXs, OYs, Xs, Ys, epochs=0, plot=True, tol=1e-7, short_type='pos'):
         
-        long_probs = compute_post_long_cond_probs(s, Xs, Ys)
+        long_probs = compute_post_long_cond_probs(s, Xs, Ys, clip=self.probability_clip)
         losses, o_losses, s_fairs, l_fairs = [], [], [], []
 
         gap = 1e30

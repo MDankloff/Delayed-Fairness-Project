@@ -1,0 +1,634 @@
+{
+  "run_id": "20260917T145027_723453Z_7028a6",
+  "source_split_defaults": {
+    "test_size": 0.2,
+    "seed": 42
+  },
+  "code_sha256": {
+    "local/BAF_refactor.ipynb": "651c659a0cf0713b17b694e70e68f5d193b8ea5d8f90120b62d30e9aa2c26d6f",
+    "Synthetic/src/activity_fair_model.py": "2cdfe62c904fc9be40752092a1cca3fa4d698d5cf0e09ac4e6009039d7a8a6dd",
+    "Synthetic/src/baselines.py": "e04f465737c18d0d3550298d5d57bbf62622682c92acabd45c6b2a68f5411f0b",
+    "Synthetic/src/evaluation.py": "ebcf2fc2a8e0604bb12b7cb9890308ebecc5558f7ff79cbc78e40225b245064c",
+    "Synthetic/src/fair_model.py": "0ae724784b2257b48d75fe976bc8109a5ebe060201149d9c1edba9c6573c6530",
+    "Synthetic/src/generator.py": "7d7cf17f56fb039d94261c7495ac6c0a551d23adb4b6f64662cc573fcbac3445",
+    "Synthetic/src/graph.py": "a5cca3be9cac739c4cba216c56df0b16f5d98af13fa878fe46d054acfe74d455",
+    "Synthetic/src/graph_sensitivity.py": "3c3638ecf4c933d3f0f57d6e363f2fdbee6a70d641e7df7d07e62110cd44a4da",
+    "Synthetic/src/group_model.py": "fddad3988803e432124044a5b628afb6f68f6571948054b65661df16f6a0c163",
+    "Synthetic/src/run_results.py": "22e2a8d81eec66c592e6b2218cf265fcb9b94adfc5eef0a3f56b9f7c50166d50",
+    "Synthetic/src/simulator.py": "efe169a1f08a461ffd6ca05305edd23d04913da04d92b24cf0debc53828f24a5",
+    "Synthetic/src/taiwan_generator.py": "2e4f85a9d1078ef4801199cc98917ae636311cf137de5cfb17cd4870cefa8c66",
+    "Synthetic/src/utils.py": "c8b782d695586e3a09c09df87b668e4eb3257752fd33d199d4b7f427d6aa8b49"
+  },
+  "notebook": "local/BAF_refactor.ipynb",
+  "random_seed": 42,
+  "simulation_defaults": {
+    "enforce_demographic_mixing": true,
+    "k_same": 8,
+    "k_other": 2,
+    "directed": false,
+    "decision_coef": 1.0,
+    "repayment_coef": 0.8
+  },
+  "fairness_denominator_clip": 0.05,
+  "decision_policy": "Bernoulli(model_probability)",
+  "fairness_policy": "model_probability",
+  "conditional_ratio_labels": "repayment_Y",
+  "groups": {
+    "S=0": "customer_age < 50",
+    "S=1": "customer_age >= 50"
+  },
+  "feature_order": [
+    "credit_risk_score",
+    "proposed_credit_limit"
+  ],
+  "credit_limit_coupling": {
+    "coefficients": [
+      4.235934699669524
+    ],
+    "intercept": -39.352073779826924,
+    "residual_std": 387.6364406954607,
+    "fitted_on": "Base training partition"
+  },
+  "datasets": {
+    "Base": {
+      "input_file": "/Users/jh22215/Documents/GitHub/Delayed-Fairness-Project/local/Base.csv",
+      "input_size_bytes": 213427735,
+      "input_modified_ns": 1789556227633973102,
+      "train_agent": {
+        "n_samples": 4000,
+        "seed": 2026,
+        "eps": 0.5,
+        "base": [
+          0.0,
+          0.0
+        ],
+        "protect_ratio": 0.5
+      },
+      "test_agent": {
+        "n_samples": 1000,
+        "seed": 2027,
+        "eps": 0.5,
+        "base": [
+          0.0,
+          0.0
+        ],
+        "protect_ratio": 0.5
+      },
+      "training": {
+        "lcf_initial_epochs": 1000,
+        "lcf_retraining_rounds": 50,
+        "lcf_retraining_epochs": 10,
+        "steps": 5,
+        "initial_trajectory_seed": 2021,
+        "retraining_seed_start": 2022
+      },
+      "scaler": {
+        "mean_": [
+          130.91488375,
+          515.194825
+        ],
+        "scale_": [
+          69.61679800144492,
+          487.0556826926662
+        ]
+      },
+      "bank_parameters": [
+        -0.8394556979355271,
+        -0.38935751280146286,
+        -0.24142869405997044,
+        4.920264792540003
+      ],
+      "models": {
+        "Baseline": {
+          "class_name": "LR",
+          "params": [
+            -0.1200781411365134,
+            -0.05569774630666951,
+            -0.03955591563870343,
+            0.6902921210208932
+          ],
+          "sklearn_parameters": {
+            "C": 99999.99999999999,
+            "class_weight": null,
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": null,
+            "max_iter": 1000,
+            "multi_class": "deprecated",
+            "n_jobs": null,
+            "penalty": "l2",
+            "random_state": 2021,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+          }
+        },
+        "LCF-original": {
+          "class_name": "FairModel",
+          "params": [
+            -0.46910661458969116,
+            -0.04600046947598457,
+            -0.012343011796474457,
+            0.43670424818992615
+          ],
+          "l2_reg": 1e-05,
+          "sf_reg": 0.119,
+          "lf_reg": 0.154,
+          "probability_clip": 0.05,
+          "sklearn_parameters": null
+        },
+        "LCF-active": {
+          "class_name": "ActivityAwareFairModel",
+          "params": [
+            -0.4992355704307556,
+            -0.03697384521365166,
+            -0.02363530546426773,
+            0.5209923386573792
+          ],
+          "l2_reg": 1e-05,
+          "sf_reg": 0.119,
+          "lf_reg": 0.154,
+          "probability_clip": 0.05,
+          "sklearn_parameters": null
+        },
+        "EO": {
+          "class_name": "EOFairModel",
+          "params": [
+            -0.009783279399611896,
+            -0.05393258199945999,
+            -0.038420816268488735,
+            0.6203088805714323
+          ],
+          "l2_reg": 1e-05,
+          "tao": 1.5,
+          "sklearn_parameters": null
+        },
+        "DP": {
+          "class_name": "CvxFairModel",
+          "params": [
+            -0.11987411947283705,
+            -0.055116412125186795,
+            -0.04017493630848873,
+            0.690158937549182
+          ],
+          "l2_reg": 1e-05,
+          "tao": 1.565,
+          "sklearn_parameters": null
+        }
+      }
+    },
+    "Variant I": {
+      "input_file": "/Users/jh22215/Documents/GitHub/Delayed-Fairness-Project/local/Variant I.csv",
+      "input_size_bytes": 213400445,
+      "input_modified_ns": 1789556225975461233,
+      "train_agent": {
+        "n_samples": 4000,
+        "seed": 2026,
+        "eps": 0.5,
+        "base": [
+          0.0,
+          0.0
+        ],
+        "protect_ratio": 0.5
+      },
+      "test_agent": {
+        "n_samples": 1000,
+        "seed": 2027,
+        "eps": 0.5,
+        "base": [
+          0.0,
+          0.0
+        ],
+        "protect_ratio": 0.5
+      },
+      "training": {
+        "lcf_initial_epochs": 1000,
+        "lcf_retraining_rounds": 50,
+        "lcf_retraining_epochs": 10,
+        "steps": 5,
+        "initial_trajectory_seed": 2021,
+        "retraining_seed_start": 2022
+      },
+      "scaler": {
+        "mean_": [
+          129.43232875,
+          507.2295875
+        ],
+        "scale_": [
+          69.05060501619027,
+          481.3633811265456
+        ]
+      },
+      "bank_parameters": [
+        0.11703702323485508,
+        -0.41549847456346223,
+        -0.24489251170429674,
+        4.673713384789199
+      ],
+      "models": {
+        "Baseline": {
+          "class_name": "LR",
+          "params": [
+            0.0743387821309227,
+            -0.07367975475916648,
+            -0.03953705607084829,
+            0.63486881609911
+          ],
+          "sklearn_parameters": {
+            "C": 99999.99999999999,
+            "class_weight": null,
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": null,
+            "max_iter": 1000,
+            "multi_class": "deprecated",
+            "n_jobs": null,
+            "penalty": "l2",
+            "random_state": 2021,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+          }
+        },
+        "LCF-original": {
+          "class_name": "FairModel",
+          "params": [
+            -0.41041162610054016,
+            -0.050999753177165985,
+            -0.010139094665646553,
+            0.428766667842865
+          ],
+          "l2_reg": 1e-05,
+          "sf_reg": 0.119,
+          "lf_reg": 0.154,
+          "probability_clip": 0.05,
+          "sklearn_parameters": null
+        },
+        "LCF-active": {
+          "class_name": "ActivityAwareFairModel",
+          "params": [
+            -0.40004998445510864,
+            -0.04066891223192215,
+            -0.017849808558821678,
+            0.48731711506843567
+          ],
+          "l2_reg": 1e-05,
+          "sf_reg": 0.119,
+          "lf_reg": 0.154,
+          "probability_clip": 0.05,
+          "sklearn_parameters": null
+        },
+        "EO": {
+          "class_name": "EOFairModel",
+          "params": [
+            0.025202463011805516,
+            -0.07312472333833292,
+            -0.03811451725915906,
+            0.6512315321059867
+          ],
+          "l2_reg": 1e-05,
+          "tao": 1.5,
+          "sklearn_parameters": null
+        },
+        "DP": {
+          "class_name": "CvxFairModel",
+          "params": [
+            0.07420263227953307,
+            -0.07428843056769148,
+            -0.038881569050869785,
+            0.6346386169277343
+          ],
+          "l2_reg": 1e-05,
+          "tao": 1.565,
+          "sklearn_parameters": null
+        }
+      }
+    },
+    "Variant II": {
+      "input_file": "/Users/jh22215/Documents/GitHub/Delayed-Fairness-Project/local/Variant II.csv",
+      "input_size_bytes": 213537521,
+      "input_modified_ns": 1789556226658327684,
+      "train_agent": {
+        "n_samples": 4000,
+        "seed": 2026,
+        "eps": 0.5,
+        "base": [
+          0.0,
+          0.0
+        ],
+        "protect_ratio": 0.5
+      },
+      "test_agent": {
+        "n_samples": 1000,
+        "seed": 2027,
+        "eps": 0.5,
+        "base": [
+          0.0,
+          0.0
+        ],
+        "protect_ratio": 0.5
+      },
+      "training": {
+        "lcf_initial_epochs": 1000,
+        "lcf_retraining_rounds": 50,
+        "lcf_retraining_epochs": 10,
+        "steps": 5,
+        "initial_trajectory_seed": 2021,
+        "retraining_seed_start": 2022
+      },
+      "scaler": {
+        "mean_": [
+          137.43911375,
+          558.417525
+        ],
+        "scale_": [
+          72.18761968207956,
+          513.51260575849
+        ]
+      },
+      "bank_parameters": [
+        -1.4477055169786908,
+        -0.4022381316183258,
+        -0.2474160016205055,
+        5.723376994102931
+      ],
+      "models": {
+        "Baseline": {
+          "class_name": "LR",
+          "params": [
+            -0.21423060922367265,
+            -0.04158559711496299,
+            -0.04393408695786823,
+            0.8173122754618374
+          ],
+          "sklearn_parameters": {
+            "C": 99999.99999999999,
+            "class_weight": null,
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": null,
+            "max_iter": 1000,
+            "multi_class": "deprecated",
+            "n_jobs": null,
+            "penalty": "l2",
+            "random_state": 2021,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+          }
+        },
+        "LCF-original": {
+          "class_name": "FairModel",
+          "params": [
+            -0.5161658525466919,
+            -0.0461452417075634,
+            -0.01576201431453228,
+            0.5045117735862732
+          ],
+          "l2_reg": 1e-05,
+          "sf_reg": 0.119,
+          "lf_reg": 0.154,
+          "probability_clip": 0.05,
+          "sklearn_parameters": null
+        },
+        "LCF-active": {
+          "class_name": "ActivityAwareFairModel",
+          "params": [
+            -0.5572533011436462,
+            -0.034772373735904694,
+            -0.02419011853635311,
+            0.5829818248748779
+          ],
+          "l2_reg": 1e-05,
+          "sf_reg": 0.119,
+          "lf_reg": 0.154,
+          "probability_clip": 0.05,
+          "sklearn_parameters": null
+        },
+        "EO": {
+          "class_name": "EOFairModel",
+          "params": [
+            0.02190320647993999,
+            -0.037444467644221,
+            -0.04035078221965447,
+            0.6541896931038969
+          ],
+          "l2_reg": 1e-05,
+          "tao": 1.5,
+          "sklearn_parameters": null
+        },
+        "DP": {
+          "class_name": "CvxFairModel",
+          "params": [
+            -0.08759463905574294,
+            -0.039385335231737435,
+            -0.043205412383139664,
+            0.7356521672367405
+          ],
+          "l2_reg": 1e-05,
+          "tao": 1.565,
+          "sklearn_parameters": null
+        }
+      }
+    }
+  },
+  "status": "complete",
+  "result_rows": 24075,
+  "figures": [
+    {
+      "dataset": "Base",
+      "plot": "group_retention",
+      "seed": 2026,
+      "files": [
+        "base__group_retention__seed_2026.png",
+        "base__group_retention__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant I",
+      "plot": "group_retention",
+      "seed": 2026,
+      "files": [
+        "variant_i__group_retention__seed_2026.png",
+        "variant_i__group_retention__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant II",
+      "plot": "group_retention",
+      "seed": 2026,
+      "files": [
+        "variant_ii__group_retention__seed_2026.png",
+        "variant_ii__group_retention__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Base",
+      "plot": "group_retention_and_ratio",
+      "seed": 2026,
+      "files": [
+        "base__group_retention_and_ratio__seed_2026.png",
+        "base__group_retention_and_ratio__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant I",
+      "plot": "group_retention_and_ratio",
+      "seed": 2026,
+      "files": [
+        "variant_i__group_retention_and_ratio__seed_2026.png",
+        "variant_i__group_retention_and_ratio__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant II",
+      "plot": "group_retention_and_ratio",
+      "seed": 2026,
+      "files": [
+        "variant_ii__group_retention_and_ratio__seed_2026.png",
+        "variant_ii__group_retention_and_ratio__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Base",
+      "plot": "long_term_unfairness_merged",
+      "seed": 2026,
+      "files": [
+        "base__long_term_unfairness_merged__seed_2026.png",
+        "base__long_term_unfairness_merged__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant I",
+      "plot": "long_term_unfairness_merged",
+      "seed": 2026,
+      "files": [
+        "variant_i__long_term_unfairness_merged__seed_2026.png",
+        "variant_i__long_term_unfairness_merged__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant II",
+      "plot": "long_term_unfairness_merged",
+      "seed": 2026,
+      "files": [
+        "variant_ii__long_term_unfairness_merged__seed_2026.png",
+        "variant_ii__long_term_unfairness_merged__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Base",
+      "plot": "opt_out_comparison",
+      "seed": 2026,
+      "files": [
+        "base__opt_out_comparison__seed_2026.png",
+        "base__opt_out_comparison__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant I",
+      "plot": "opt_out_comparison",
+      "seed": 2026,
+      "files": [
+        "variant_i__opt_out_comparison__seed_2026.png",
+        "variant_i__opt_out_comparison__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant II",
+      "plot": "opt_out_comparison",
+      "seed": 2026,
+      "files": [
+        "variant_ii__opt_out_comparison__seed_2026.png",
+        "variant_ii__opt_out_comparison__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Base",
+      "plot": "relative_retention",
+      "seed": 2026,
+      "files": [
+        "base__relative_retention__seed_2026.png",
+        "base__relative_retention__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Base",
+      "plot": "approval_rate_difference",
+      "seed": 2026,
+      "files": [
+        "base__approval_rate_difference__seed_2026.png",
+        "base__approval_rate_difference__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Base",
+      "plot": "relative_gradient_retention",
+      "seed": 2026,
+      "files": [
+        "base__relative_gradient_retention__seed_2026.png",
+        "base__relative_gradient_retention__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant I",
+      "plot": "relative_retention",
+      "seed": 2026,
+      "files": [
+        "variant_i__relative_retention__seed_2026.png",
+        "variant_i__relative_retention__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant I",
+      "plot": "approval_rate_difference",
+      "seed": 2026,
+      "files": [
+        "variant_i__approval_rate_difference__seed_2026.png",
+        "variant_i__approval_rate_difference__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant I",
+      "plot": "relative_gradient_retention",
+      "seed": 2026,
+      "files": [
+        "variant_i__relative_gradient_retention__seed_2026.png",
+        "variant_i__relative_gradient_retention__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant II",
+      "plot": "relative_retention",
+      "seed": 2026,
+      "files": [
+        "variant_ii__relative_retention__seed_2026.png",
+        "variant_ii__relative_retention__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant II",
+      "plot": "approval_rate_difference",
+      "seed": 2026,
+      "files": [
+        "variant_ii__approval_rate_difference__seed_2026.png",
+        "variant_ii__approval_rate_difference__seed_2026.pdf"
+      ]
+    },
+    {
+      "dataset": "Variant II",
+      "plot": "relative_gradient_retention",
+      "seed": 2026,
+      "files": [
+        "variant_ii__relative_gradient_retention__seed_2026.png",
+        "variant_ii__relative_gradient_retention__seed_2026.pdf"
+      ]
+    }
+  ]
+}

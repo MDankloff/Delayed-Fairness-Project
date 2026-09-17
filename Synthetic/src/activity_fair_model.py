@@ -47,7 +47,7 @@ class ActivityAwareFairModel(FairModel):
                 "surviving groups or label classes to fit conditional ratios.",
                 RuntimeWarning, stacklevel=2,
             )
-        long_probs = (compute_post_long_cond_probs(long_s, long_Xs, long_Ys)
+        long_probs = (compute_post_long_cond_probs(long_s, long_Xs, long_Ys, clip=self.probability_clip)
                       if can_estimate_long else None)
         losses, o_losses, s_fairs, l_fairs = [], [], [], []
 
