@@ -1,7 +1,7 @@
 import numpy as np
 import csv
 from utils import *
-from graph import gen_static_random_graph, gen_static_demographic_regular_graph, build_temporal_graph_features
+from graph import gen_static_random_graph, gen_static_demographic_regular_graph, gen_static_alternative_graph, build_temporal_graph_features
 
 class Bank:
     name = 'Bank'
@@ -208,6 +208,8 @@ def run_simulation(
     repayment_coef=0.8,
     enable_opt_out=True,
     feature_update=None,
+    graph_model=None,
+    ws_beta=0.1,
 ):
     """
 
@@ -227,6 +229,10 @@ def run_simulation(
     Decisions are sampled directly from model probabilities (decision_coef must be 1.0).
 
     Optional behavior:
+        - graph_model=None preserves the existing demographic/random generator.
+          'erdos_renyi' and 'watts_strogatz' select group-blind undirected graphs;
+          set enforce_demographic_mixing=False. k sets mean degree (in expectation
+          for ER); ws_beta controls WS rewiring.
         - With opt-out enabled, active denied applicants with Y=0 also exit,
           independently of perceived unfairness U.
         - enable_opt_out=False disables both exit mechanisms.
@@ -261,7 +267,13 @@ def run_simulation(
     if enforce_demographic_mixing and directed:
         raise ValueError("enforce_demographic_mixing requires an undirected graph")
 
-    if enforce_demographic_mixing:
+    if graph_model is not None:
+        if enforce_demographic_mixing or directed:
+            raise ValueError('Alternative graph models require undirected, group-blind mixing')
+        adj, edges = gen_static_alternative_graph(
+            n, model=graph_model, k=k, beta=ws_beta, seed=graph_seed
+        )
+    elif enforce_demographic_mixing:
         adj, edges = gen_static_demographic_regular_graph(
             s, k_same=int(k_same), k_other=int(k_other), seed=int(graph_seed)
         )
@@ -492,4 +504,3 @@ def save_agent_panel_csv(
                     float(X_t[i, 1]),
                 ] + nbr_decisions
                 writer.writerow(row)
-

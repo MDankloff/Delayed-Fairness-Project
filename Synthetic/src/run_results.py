@@ -39,6 +39,7 @@ class RunResults:
         self.write_metadata({'status': 'running'})
 
     def write_metadata(self, metadata):
+        self.folder.mkdir(parents=True, exist_ok=True)
         (self.folder / 'run_metadata.json').write_text(
             json.dumps({'run_id': self.run_id, **metadata}, default=_json, indent=2) + '\n'
         )
@@ -59,6 +60,8 @@ class RunResults:
                     context.update(eps=agent.eps, base_s0=agent.base[0], base_s1=agent.base[1],
                                    test_n=agent.n_samples, test_initialization_seed=agent.seed)
                     key = (dataset, name, bool(opt_out), seed)
+                    if settings.get('graph_model') is not None:
+                        key += (settings['graph_model'], settings.get('k'), settings.get('ws_beta'))
                     self.trajectories[key] = (context, (result[0], result[3], result[4], result[5], result[9]))
                     self.last_context = context
                     return
@@ -90,6 +93,7 @@ class RunResults:
                      n_seeds=len(seeds), seeds=json.dumps(list(seeds)), std_ddof=0)
 
     def save_figure(self, fig, dataset, name):
+        self.folder.mkdir(parents=True, exist_ok=True)
         stem = f'{_slug(dataset)}__{name}__seed_2026'
         files = []
         for extension in ('png', 'pdf'):
@@ -99,6 +103,7 @@ class RunResults:
         self.figures[stem] = dict(dataset=dataset, plot=name, seed=2026, files=files)
 
     def export(self, experiments, extract_metrics, detailed_metrics, metadata):
+        self.folder.mkdir(parents=True, exist_ok=True)
         import contextlib
         import io
         from evaluation import compute_accuracy, compute_short_cond_fairness

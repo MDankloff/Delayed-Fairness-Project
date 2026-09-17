@@ -1,5 +1,31 @@
 import numpy as np
 
+def gen_static_alternative_graph(n_nodes, *, model, k=10, beta=0.1, seed=2026):
+    """Group-blind ER G(n,p) or WS graph, with expected/actual mean degree k.
+
+    WS ring positions are randomly assigned to applicant IDs independently of S.
+    Local RNGs leave simulation outcome sampling unchanged.
+    """
+    import networkx as nx
+
+    if n_nodes < 2 or int(k) != k or not 0 <= k < n_nodes:
+        raise ValueError('Require n_nodes >= 2 and integer 0 <= k < n_nodes')
+    k = int(k)
+    if model == 'erdos_renyi':
+        graph = nx.fast_gnp_random_graph(n_nodes, k / (n_nodes - 1), seed=int(seed))
+    elif model == 'watts_strogatz':
+        if k < 2 or k % 2 or not 0 <= beta <= 1:
+            raise ValueError('WS requires even k >= 2 and 0 <= beta <= 1')
+        graph = nx.watts_strogatz_graph(n_nodes, k, beta, seed=int(seed))
+        order = np.random.default_rng(seed).permutation(n_nodes)
+        graph = nx.relabel_nodes(graph, dict(enumerate(order)))
+    else:
+        raise ValueError(f'Unknown alternative graph model: {model}')
+    adjacency = nx.to_numpy_array(graph, nodelist=range(n_nodes), dtype=np.int8)
+    edges = sorted((min(int(u), int(v)), max(int(u), int(v))) for u, v in graph.edges())
+    return adjacency, edges
+
+
 def gen_static_random_graph(n_nodes, k=10, *, seed=2021, directed=False):
     """Generate a static random graph with per-node degree ~k.
 
@@ -187,6 +213,5 @@ def build_temporal_graph_features(s, Xs, *, include_sensitive=False):
         return list(Xs)
     s_col = np.asarray(s).reshape(-1, 1)
     return [np.concatenate([s_col, X], axis=1) for X in Xs]
-
 
 
