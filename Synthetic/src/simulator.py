@@ -204,7 +204,7 @@ def run_simulation(
     directed=False,
     graph_seed=2026,
     seed=2026,
-    decision_coef=0.8,
+    decision_coef=1.0,
     repayment_coef=0.8,
     enable_opt_out=True,
     feature_update=None,
@@ -223,6 +223,8 @@ def run_simulation(
         - Y_t in {0,1}: latent repayment ability/label at time t
         - A_t in {0,1}: 1=active/applying, 0=opted out
         - P_t in {0,1}: previous denial indicator (1 means denied at t-1 while active)
+
+    Decisions are sampled directly from model probabilities (decision_coef must be 1.0).
 
     Optional behavior:
         - With opt-out enabled, active denied applicants with Y=0 also exit,
@@ -245,6 +247,8 @@ def run_simulation(
         Us: [U_1..U_steps],
         As: [A_1..A_steps]
     """
+    if decision_coef != 1.0:
+        raise ValueError("Decisions now use Bernoulli(p) directly; set decision_coef=1.0.")
     if repayment_model is None:
         repayment_model = Bank()
 
@@ -286,7 +290,7 @@ def run_simulation(
 
         # bank issues D_t
         _, p_dec = decision_model.predict(s, X_t)
-        D_t = sampling(np.asarray(p_dec, dtype=float), values=[0.0, 1.0], coef=float(decision_coef)).astype(int)
+        D_t = sampling(np.asarray(p_dec, dtype=float), values=[0.0, 1.0], coef=None).astype(int)
         D_t = np.asarray(D_t, dtype=int)
         D_t[A_t == 0] = -1  # not applicable for inactive agents
         denied = ((A_t == 1) & (D_t == 0)).astype(int)

@@ -27,8 +27,8 @@ def compute_total_cond_fairness(s, X, model):
     s_pos, s_neg = s[s == 1], s[s == 0]
     X_pos, X_neg = X[s == 1], X[s == 0]
 
-    y_pos, _ = model.predict(s_pos, X_pos)
-    y_neg, _ = model.predict(s_neg, X_neg) 
+    _, y_pos = model.predict(s_pos, X_pos)
+    _, y_neg = model.predict(s_neg, X_neg)
     fairness = y_pos.mean() - y_neg.mean()
     return fairness
 
@@ -40,51 +40,58 @@ def compute_short_cond_fairness(s, X, model):
     s_pos = np.ones_like(s)
     s_neg = np.zeros_like(s)
         
-    y_pos, _ = model.predict(s_pos, X)
-    y_neg, _ = model.predict(s_neg, X)
+    _, y_pos = model.predict(s_pos, X)
+    _, y_neg = model.predict(s_neg, X)
 
     fairness = y_pos.mean() - y_neg.mean()
     return fairness
 
 
-def compute_post_long_cond_probs(s, Xs, Ys):
+def validate_probability_clip(clip):
+    """None disables clipping for sensitivity checks; otherwise require 0 < clip < .5."""
+    if clip is not None and not (0 < clip < 0.5):
+        raise ValueError("clip must be None or strictly between 0 and 0.5")
+    return clip
+
+
+def compute_post_long_cond_probs(s, Xs, Ys, clip=0.05):
+    """Shared conditional-ratio estimator for training and evaluation.
+
+    Ys retains the caller's label semantics (BAF supplies repayment labels).
+    Only denominator probabilities are clipped, as in the former notebook patch.
+    """
+    validate_probability_clip(clip)
+    s = np.asarray(s)
     probs = {}
-    
-    for i in range(len(Xs)-1):
-        
-        XXs_comb = np.c_[s[s == 1], Xs[i][s == 1], Xs[i+1][s == 1]]
-        Xs_comb = np.c_[s[s == 1], Xs[i][s == 1]]
-        lr_up = LogisticRegression(max_iter=1000, random_state=2021).fit(XXs_comb, Ys[i][s == 1])
-        lr_dn = LogisticRegression(max_iter=1000, random_state=2021).fit(Xs_comb, Ys[i][s == 1])
-        probs_up = lr_up.predict_proba(XXs_comb)
-        probs_dn = lr_dn.predict_proba(Xs_comb)
-        probs[f'pos(y{i+1}=0)'] = probs_up[:, 0] / probs_dn[:, 0]
-        probs[f'pos(y{i+1}=1)'] = probs_up[:, 1] / probs_dn[:, 1]
-
-
-        XXs_comb = np.c_[s[s == 0], Xs[i][s == 0], Xs[i+1][s == 0]]
-        Xs_comb = np.c_[s[s == 0], Xs[i][s == 0]]
-        lr_up = LogisticRegression(max_iter=1000, random_state=2021).fit(XXs_comb, Ys[i][s == 0])
-        lr_dn = LogisticRegression(max_iter=1000, random_state=2021).fit(Xs_comb, Ys[i][s == 0])
-        probs_up = lr_up.predict_proba(XXs_comb)
-        probs_dn = lr_dn.predict_proba(Xs_comb)
-        probs[f'neg(y{i+1}=0)'] = probs_up[:, 0] / probs_dn[:, 0]
-        probs[f'neg(y{i+1}=1)'] = probs_up[:, 1] / probs_dn[:, 1]
+    for i in range(len(Xs) - 1):
+        for group, label in [(1, 'pos'), (0, 'neg')]:
+            mask = s == group
+            XXs_comb = np.c_[s[mask], Xs[i][mask], Xs[i + 1][mask]]
+            Xs_comb = np.c_[s[mask], Xs[i][mask]]
+            lr_up = LogisticRegression(max_iter=1000, random_state=2021).fit(XXs_comb, Ys[i][mask])
+            lr_dn = LogisticRegression(max_iter=1000, random_state=2021).fit(Xs_comb, Ys[i][mask])
+            probs_up = lr_up.predict_proba(XXs_comb)
+            probs_dn = lr_dn.predict_proba(Xs_comb)
+            if clip is not None:
+                probs_dn = np.clip(probs_dn, clip, 1 - clip)
+            probs[f'{label}(y{i+1}=0)'] = probs_up[:, 0] / probs_dn[:, 0]
+            probs[f'{label}(y{i+1}=1)'] = probs_up[:, 1] / probs_dn[:, 1]
     return probs
-    
+
 
 def compute_post_long_cond_fairness(s, Xs, model, prob=None):
+    """Signed path-specific gap using policy probabilities, not hard predictions."""
     outputs = {}
     for i in range(len(Xs)-1):
-        y_pos, _ = model.predict(s[s == 1], Xs[i][s == 1])
-        y_neg, _ = model.predict(s[s == 0], Xs[i][s == 0])
+        _, y_pos = model.predict(s[s == 1], Xs[i][s == 1])
+        _, y_neg = model.predict(s[s == 0], Xs[i][s == 0])
         outputs[f'pos(y{i+1}=0)'] = 1 - y_pos
         outputs[f'pos(y{i+1}=1)'] = y_pos
         outputs[f'neg(y{i+1}=0)'] = 1 - y_neg
         outputs[f'neg(y{i+1}=1)'] = y_neg
 
-    y_pos, _ = model.predict(np.zeros_like(s[s == 1]), Xs[-1][s == 1])
-    y_neg, _ = model.predict(np.zeros_like(s[s == 0]), Xs[-1][s == 0])
+    _, y_pos = model.predict(np.zeros_like(s[s == 1]), Xs[-1][s == 1])
+    _, y_neg = model.predict(np.zeros_like(s[s == 0]), Xs[-1][s == 0])
 
     indices = [[0, 1]] * (len(Xs) - 1)
 
@@ -110,7 +117,7 @@ def compute_post_long_cond_fairness(s, Xs, model, prob=None):
     return fairness
 
 
-def compute_statistics(s, Xs, Ys, model, OYs=None, As=None):
+def compute_statistics(s, Xs, Ys, model, OYs=None, As=None, clip=0.05):
 
     records = []
     retention = compute_retention_rate(Xs, As)
@@ -142,7 +149,7 @@ def compute_statistics(s, Xs, Ys, model, OYs=None, As=None):
         if i == 0:
             post_long_cond_fairness = compute_post_long_cond_fairness(s, Xs[:i+1], model)
         else:
-            post_long_cond_prob = compute_post_long_cond_probs(s, Xs[:i+1], Ys[:i+1])
+            post_long_cond_prob = compute_post_long_cond_probs(s, Xs[:i+1], (OYs if OYs is not None else Ys)[:i+1], clip=clip)
             post_long_cond_fairness = compute_post_long_cond_fairness(s, Xs[:i+1], model, post_long_cond_prob)
 
         print(f"Long fairness: {abs(post_long_cond_fairness):.3f}")
@@ -210,7 +217,7 @@ def compute_retention_disparity(s, As):
     return disparity
 
 
-def plot_simulation_summary(s, Xs, Ys, model, OYs=None, As=None):
+def plot_simulation_summary(s, Xs, Ys, model, OYs=None, As=None, clip=0.05):
     """Visualise training, dynamics, and evaluation across simulation steps.
 
     Row 1: Feature scatter plots (X0 vs X1) with decision boundary at each step.
@@ -244,7 +251,7 @@ def plot_simulation_summary(s, Xs, Ys, model, OYs=None, As=None):
         if i == 0:
             l_fairs.append(abs(compute_post_long_cond_fairness(s, Xs[:i+1], model)))
         else:
-            prob = compute_post_long_cond_probs(s, Xs[:i+1], Ys[:i+1])
+            prob = compute_post_long_cond_probs(s, Xs[:i+1], (OYs if OYs is not None else Ys)[:i+1], clip=clip)
             l_fairs.append(abs(compute_post_long_cond_fairness(s, Xs[:i+1], model, prob)))
 
     # ── decision boundary helper ──
