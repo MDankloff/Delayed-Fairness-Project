@@ -206,6 +206,8 @@ def run_simulation(
     seed=2026,
     decision_coef=0.8,
     repayment_coef=0.8,
+    enable_opt_out=True,
+    feature_update=None,
 ):
     """
 
@@ -222,6 +224,17 @@ def run_simulation(
         - A_t in {0,1}: 1=active/applying, 0=opted out
         - P_t in {0,1}: previous denial indicator (1 means denied at t-1 while active)
 
+    Optional behavior:
+        - With opt-out enabled, active denied applicants with Y=0 also exit,
+          independently of perceived unfairness U.
+        - enable_opt_out=False disables both exit mechanisms.
+        - feature_update(s, X, Y, D, continue_mask, agent, decision_model, rng)
+          replaces the default feature transition and must return an array with
+          the same shape as X. It runs before next-step repayment sampling.
+          Without a callback, all features retain the synthetic update rule.
+        - Random sampling uses np.random; callers seed it. The seed argument
+          is retained for compatibility and does not reset the random state.
+
     Returns:
         s, adj, edges,
         Xs: [X_1..X_steps],
@@ -232,10 +245,7 @@ def run_simulation(
         Us: [U_1..U_steps],
         As: [A_1..A_steps]
     """
-    # Default repayment model is the Bank model from generator.py
     if repayment_model is None:
-        from src.simulator import Bank
-
         repayment_model = Bank()
 
     # Reset: generate population and initial state
@@ -291,30 +301,45 @@ def run_simulation(
         )
 
         # compute U_t and choose A_{t+1}
-        repeated_denial_no_default = (denied == 1) & (P_t == 1)
-        peer_spillover = (denied == 1) & (O_t == 1)
-        U_t = ((repeated_denial_no_default | peer_spillover) & (A_t == 1)).astype(int)
+        if enable_opt_out:
+            repeated_denial = (denied == 1) & (P_t == 1)
+            peer_spillover = (denied == 1) & (O_t == 1)
+            U_t = ((repeated_denial | peer_spillover) & (A_t == 1)).astype(int)
+
+        else:
+            U_t = np.zeros(n, dtype=int)
 
         A_next = A_t.copy()
         A_next[(U_t == 1) & (A_t == 1)] = 0
+        if enable_opt_out:
+            correctly_identified_fraud = (A_t == 1) & (D_t == 0) & (Y_t == 0)
+            A_next[correctly_identified_fraud] = 0
 
         # transition (X_{t+1}, Y_{t+1}) for continuing agents
         continue_mask = (A_t == 1) & (A_next == 1)
-        outcome_mask = continue_mask & (D_t == 1)
+        if feature_update is None:
+            outcome_mask = continue_mask & (D_t == 1)
 
-        X_next = np.asarray(X_t, dtype=float).copy()
-        base = np.array([[agent.base[int(i)]] for i in s], dtype=float)
-        base_tile = np.tile(base, (1, X_t.shape[1]))
-        X_next[continue_mask] = X_t[continue_mask] + base_tile[continue_mask]
+            X_next = np.asarray(X_t, dtype=float).copy()
+            base = np.array([[agent.base[int(i)]] for i in s], dtype=float)
+            base_tile = np.tile(base, (1, X_t.shape[1]))
+            X_next[continue_mask] = X_t[continue_mask] + base_tile[continue_mask]
 
-        theta = np.asarray(decision_model.params[1:-1], dtype=float)
-        if theta.size != X_t.shape[1]:
-            raise ValueError("decision_model.params[1:-1] must match feature dimension of X")
+            theta = np.asarray(decision_model.params[1:-1], dtype=float)
+            if theta.size != X_t.shape[1]:
+                raise ValueError("decision_model.params[1:-1] must match feature dimension of X")
 
-        repay_sign = (2.0 * Y_t - 1.0).reshape(-1, 1)
-        delta = agent.eps * theta.reshape(1, -1)
-        delta = np.repeat(delta, repeats=n, axis=0) * repay_sign
-        X_next[outcome_mask] = X_next[outcome_mask] + delta[outcome_mask]
+            repay_sign = (2.0 * Y_t - 1.0).reshape(-1, 1)
+            delta = agent.eps * theta.reshape(1, -1)
+            delta = np.repeat(delta, repeats=n, axis=0) * repay_sign
+            X_next[outcome_mask] = X_next[outcome_mask] + delta[outcome_mask]
+
+        else:
+            X_next = np.asarray(feature_update(
+                s, X_t, Y_t, D_t, continue_mask, agent, decision_model, np.random
+            ), dtype=float)
+            if X_next.shape != X_t.shape:
+                raise ValueError("feature_update must preserve the shape of X")
 
         Y_next = np.asarray(Y_t, dtype=int).copy()
         if continue_mask.any():
