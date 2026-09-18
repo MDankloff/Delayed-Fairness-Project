@@ -254,3 +254,33 @@ def baf_feature_update(s, X, Y, D, continue_mask, agent, decision_model, rng):
     X_next[approved] += (agent.eps * theta[None, :] * probability[approved, None]
                          * (2 * np.asarray(Y)[approved, None] - 1))
     return X_next
+
+
+def sample_baf_intervention(decision_model, repayment_model, agent, steps, **settings):
+    """Sample the BAF environment with only approval-policy S fixed to zero."""
+    from direct_fairness import sample_intervention
+    settings.setdefault('repayment_coef', 1.0)
+    if settings['repayment_coef'] != 1.0:
+        raise ValueError('BAF repayment must use the fitted bank probabilities directly.')
+    return sample_intervention(decision_model, repayment_model, agent, steps,
+                               feature_update=baf_feature_update, **settings)
+
+
+def run_baf_with_intervention(decision_model, agent, steps, *, repayment_model, **settings):
+    """Return factual BAF trajectories plus a separate reference-policy rollout.
+
+    The latter is attached to Xs so downstream metrics cannot accidentally use
+    the factual trajectory or the context of a different model/seed/network.
+    """
+    from simulator import run_simulation
+    from direct_fairness import FeatureHistory
+    settings.setdefault('repayment_coef', 1.0)
+    if settings['repayment_coef'] != 1.0:
+        raise ValueError('BAF repayment must use the fitted bank probabilities directly.')
+    factual = list(run_simulation(decision_model, agent, steps,
+        repayment_model=repayment_model, feature_update=baf_feature_update, **settings))
+    intervention = sample_baf_intervention(decision_model, repayment_model, agent, steps, **settings)
+    np.testing.assert_array_equal(factual[0], intervention.s)
+    np.testing.assert_array_equal(factual[3][0], intervention.Xs[0])
+    factual[3] = FeatureHistory(factual[3], intervention)
+    return tuple(factual)

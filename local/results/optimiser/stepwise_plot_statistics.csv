@@ -1,0 +1,2251 @@
+dataset,network,model,opt_out,step,metric,mean,std,n_valid_seeds
+Base,Base (80/20),Baseline,False,1,approval_rate_difference,1.5200000000000014,0.95163018026962631,5
+Base,Base (80/20),Baseline,False,1,retention_disparity,0,0,5
+Base,Base (80/20),Baseline,False,1,retention_s0,100,0,5
+Base,Base (80/20),Baseline,False,1,retention_s1,100,0,5
+Base,Base (80/20),Baseline,False,1,unfairness,0.0022804378935982195,0,5
+Base,Base (80/20),Baseline,False,2,approval_rate_difference,1.160000000000001,0.62481997407253287,5
+Base,Base (80/20),Baseline,False,2,retention_disparity,0,0,5
+Base,Base (80/20),Baseline,False,2,retention_s0,100,0,5
+Base,Base (80/20),Baseline,False,2,retention_s1,100,0,5
+Base,Base (80/20),Baseline,False,2,unfairness,0.0021466011285260931,1.0190756158018379e-05,5
+Base,Base (80/20),Baseline,False,3,approval_rate_difference,0.6800000000000006,0.16000000000000014,5
+Base,Base (80/20),Baseline,False,3,retention_disparity,0,0,5
+Base,Base (80/20),Baseline,False,3,retention_s0,100,0,5
+Base,Base (80/20),Baseline,False,3,retention_s1,100,0,5
+Base,Base (80/20),Baseline,False,3,unfairness,0.0020286233071217909,1.3524674076658701e-05,5
+Base,Base (80/20),Baseline,False,4,approval_rate_difference,1.5200000000000014,0.20396078054371158,5
+Base,Base (80/20),Baseline,False,4,retention_disparity,0,0,5
+Base,Base (80/20),Baseline,False,4,retention_s0,100,0,5
+Base,Base (80/20),Baseline,False,4,retention_s1,100,0,5
+Base,Base (80/20),Baseline,False,4,unfairness,0.0019075192752251668,1.7107734440583763e-05,5
+Base,Base (80/20),Baseline,False,5,approval_rate_difference,0.92000000000000082,0.96000000000000096,5
+Base,Base (80/20),Baseline,False,5,retention_disparity,0,0,5
+Base,Base (80/20),Baseline,False,5,retention_s0,100,0,5
+Base,Base (80/20),Baseline,False,5,retention_s1,100,0,5
+Base,Base (80/20),Baseline,False,5,unfairness,0.0017998334359303979,2.5827824675200804e-05,5
+Base,Base (80/20),Baseline,True,1,approval_rate_difference,1.5200000000000014,0.95163018026962631,5
+Base,Base (80/20),Baseline,True,1,retention_disparity,0,0,5
+Base,Base (80/20),Baseline,True,1,retention_s0,100,0,5
+Base,Base (80/20),Baseline,True,1,retention_s1,100,0,5
+Base,Base (80/20),Baseline,True,1,unfairness,0.0022804378935982195,0,5
+Base,Base (80/20),Baseline,True,2,approval_rate_difference,1.1666953345933861,0.62557122100242468,5
+Base,Base (80/20),Baseline,True,2,retention_disparity,0.20000000000000001,0.17888543819998254,5
+Base,Base (80/20),Baseline,True,2,retention_s0,99.799999999999997,0.25298221281346944,5
+Base,Base (80/20),Baseline,True,2,retention_s1,99.599999999999994,0.35777087639996508,5
+Base,Base (80/20),Baseline,True,2,unfairness,0.0024017364966836484,0.00070622319588675622,5
+Base,Base (80/20),Baseline,True,3,approval_rate_difference,0.68937547528896026,0.15906232992142078,5
+Base,Base (80/20),Baseline,True,3,retention_disparity,0.52000000000000168,0.32496153618543638,5
+Base,Base (80/20),Baseline,True,3,retention_s0,99.679999999999993,0.41182520563947922,5
+Base,Base (80/20),Baseline,True,3,retention_s1,99.159999999999997,0.38781438859330714,5
+Base,Base (80/20),Baseline,True,3,unfairness,0.0043467142910957436,0.0023079658192619655,5
+Base,Base (80/20),Baseline,True,4,approval_rate_difference,1.5349503344448245,0.20007056616374955,5
+Base,Base (80/20),Baseline,True,4,retention_disparity,0.48000000000000115,0.34871191548325198,5
+Base,Base (80/20),Baseline,True,4,retention_s0,99.560000000000002,0.54258639865002223,5
+Base,Base (80/20),Baseline,True,4,retention_s1,99.159999999999997,0.38781438859330714,5
+Base,Base (80/20),Baseline,True,4,unfairness,0.0055090526757997525,0.0029292226950569412,5
+Base,Base (80/20),Baseline,True,5,approval_rate_difference,0.93655460612193553,0.97389815672825297,5
+Base,Base (80/20),Baseline,True,5,retention_disparity,0.6799999999999955,0.20396078054371428,5
+Base,Base (80/20),Baseline,True,5,retention_s0,99.439999999999998,0.55713553108736613,5
+Base,Base (80/20),Baseline,True,5,retention_s1,98.760000000000005,0.46303347611160994,5
+Base,Base (80/20),Baseline,True,5,unfairness,0.0046805370603915765,0.0016972717238901245,5
+Base,Base (80/20),DP,False,1,approval_rate_difference,0.52000000000000057,3.0895954427723988,5
+Base,Base (80/20),DP,False,1,retention_disparity,0,0,5
+Base,Base (80/20),DP,False,1,retention_s0,100,0,5
+Base,Base (80/20),DP,False,1,retention_s1,100,0,5
+Base,Base (80/20),DP,False,1,unfairness,0.0011422741246552848,0,5
+Base,Base (80/20),DP,False,2,approval_rate_difference,-1.4799999999999991,1.6228370220080637,5
+Base,Base (80/20),DP,False,2,retention_disparity,0,0,5
+Base,Base (80/20),DP,False,2,retention_s0,100,0,5
+Base,Base (80/20),DP,False,2,retention_s1,100,0,5
+Base,Base (80/20),DP,False,2,unfairness,0.0011424497859363614,3.8479592267543332e-07,5
+Base,Base (80/20),DP,False,3,approval_rate_difference,-2.2399999999999975,1.8391302292116212,5
+Base,Base (80/20),DP,False,3,retention_disparity,0,0,5
+Base,Base (80/20),DP,False,3,retention_s0,100,0,5
+Base,Base (80/20),DP,False,3,retention_s1,100,0,5
+Base,Base (80/20),DP,False,3,unfairness,0.0011425326071430541,3.9690132801745556e-07,5
+Base,Base (80/20),DP,False,4,approval_rate_difference,-0.52000000000000057,3.2877956140855198,5
+Base,Base (80/20),DP,False,4,retention_disparity,0,0,5
+Base,Base (80/20),DP,False,4,retention_s0,100,0,5
+Base,Base (80/20),DP,False,4,retention_s1,100,0,5
+Base,Base (80/20),DP,False,4,unfairness,0.0011424654170337778,5.0395592451978246e-07,5
+Base,Base (80/20),DP,False,5,approval_rate_difference,-2.1999999999999971,3.548520818594695,5
+Base,Base (80/20),DP,False,5,retention_disparity,0,0,5
+Base,Base (80/20),DP,False,5,retention_s0,100,0,5
+Base,Base (80/20),DP,False,5,retention_s1,100,0,5
+Base,Base (80/20),DP,False,5,unfairness,0.0011426313800120935,5.0257300812018962e-07,5
+Base,Base (80/20),DP,True,1,approval_rate_difference,0.52000000000000057,3.0895954427723988,5
+Base,Base (80/20),DP,True,1,retention_disparity,0,0,5
+Base,Base (80/20),DP,True,1,retention_s0,100,0,5
+Base,Base (80/20),DP,True,1,retention_s1,100,0,5
+Base,Base (80/20),DP,True,1,unfairness,0.0011422741246552848,0,5
+Base,Base (80/20),DP,True,2,approval_rate_difference,-2.7689007879697791,1.7727811838709064,5
+Base,Base (80/20),DP,True,2,retention_disparity,2.960000000000008,2.0135540717845193,5
+Base,Base (80/20),DP,True,2,retention_s0,85.359999999999999,1.9734234213670447,5
+Base,Base (80/20),DP,True,2,retention_s1,84.799999999999997,1.8547236990991471,5
+Base,Base (80/20),DP,True,2,unfairness,0.020923882147256,0.014120293584092437,5
+Base,Base (80/20),DP,True,3,approval_rate_difference,-1.4327062516062705,2.5139580865336715,5
+Base,Base (80/20),DP,True,3,retention_disparity,3.0799999999999956,1.9291448882860003,5
+Base,Base (80/20),DP,True,3,retention_s0,68.599999999999994,1.6395121225535347,5
+Base,Base (80/20),DP,True,3,retention_s1,70.959999999999994,1.4388884598883938,5
+Base,Base (80/20),DP,True,3,unfairness,0.020478404692280829,0.013525950448011663,5
+Base,Base (80/20),DP,True,4,approval_rate_difference,-0.12813176730963605,3.9250535732107039,5
+Base,Base (80/20),DP,True,4,retention_disparity,4.0399999999999974,1.571750616351077,5
+Base,Base (80/20),DP,True,4,retention_s0,56.720000000000006,1.7092688495377162,5
+Base,Base (80/20),DP,True,4,retention_s1,59.879999999999995,1.6809521111560584,5
+Base,Base (80/20),DP,True,4,unfairness,0.026469193069642107,0.011104680413347588,5
+Base,Base (80/20),DP,True,5,approval_rate_difference,-1.8700136178947147,5.415878745891523,5
+Base,Base (80/20),DP,True,5,retention_disparity,3.4400000000000035,1.6989408465276252,5
+Base,Base (80/20),DP,True,5,retention_s0,48.239999999999995,1.5460918472070149,5
+Base,Base (80/20),DP,True,5,retention_s1,51.679999999999993,0.75471849056452978,5
+Base,Base (80/20),DP,True,5,unfairness,0.021537422190218414,0.012020665734257616,5
+Base,Base (80/20),EO,False,1,approval_rate_difference,0.40000000000000269,3.308171700501652,5
+Base,Base (80/20),EO,False,1,retention_disparity,0,0,5
+Base,Base (80/20),EO,False,1,retention_s0,100,0,5
+Base,Base (80/20),EO,False,1,retention_s1,100,0,5
+Base,Base (80/20),EO,False,1,unfairness,0.00062857209181632623,0,5
+Base,Base (80/20),EO,False,2,approval_rate_difference,-2.1199999999999997,2.3752052542885633,5
+Base,Base (80/20),EO,False,2,retention_disparity,0,0,5
+Base,Base (80/20),EO,False,2,retention_s0,100,0,5
+Base,Base (80/20),EO,False,2,retention_s1,100,0,5
+Base,Base (80/20),EO,False,2,unfairness,0.00062862200042188563,1.1093760719908874e-07,5
+Base,Base (80/20),EO,False,3,approval_rate_difference,-2.48,1.4119490075778216,5
+Base,Base (80/20),EO,False,3,retention_disparity,0,0,5
+Base,Base (80/20),EO,False,3,retention_s0,100,0,5
+Base,Base (80/20),EO,False,3,retention_s1,100,0,5
+Base,Base (80/20),EO,False,3,unfairness,0.0006286102808691574,7.5486893592801304e-08,5
+Base,Base (80/20),EO,False,4,approval_rate_difference,-0.59999999999999598,2.8255972819918949,5
+Base,Base (80/20),EO,False,4,retention_disparity,0,0,5
+Base,Base (80/20),EO,False,4,retention_s0,100,0,5
+Base,Base (80/20),EO,False,4,retention_s1,100,0,5
+Base,Base (80/20),EO,False,4,unfairness,0.00062857887662910446,1.296874724636182e-07,5
+Base,Base (80/20),EO,False,5,approval_rate_difference,-1.8799999999999994,3.6367018024578228,5
+Base,Base (80/20),EO,False,5,retention_disparity,0,0,5
+Base,Base (80/20),EO,False,5,retention_s0,100,0,5
+Base,Base (80/20),EO,False,5,retention_s1,100,0,5
+Base,Base (80/20),EO,False,5,unfairness,0.00062861435456902366,1.21375931219244e-07,5
+Base,Base (80/20),EO,True,1,approval_rate_difference,0.40000000000000269,3.308171700501652,5
+Base,Base (80/20),EO,True,1,retention_disparity,0,0,5
+Base,Base (80/20),EO,True,1,retention_s0,100,0,5
+Base,Base (80/20),EO,True,1,retention_s1,100,0,5
+Base,Base (80/20),EO,True,1,unfairness,0.00062857209181632623,0,5
+Base,Base (80/20),EO,True,2,approval_rate_difference,-2.9285687486414291,2.6885431235240218,5
+Base,Base (80/20),EO,True,2,retention_disparity,3.3599999999999994,2.8993792439072221,5
+Base,Base (80/20),EO,True,2,retention_s0,83.759999999999991,2.5405511213120673,5
+Base,Base (80/20),EO,True,2,retention_s1,83.760000000000005,1.9815145722401346,5
+Base,Base (80/20),EO,True,2,unfairness,0.022850576198289695,0.018976896166705757,5
+Base,Base (80/20),EO,True,3,approval_rate_difference,-0.96682171506393466,1.7343616483048849,5
+Base,Base (80/20),EO,True,3,retention_disparity,3.8799999999999981,2.1857721747702792,5
+Base,Base (80/20),EO,True,3,retention_s0,65.240000000000009,1.9241621553289132,5
+Base,Base (80/20),EO,True,3,retention_s1,67.599999999999994,1.8889150324988109,5
+Base,Base (80/20),EO,True,3,unfairness,0.025706620750247756,0.014503408588572519,5
+Base,Base (80/20),EO,True,4,approval_rate_difference,-0.95667408954604549,3.674980460058288,5
+Base,Base (80/20),EO,True,4,retention_disparity,3.9599999999999982,1.2483589227461784,5
+Base,Base (80/20),EO,True,4,retention_s0,52.760000000000005,1.1689311356961973,5
+Base,Base (80/20),EO,True,4,retention_s1,55.760000000000005,1.9365949499056301,5
+Base,Base (80/20),EO,True,4,unfairness,0.026024172438727365,0.0073026762525721291,5
+Base,Base (80/20),EO,True,5,approval_rate_difference,-2.1651906624675172,6.2385327963269983,5
+Base,Base (80/20),EO,True,5,retention_disparity,3.7999999999999985,2.0630075133164198,5
+Base,Base (80/20),EO,True,5,retention_s0,43.359999999999999,1.1551623262554949,5
+Base,Base (80/20),EO,True,5,retention_s1,47.159999999999997,1.3529227620230184,5
+Base,Base (80/20),EO,True,5,unfairness,0.024749549890222898,0.012666140704349665,5
+Base,Base (80/20),LCF-active,False,1,approval_rate_difference,12.84,1.4164744967700633,5
+Base,Base (80/20),LCF-active,False,1,retention_disparity,0,0,5
+Base,Base (80/20),LCF-active,False,1,retention_s0,100,0,5
+Base,Base (80/20),LCF-active,False,1,retention_s1,100,0,5
+Base,Base (80/20),LCF-active,False,1,unfairness,0.0033998594284058159,0,5
+Base,Base (80/20),LCF-active,False,2,approval_rate_difference,8.2799999999999958,1.1634431657799202,5
+Base,Base (80/20),LCF-active,False,2,retention_disparity,0,0,5
+Base,Base (80/20),LCF-active,False,2,retention_s0,100,0,5
+Base,Base (80/20),LCF-active,False,2,retention_s1,100,0,5
+Base,Base (80/20),LCF-active,False,2,unfairness,0.0018720233201980462,0.00036576196230969318,5
+Base,Base (80/20),LCF-active,False,3,approval_rate_difference,5.0000000000000044,0.68117545463705664,5
+Base,Base (80/20),LCF-active,False,3,retention_disparity,0,0,5
+Base,Base (80/20),LCF-active,False,3,retention_s0,100,0,5
+Base,Base (80/20),LCF-active,False,3,retention_s1,100,0,5
+Base,Base (80/20),LCF-active,False,3,unfairness,0.0013396656274795137,0.00031015159344835317,5
+Base,Base (80/20),LCF-active,False,4,approval_rate_difference,3.4800000000000031,0.37094473981982851,5
+Base,Base (80/20),LCF-active,False,4,retention_disparity,0,0,5
+Base,Base (80/20),LCF-active,False,4,retention_s0,100,0,5
+Base,Base (80/20),LCF-active,False,4,retention_s1,100,0,5
+Base,Base (80/20),LCF-active,False,4,unfairness,0.00075469992160797088,0.00020071335675854451,5
+Base,Base (80/20),LCF-active,False,5,approval_rate_difference,2.240000000000002,0.68585712797929055,5
+Base,Base (80/20),LCF-active,False,5,retention_disparity,0,0,5
+Base,Base (80/20),LCF-active,False,5,retention_s0,100,0,5
+Base,Base (80/20),LCF-active,False,5,retention_s1,100,0,5
+Base,Base (80/20),LCF-active,False,5,unfairness,0.00040265469551088452,0.00016143097104199641,5
+Base,Base (80/20),LCF-active,True,1,approval_rate_difference,12.84,1.4164744967700633,5
+Base,Base (80/20),LCF-active,True,1,retention_disparity,0,0,5
+Base,Base (80/20),LCF-active,True,1,retention_s0,100,0,5
+Base,Base (80/20),LCF-active,True,1,retention_s1,100,0,5
+Base,Base (80/20),LCF-active,True,1,unfairness,0.0033998594284058159,0,5
+Base,Base (80/20),LCF-active,True,2,approval_rate_difference,6.4016697659223691,0.92864010672072728,5
+Base,Base (80/20),LCF-active,True,2,retention_disparity,10.080000000000002,1.6424372134118228,5
+Base,Base (80/20),LCF-active,True,2,retention_s0,99.52000000000001,0.44899888641287328,5
+Base,Base (80/20),LCF-active,True,2,retention_s1,89.439999999999998,1.763632614803887,5
+Base,Base (80/20),LCF-active,True,2,unfairness,0.0046984871387481418,0.0024087793884179421,5
+Base,Base (80/20),LCF-active,True,3,approval_rate_difference,3.2315172058902797,0.53131096198883221,5
+Base,Base (80/20),LCF-active,True,3,retention_disparity,13.080000000000002,1.6029971927611093,5
+Base,Base (80/20),LCF-active,True,3,retention_s0,99.280000000000001,0.67646138101150954,5
+Base,Base (80/20),LCF-active,True,3,retention_s1,86.200000000000003,1.5999999999999999,5
+Base,Base (80/20),LCF-active,True,3,unfairness,0.0062068418979644765,0.0010413566525593694,5
+Base,Base (80/20),LCF-active,True,4,approval_rate_difference,1.8469731735472705,0.44108556003400079,5
+Base,Base (80/20),LCF-active,True,4,retention_disparity,14.200000000000003,1.3206059215375332,5
+Base,Base (80/20),LCF-active,True,4,retention_s0,99.239999999999995,0.69742383096650729,5
+Base,Base (80/20),LCF-active,True,4,retention_s1,85.039999999999992,1.1959933110180851,5
+Base,Base (80/20),LCF-active,True,4,unfairness,0.0071167327880859331,0.0013262274141178042,5
+Base,Base (80/20),LCF-active,True,5,approval_rate_difference,0.95982231747238522,0.39878421057587771,5
+Base,Base (80/20),LCF-active,True,5,retention_disparity,14.640000000000006,1.2800000000000018,5
+Base,Base (80/20),LCF-active,True,5,retention_s0,99.239999999999995,0.69742383096650729,5
+Base,Base (80/20),LCF-active,True,5,retention_s1,84.599999999999994,0.98792712281827944,5
+Base,Base (80/20),LCF-active,True,5,unfairness,0.0070827035903930687,0.0014802126162879725,5
+Base,Base (80/20),LCF-full,False,1,approval_rate_difference,12.880000000000001,1.43443368616329,5
+Base,Base (80/20),LCF-full,False,1,retention_disparity,0,0,5
+Base,Base (80/20),LCF-full,False,1,retention_s0,100,0,5
+Base,Base (80/20),LCF-full,False,1,retention_s1,100,0,5
+Base,Base (80/20),LCF-full,False,1,unfairness,0.0033942106962204788,0,5
+Base,Base (80/20),LCF-full,False,2,approval_rate_difference,8.3599999999999959,1.2924395537122821,5
+Base,Base (80/20),LCF-full,False,2,retention_disparity,0,0,5
+Base,Base (80/20),LCF-full,False,2,retention_s0,100,0,5
+Base,Base (80/20),LCF-full,False,2,retention_s1,100,0,5
+Base,Base (80/20),LCF-full,False,2,unfairness,0.0018818753004073985,0.00036365041800884171,5
+Base,Base (80/20),LCF-full,False,3,approval_rate_difference,5.0800000000000045,0.64000000000000057,5
+Base,Base (80/20),LCF-full,False,3,retention_disparity,0,0,5
+Base,Base (80/20),LCF-full,False,3,retention_s0,100,0,5
+Base,Base (80/20),LCF-full,False,3,retention_s1,100,0,5
+Base,Base (80/20),LCF-full,False,3,unfairness,0.0013438858270645505,0.00031062791893864459,5
+Base,Base (80/20),LCF-full,False,4,approval_rate_difference,3.5200000000000031,0.44899888641287339,5
+Base,Base (80/20),LCF-full,False,4,retention_disparity,0,0,5
+Base,Base (80/20),LCF-full,False,4,retention_s0,100,0,5
+Base,Base (80/20),LCF-full,False,4,retention_s1,100,0,5
+Base,Base (80/20),LCF-full,False,4,unfairness,0.00076327517032619423,0.0002035076590718299,5
+Base,Base (80/20),LCF-full,False,5,approval_rate_difference,2.240000000000002,0.68585712797929055,5
+Base,Base (80/20),LCF-full,False,5,retention_disparity,0,0,5
+Base,Base (80/20),LCF-full,False,5,retention_s0,100,0,5
+Base,Base (80/20),LCF-full,False,5,retention_s1,100,0,5
+Base,Base (80/20),LCF-full,False,5,unfairness,0.0004158614873886357,0.00015894030541976464,5
+Base,Base (80/20),LCF-full,True,1,approval_rate_difference,12.880000000000001,1.43443368616329,5
+Base,Base (80/20),LCF-full,True,1,retention_disparity,0,0,5
+Base,Base (80/20),LCF-full,True,1,retention_s0,100,0,5
+Base,Base (80/20),LCF-full,True,1,retention_s1,100,0,5
+Base,Base (80/20),LCF-full,True,1,unfairness,0.0033942106962204788,0,5
+Base,Base (80/20),LCF-full,True,2,approval_rate_difference,6.4965689613394701,0.98331001876831448,5
+Base,Base (80/20),LCF-full,True,2,retention_disparity,10.080000000000002,1.6424372134118228,5
+Base,Base (80/20),LCF-full,True,2,retention_s0,99.52000000000001,0.44899888641287328,5
+Base,Base (80/20),LCF-full,True,2,retention_s1,89.439999999999998,1.763632614803887,5
+Base,Base (80/20),LCF-full,True,2,unfairness,0.0046958633422851557,0.0024107084584014762,5
+Base,Base (80/20),LCF-full,True,3,approval_rate_difference,3.2822512583765233,0.46487959737484058,5
+Base,Base (80/20),LCF-full,True,3,retention_disparity,13.160000000000002,1.7036431551237488,5
+Base,Base (80/20),LCF-full,True,3,retention_s0,99.280000000000001,0.67646138101150954,5
+Base,Base (80/20),LCF-full,True,3,retention_s1,86.120000000000005,1.6666133324799739,5
+Base,Base (80/20),LCF-full,True,3,unfairness,0.006209515118598974,0.0010430396826125218,5
+Base,Base (80/20),LCF-full,True,4,approval_rate_difference,1.8970984868304774,0.48794291080000696,5
+Base,Base (80/20),LCF-full,True,4,retention_disparity,14.280000000000005,1.4344336861632891,5
+Base,Base (80/20),LCF-full,True,4,retention_s0,99.239999999999995,0.69742383096650729,5
+Base,Base (80/20),LCF-full,True,4,retention_s1,84.959999999999994,1.2737346662472544,5
+Base,Base (80/20),LCF-full,True,4,unfairness,0.0071161461353301814,0.0013262646605793071,5
+Base,Base (80/20),LCF-full,True,5,approval_rate_difference,0.96051573863906725,0.39836839233464477,5
+Base,Base (80/20),LCF-full,True,5,retention_disparity,14.720000000000004,1.4062716664997548,5
+Base,Base (80/20),LCF-full,True,5,retention_s0,99.239999999999995,0.69742383096650729,5
+Base,Base (80/20),LCF-full,True,5,retention_s1,84.519999999999996,1.0925200226998126,5
+Base,Base (80/20),LCF-full,True,5,unfairness,0.0070893457651138416,0.0014737264244290354,5
+Base,Erdős–Rényi,Baseline,False,1,approval_rate_difference,1.5200000000000014,0.95163018026962631,5
+Base,Erdős–Rényi,Baseline,False,1,retention_disparity,0,0,5
+Base,Erdős–Rényi,Baseline,False,1,retention_s0,100,0,5
+Base,Erdős–Rényi,Baseline,False,1,retention_s1,100,0,5
+Base,Erdős–Rényi,Baseline,False,1,unfairness,0.0022731282140118214,0,5
+Base,Erdős–Rényi,Baseline,False,2,approval_rate_difference,1.160000000000001,0.62481997407253287,5
+Base,Erdős–Rényi,Baseline,False,2,retention_disparity,0,0,5
+Base,Erdős–Rényi,Baseline,False,2,retention_s0,100,0,5
+Base,Erdős–Rényi,Baseline,False,2,retention_s1,100,0,5
+Base,Erdős–Rényi,Baseline,False,2,unfairness,0.0021407355785681313,1.010618438653131e-05,5
+Base,Erdős–Rényi,Baseline,False,3,approval_rate_difference,0.6800000000000006,0.16000000000000014,5
+Base,Erdős–Rényi,Baseline,False,3,retention_disparity,0,0,5
+Base,Erdős–Rényi,Baseline,False,3,retention_s0,100,0,5
+Base,Erdős–Rényi,Baseline,False,3,retention_s1,100,0,5
+Base,Erdős–Rényi,Baseline,False,3,unfairness,0.0020234562765612642,1.4289967535619097e-05,5
+Base,Erdős–Rényi,Baseline,False,4,approval_rate_difference,1.5600000000000014,0.19595917942265439,5
+Base,Erdős–Rényi,Baseline,False,4,retention_disparity,0,0,5
+Base,Erdős–Rényi,Baseline,False,4,retention_s0,100,0,5
+Base,Erdős–Rényi,Baseline,False,4,retention_s1,100,0,5
+Base,Erdős–Rényi,Baseline,False,4,unfairness,0.0019035743204263822,1.7762748754151715e-05,5
+Base,Erdős–Rényi,Baseline,False,5,approval_rate_difference,0.96000000000000085,0.89799777282574678,5
+Base,Erdős–Rényi,Baseline,False,5,retention_disparity,0,0,5
+Base,Erdős–Rényi,Baseline,False,5,retention_s0,100,0,5
+Base,Erdős–Rényi,Baseline,False,5,retention_s1,100,0,5
+Base,Erdős–Rényi,Baseline,False,5,unfairness,0.0017969371789617438,2.5911109669721861e-05,5
+Base,Erdős–Rényi,Baseline,True,1,approval_rate_difference,1.5200000000000014,0.95163018026962631,5
+Base,Erdős–Rényi,Baseline,True,1,retention_disparity,0,0,5
+Base,Erdős–Rényi,Baseline,True,1,retention_s0,100,0,5
+Base,Erdős–Rényi,Baseline,True,1,retention_s1,100,0,5
+Base,Erdős–Rényi,Baseline,True,1,unfairness,0.0022731282140118214,0,5
+Base,Erdős–Rényi,Baseline,True,2,approval_rate_difference,1.1691274187659717,0.62689512507470113,5
+Base,Erdős–Rényi,Baseline,True,2,retention_disparity,0.40000000000000002,0.48989794855663565,5
+Base,Erdős–Rényi,Baseline,True,2,retention_s0,99.920000000000002,0.16000000000000228,5
+Base,Erdős–Rényi,Baseline,True,2,retention_s1,99.52000000000001,0.44899888641287278,5
+Base,Erdős–Rényi,Baseline,True,2,unfairness,0.0028634786441208205,0.0016194764932019714,5
+Base,Erdős–Rényi,Baseline,True,3,approval_rate_difference,0.73395916071679279,0.19748109906054018,5
+Base,Erdős–Rényi,Baseline,True,3,retention_disparity,0.95999999999999941,0.69742383096650618,5
+Base,Erdős–Rényi,Baseline,True,3,retention_s0,99.920000000000002,0.16000000000000228,5
+Base,Erdős–Rényi,Baseline,True,3,retention_s1,98.960000000000008,0.64992307237087388,5
+Base,Erdős–Rényi,Baseline,True,3,unfairness,0.0051891557357212738,0.003658116502163401,5
+Base,Erdős–Rényi,Baseline,True,4,approval_rate_difference,1.5837857332415406,0.19133968114725733,5
+Base,Erdős–Rényi,Baseline,True,4,retention_disparity,0.99999999999999711,0.5932958789676519,5
+Base,Erdős–Rényi,Baseline,True,4,retention_s0,99.879999999999995,0.16000000000000225,5
+Base,Erdős–Rényi,Baseline,True,4,retention_s1,98.879999999999995,0.58787753826796108,5
+Base,Erdős–Rényi,Baseline,True,4,unfairness,0.0046789465412246049,0.0038625629423725502,5
+Base,Erdős–Rényi,Baseline,True,5,approval_rate_difference,0.98386103849404949,0.90851193771409045,5
+Base,Erdős–Rényi,Baseline,True,5,retention_disparity,1.1999999999999971,0.6066300355241262,5
+Base,Erdős–Rényi,Baseline,True,5,retention_s0,99.840000000000003,0.19595917942265703,5
+Base,Erdős–Rényi,Baseline,True,5,retention_s1,98.640000000000001,0.61188234163113608,5
+Base,Erdős–Rényi,Baseline,True,5,unfairness,0.0046156528530030497,0.0039936144460959114,5
+Base,Erdős–Rényi,DP,False,1,approval_rate_difference,0.52000000000000057,3.0895954427723988,5
+Base,Erdős–Rényi,DP,False,1,retention_disparity,0,0,5
+Base,Erdős–Rényi,DP,False,1,retention_s0,100,0,5
+Base,Erdős–Rényi,DP,False,1,retention_s1,100,0,5
+Base,Erdős–Rényi,DP,False,1,unfairness,0.0011461604442812856,0,5
+Base,Erdős–Rényi,DP,False,2,approval_rate_difference,-1.4799999999999991,1.6228370220080637,5
+Base,Erdős–Rényi,DP,False,2,retention_disparity,0,0,5
+Base,Erdős–Rényi,DP,False,2,retention_s0,100,0,5
+Base,Erdős–Rényi,DP,False,2,retention_s1,100,0,5
+Base,Erdős–Rényi,DP,False,2,unfairness,0.001146337284834198,3.8740690328782125e-07,5
+Base,Erdős–Rényi,DP,False,3,approval_rate_difference,-2.2399999999999975,1.8391302292116212,5
+Base,Erdős–Rényi,DP,False,3,retention_disparity,0,0,5
+Base,Erdős–Rényi,DP,False,3,retention_s0,100,0,5
+Base,Erdős–Rényi,DP,False,3,retention_s1,100,0,5
+Base,Erdős–Rényi,DP,False,3,unfairness,0.001146420653869784,3.9959603540708766e-07,5
+Base,Erdős–Rényi,DP,False,4,approval_rate_difference,-0.52000000000000057,3.2877956140855198,5
+Base,Erdős–Rényi,DP,False,4,retention_disparity,0,0,5
+Base,Erdős–Rényi,DP,False,4,retention_s0,100,0,5
+Base,Erdős–Rényi,DP,False,4,retention_s1,100,0,5
+Base,Erdős–Rényi,DP,False,4,unfairness,0.0011463529958065433,5.073763402131327e-07,5
+Base,Erdős–Rényi,DP,False,5,approval_rate_difference,-2.1999999999999971,3.548520818594695,5
+Base,Erdős–Rényi,DP,False,5,retention_disparity,0,0,5
+Base,Erdős–Rényi,DP,False,5,retention_s0,100,0,5
+Base,Erdős–Rényi,DP,False,5,retention_s1,100,0,5
+Base,Erdős–Rényi,DP,False,5,unfairness,0.0011465200724092961,5.0598254794430844e-07,5
+Base,Erdős–Rényi,DP,True,1,approval_rate_difference,0.52000000000000057,3.0895954427723988,5
+Base,Erdős–Rényi,DP,True,1,retention_disparity,0,0,5
+Base,Erdős–Rényi,DP,True,1,retention_s0,100,0,5
+Base,Erdős–Rényi,DP,True,1,retention_s1,100,0,5
+Base,Erdős–Rényi,DP,True,1,unfairness,0.0011461604442812856,0,5
+Base,Erdős–Rényi,DP,True,2,approval_rate_difference,-2.0549625735778076,1.9765327524855048,5
+Base,Erdős–Rényi,DP,True,2,retention_disparity,3.7600000000000025,2.2922478051030986,5
+Base,Erdős–Rényi,DP,True,2,retention_s0,87.719999999999999,1.4119490075778256,5
+Base,Erdős–Rényi,DP,True,2,retention_s1,85.799999999999997,3.1648064711763997,5
+Base,Erdős–Rényi,DP,True,2,unfairness,0.02653135417794179,0.016558607038329516,5
+Base,Erdős–Rényi,DP,True,3,approval_rate_difference,-2.5303127111021295,2.7273970777043433,5
+Base,Erdős–Rényi,DP,True,3,retention_disparity,3.2000000000000028,1.6346253393362098,5
+Base,Erdős–Rényi,DP,True,3,retention_s0,71.640000000000001,1.1271202242884335,5
+Base,Erdős–Rényi,DP,True,3,retention_s1,72.039999999999992,2.9567549780122149,5
+Base,Erdős–Rényi,DP,True,3,unfairness,0.022235889603824621,0.010743085337123365,5
+Base,Erdős–Rényi,DP,True,4,approval_rate_difference,0.94719587226521862,2.5789770023166341,5
+Base,Erdős–Rényi,DP,True,4,retention_disparity,3.0000000000000013,2.0000000000000009,5
+Base,Erdős–Rényi,DP,True,4,retention_s0,60.479999999999997,0.56000000000000083,5
+Base,Erdős–Rényi,DP,True,4,retention_s1,62.11999999999999,3.1025151087464509,5
+Base,Erdős–Rényi,DP,True,4,unfairness,0.020770419102103931,0.012932405827204828,5
+Base,Erdős–Rényi,DP,True,5,approval_rate_difference,-1.256011663674792,6.649189427650783,5
+Base,Erdős–Rényi,DP,True,5,retention_disparity,2.5600000000000009,1.1056219968868219,5
+Base,Erdős–Rényi,DP,True,5,retention_s0,51.160000000000004,0.79397732965116841,5
+Base,Erdős–Rényi,DP,True,5,retention_s1,52.279999999999994,2.2613270440164115,5
+Base,Erdős–Rényi,DP,True,5,unfairness,0.017514361025331861,0.0067029495698714189,5
+Base,Erdős–Rényi,EO,False,1,approval_rate_difference,0.40000000000000269,3.308171700501652,5
+Base,Erdős–Rényi,EO,False,1,retention_disparity,0,0,5
+Base,Erdős–Rényi,EO,False,1,retention_s0,100,0,5
+Base,Erdős–Rényi,EO,False,1,retention_s1,100,0,5
+Base,Erdős–Rényi,EO,False,1,unfairness,0.0006307339524530553,0,5
+Base,Erdős–Rényi,EO,False,2,approval_rate_difference,-2.1199999999999997,2.3752052542885633,5
+Base,Erdős–Rényi,EO,False,2,retention_disparity,0,0,5
+Base,Erdős–Rényi,EO,False,2,retention_s0,100,0,5
+Base,Erdős–Rényi,EO,False,2,retention_s1,100,0,5
+Base,Erdős–Rényi,EO,False,2,unfairness,0.00063078420516773372,1.1170166665497872e-07,5
+Base,Erdős–Rényi,EO,False,3,approval_rate_difference,-2.48,1.4119490075778216,5
+Base,Erdős–Rényi,EO,False,3,retention_disparity,0,0,5
+Base,Erdős–Rényi,EO,False,3,retention_s0,100,0,5
+Base,Erdős–Rényi,EO,False,3,retention_s1,100,0,5
+Base,Erdős–Rényi,EO,False,3,unfairness,0.00063077240531961287,7.6006746763742774e-08,5
+Base,Erdős–Rényi,EO,False,4,approval_rate_difference,-0.59999999999999598,2.8255972819918949,5
+Base,Erdős–Rényi,EO,False,4,retention_disparity,0,0,5
+Base,Erdős–Rényi,EO,False,4,retention_s0,100,0,5
+Base,Erdős–Rényi,EO,False,4,retention_s1,100,0,5
+Base,Erdős–Rényi,EO,False,4,unfairness,0.00063074078514175898,1.3058064596152584e-07,5
+Base,Erdős–Rényi,EO,False,5,approval_rate_difference,-1.8799999999999994,3.6367018024578228,5
+Base,Erdős–Rényi,EO,False,5,retention_disparity,0,0,5
+Base,Erdős–Rényi,EO,False,5,retention_s0,100,0,5
+Base,Erdős–Rényi,EO,False,5,retention_s1,100,0,5
+Base,Erdős–Rényi,EO,False,5,unfairness,0.00063077650777199068,1.2221188904979114e-07,5
+Base,Erdős–Rényi,EO,True,1,approval_rate_difference,0.40000000000000269,3.308171700501652,5
+Base,Erdős–Rényi,EO,True,1,retention_disparity,0,0,5
+Base,Erdős–Rényi,EO,True,1,retention_s0,100,0,5
+Base,Erdős–Rényi,EO,True,1,retention_s1,100,0,5
+Base,Erdős–Rényi,EO,True,1,unfairness,0.0006307339524530553,0,5
+Base,Erdős–Rényi,EO,True,2,approval_rate_difference,-2.8904571000532941,3.1950779087210028,5
+Base,Erdős–Rényi,EO,True,2,retention_disparity,4.400000000000003,2.0238577025077578,5
+Base,Erdős–Rényi,EO,True,2,retention_s0,85.760000000000005,1.2354756169184389,5
+Base,Erdős–Rényi,EO,True,2,retention_s1,83.840000000000003,3.7850231174987554,5
+Base,Erdős–Rényi,EO,True,2,unfairness,0.030538905192986476,0.014921023166023371,5
+Base,Erdős–Rényi,EO,True,3,approval_rate_difference,-1.6142222889462274,1.5278781855074306,5
+Base,Erdős–Rényi,EO,True,3,retention_disparity,3.9199999999999875,1.3891004283348245,5
+Base,Erdős–Rényi,EO,True,3,retention_s0,66.560000000000002,1.9324595726689804,5
+Base,Erdős–Rényi,EO,True,3,retention_s1,68.719999999999999,2.8385911998736231,5
+Base,Erdős–Rényi,EO,True,3,unfairness,0.025718458867710903,0.010636672392834896,5
+Base,Erdős–Rényi,EO,True,4,approval_rate_difference,1.4597245542787054,2.1576983871992512,5
+Base,Erdős–Rényi,EO,True,4,retention_disparity,3.6399999999999979,1.4609585894199728,5
+Base,Erdős–Rényi,EO,True,4,retention_s0,54.720000000000006,1.1070682002478447,5
+Base,Erdős–Rényi,EO,True,4,retention_s1,56.839999999999996,3.3903392160667334,5
+Base,Erdős–Rényi,EO,True,4,unfairness,0.024414104202567642,0.011141407350842531,5
+Base,Erdős–Rényi,EO,True,5,approval_rate_difference,-1.8935364899286398,6.451641380500571,5
+Base,Erdős–Rényi,EO,True,5,retention_disparity,2.6399999999999979,1.8607525359380801,5
+Base,Erdős–Rényi,EO,True,5,retention_s0,45.600000000000001,1.2132600710482471,5
+Base,Erdős–Rényi,EO,True,5,retention_s1,46.719999999999999,2.7585503439306658,5
+Base,Erdős–Rényi,EO,True,5,unfairness,0.018616105916039814,0.010983871312008195,5
+Base,Erdős–Rényi,LCF-active,False,1,approval_rate_difference,12.84,1.4164744967700633,5
+Base,Erdős–Rényi,LCF-active,False,1,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-active,False,1,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-active,False,1,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-active,False,1,unfairness,0.0034103021621704199,0,5
+Base,Erdős–Rényi,LCF-active,False,2,approval_rate_difference,8.2399999999999967,1.1551623262554933,5
+Base,Erdős–Rényi,LCF-active,False,2,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-active,False,2,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-active,False,2,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-active,False,2,unfairness,0.0018814132213592627,0.00036627673032037439,5
+Base,Erdős–Rényi,LCF-active,False,3,approval_rate_difference,5.0400000000000045,0.61188234163113464,5
+Base,Erdős–Rényi,LCF-active,False,3,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-active,False,3,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-active,False,3,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-active,False,3,unfairness,0.0013412719011306918,0.00031211610469774866,5
+Base,Erdős–Rényi,LCF-active,False,4,approval_rate_difference,3.4800000000000031,0.37094473981982851,5
+Base,Erdős–Rényi,LCF-active,False,4,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-active,False,4,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-active,False,4,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-active,False,4,unfairness,0.00075794222354890199,0.00020373455954110731,5
+Base,Erdős–Rényi,LCF-active,False,5,approval_rate_difference,2.240000000000002,0.68585712797929055,5
+Base,Erdős–Rényi,LCF-active,False,5,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-active,False,5,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-active,False,5,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-active,False,5,unfairness,0.00041211891174319781,0.00015947566359797929,5
+Base,Erdős–Rényi,LCF-active,True,1,approval_rate_difference,12.84,1.4164744967700633,5
+Base,Erdős–Rényi,LCF-active,True,1,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-active,True,1,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-active,True,1,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-active,True,1,unfairness,0.0034103021621704199,0,5
+Base,Erdős–Rényi,LCF-active,True,2,approval_rate_difference,6.9142675496244808,0.88485935725738285,5
+Base,Erdős–Rényi,LCF-active,True,2,retention_disparity,8.4399999999999977,1.8693314312876714,5
+Base,Erdős–Rényi,LCF-active,True,2,retention_s0,99.879999999999995,0.16000000000000225,5
+Base,Erdős–Rényi,LCF-active,True,2,retention_s1,91.439999999999998,1.759090674183684,5
+Base,Erdős–Rényi,LCF-active,True,2,unfairness,0.0057272608518600387,0.0036030888038705374,5
+Base,Erdős–Rényi,LCF-active,True,3,approval_rate_difference,3.5507085638122726,0.87804987810820923,5
+Base,Erdős–Rényi,LCF-active,True,3,retention_disparity,11.440000000000001,2.0095770699328739,5
+Base,Erdős–Rényi,LCF-active,True,3,retention_s0,99.760000000000005,0.23323807579381092,5
+Base,Erdős–Rényi,LCF-active,True,3,retention_s1,88.320000000000007,1.8829763673503719,5
+Base,Erdős–Rényi,LCF-active,True,3,unfairness,0.0086234537839889654,0.0049588404837478924,5
+Base,Erdős–Rényi,LCF-active,True,4,approval_rate_difference,1.9411982626332569,0.71700204137155876,5
+Base,Erdős–Rényi,LCF-active,True,4,retention_disparity,12.640000000000001,2.029384143034529,5
+Base,Erdős–Rényi,LCF-active,True,4,retention_s0,99.719999999999999,0.2399999999999996,5
+Base,Erdős–Rényi,LCF-active,True,4,retention_s1,87.079999999999998,1.9208331525668747,5
+Base,Erdős–Rényi,LCF-active,True,4,unfairness,0.0084956335067749127,0.0055720839151334224,5
+Base,Erdős–Rényi,LCF-active,True,5,approval_rate_difference,0.79537451044589424,0.37120979731931952,5
+Base,Erdős–Rényi,LCF-active,True,5,retention_disparity,13.080000000000002,2.0301724064719209,5
+Base,Erdős–Rényi,LCF-active,True,5,retention_s0,99.719999999999999,0.2399999999999996,5
+Base,Erdős–Rényi,LCF-active,True,5,retention_s1,86.640000000000001,1.907459042810618,5
+Base,Erdős–Rényi,LCF-active,True,5,unfairness,0.0082684272050857818,0.0056014629008989299,5
+Base,Erdős–Rényi,LCF-full,False,1,approval_rate_difference,12.920000000000002,1.3600000000000012,5
+Base,Erdős–Rényi,LCF-full,False,1,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-full,False,1,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-full,False,1,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-full,False,1,unfairness,0.0034314200878142742,0,5
+Base,Erdős–Rényi,LCF-full,False,2,approval_rate_difference,8.3599999999999959,1.2924395537122821,5
+Base,Erdős–Rényi,LCF-full,False,2,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-full,False,2,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-full,False,2,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-full,False,2,unfairness,0.0019042764902114761,0.00036532062027232095,5
+Base,Erdős–Rényi,LCF-full,False,3,approval_rate_difference,5.0400000000000045,0.59866518188383111,5
+Base,Erdős–Rényi,LCF-full,False,3,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-full,False,3,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-full,False,3,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-full,False,3,unfairness,0.0013583213567733843,0.00031212642806755051,5
+Base,Erdős–Rényi,LCF-full,False,4,approval_rate_difference,3.5600000000000032,0.44542114902640217,5
+Base,Erdős–Rényi,LCF-full,False,4,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-full,False,4,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-full,False,4,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-full,False,4,unfairness,0.00077126929759978595,0.00020668110816326004,5
+Base,Erdős–Rényi,LCF-full,False,5,approval_rate_difference,2.240000000000002,0.68585712797929055,5
+Base,Erdős–Rényi,LCF-full,False,5,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-full,False,5,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-full,False,5,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-full,False,5,unfairness,0.00042075793743134859,0.00016043426072619678,5
+Base,Erdős–Rényi,LCF-full,True,1,approval_rate_difference,12.920000000000002,1.3600000000000012,5
+Base,Erdős–Rényi,LCF-full,True,1,retention_disparity,0,0,5
+Base,Erdős–Rényi,LCF-full,True,1,retention_s0,100,0,5
+Base,Erdős–Rényi,LCF-full,True,1,retention_s1,100,0,5
+Base,Erdős–Rényi,LCF-full,True,1,unfairness,0.0034314200878142742,0,5
+Base,Erdős–Rényi,LCF-full,True,2,approval_rate_difference,7.0523304115602414,1.0259810825956963,5
+Base,Erdős–Rényi,LCF-full,True,2,retention_disparity,8.519999999999996,1.7508854902591493,5
+Base,Erdős–Rényi,LCF-full,True,2,retention_s0,99.879999999999995,0.16000000000000225,5
+Base,Erdős–Rényi,LCF-full,True,2,retention_s1,91.359999999999999,1.6463292501805389,5
+Base,Erdős–Rényi,LCF-full,True,2,unfairness,0.0057392917394638362,0.0036105197573662881,5
+Base,Erdős–Rényi,LCF-full,True,3,approval_rate_difference,3.5151247091816868,0.81710560507655572,5
+Base,Erdős–Rényi,LCF-full,True,3,retention_disparity,11.52,1.8914544668059032,5
+Base,Erdős–Rényi,LCF-full,True,3,retention_s0,99.760000000000005,0.23323807579381092,5
+Base,Erdős–Rényi,LCF-full,True,3,retention_s1,88.239999999999995,1.7726815844928299,5
+Base,Erdős–Rényi,LCF-full,True,3,unfairness,0.0086308609724044631,0.0049673045529559116,5
+Base,Erdős–Rényi,LCF-full,True,4,approval_rate_difference,2.0353914090178327,0.82626508636096874,5
+Base,Erdős–Rényi,LCF-full,True,4,retention_disparity,12.719999999999999,1.912485294061107,5
+Base,Erdős–Rényi,LCF-full,True,4,retention_s0,99.719999999999999,0.2399999999999996,5
+Base,Erdős–Rényi,LCF-full,True,4,retention_s1,87,1.8110770276274855,5
+Base,Erdős–Rényi,LCF-full,True,4,unfairness,0.0085037748336792111,0.0055753176325782526,5
+Base,Erdős–Rényi,LCF-full,True,5,approval_rate_difference,0.79618613699622642,0.37143957563366609,5
+Base,Erdős–Rényi,LCF-full,True,5,retention_disparity,13.160000000000002,1.9283153269110282,5
+Base,Erdős–Rényi,LCF-full,True,5,retention_s0,99.719999999999999,0.2399999999999996,5
+Base,Erdős–Rényi,LCF-full,True,5,retention_s1,86.559999999999988,1.8128430709799437,5
+Base,Erdős–Rényi,LCF-full,True,5,unfairness,0.0082736157178878722,0.0056031504008854762,5
+Base,Watts–Strogatz,Baseline,False,1,approval_rate_difference,1.5200000000000014,0.95163018026962631,5
+Base,Watts–Strogatz,Baseline,False,1,retention_disparity,0,0,5
+Base,Watts–Strogatz,Baseline,False,1,retention_s0,100,0,5
+Base,Watts–Strogatz,Baseline,False,1,retention_s1,100,0,5
+Base,Watts–Strogatz,Baseline,False,1,unfairness,0.0022370665517963406,0,5
+Base,Watts–Strogatz,Baseline,False,2,approval_rate_difference,1.120000000000001,0.5878775382679633,5
+Base,Watts–Strogatz,Baseline,False,2,retention_disparity,0,0,5
+Base,Watts–Strogatz,Baseline,False,2,retention_s0,100,0,5
+Base,Watts–Strogatz,Baseline,False,2,retention_s1,100,0,5
+Base,Watts–Strogatz,Baseline,False,2,unfairness,0.0021094447479010014,9.7978552086411929e-06,5
+Base,Watts–Strogatz,Baseline,False,3,approval_rate_difference,0.6800000000000006,0.16000000000000014,5
+Base,Watts–Strogatz,Baseline,False,3,retention_disparity,0,0,5
+Base,Watts–Strogatz,Baseline,False,3,retention_s0,100,0,5
+Base,Watts–Strogatz,Baseline,False,3,retention_s1,100,0,5
+Base,Watts–Strogatz,Baseline,False,3,unfairness,0.0019958032989167316,1.4007597167951371e-05,5
+Base,Watts–Strogatz,Baseline,False,4,approval_rate_difference,1.4800000000000013,0.271293199325011,5
+Base,Watts–Strogatz,Baseline,False,4,retention_disparity,0,0,5
+Base,Watts–Strogatz,Baseline,False,4,retention_s0,100,0,5
+Base,Watts–Strogatz,Baseline,False,4,retention_s1,100,0,5
+Base,Watts–Strogatz,Baseline,False,4,unfairness,0.0018800440459720402,1.7283005524947172e-05,5
+Base,Watts–Strogatz,Baseline,False,5,approval_rate_difference,0.96000000000000085,0.89799777282574678,5
+Base,Watts–Strogatz,Baseline,False,5,retention_disparity,0,0,5
+Base,Watts–Strogatz,Baseline,False,5,retention_s0,100,0,5
+Base,Watts–Strogatz,Baseline,False,5,retention_s1,100,0,5
+Base,Watts–Strogatz,Baseline,False,5,unfairness,0.0017769635124555538,2.4724228961154732e-05,5
+Base,Watts–Strogatz,Baseline,True,1,approval_rate_difference,1.5200000000000014,0.95163018026962631,5
+Base,Watts–Strogatz,Baseline,True,1,retention_disparity,0,0,5
+Base,Watts–Strogatz,Baseline,True,1,retention_s0,100,0,5
+Base,Watts–Strogatz,Baseline,True,1,retention_s1,100,0,5
+Base,Watts–Strogatz,Baseline,True,1,unfairness,0.0022370665517963406,0,5
+Base,Watts–Strogatz,Baseline,True,2,approval_rate_difference,1.0833900058180879,0.5625045284003527,5
+Base,Watts–Strogatz,Baseline,True,2,retention_disparity,0.20000000000000001,0.3098386676965923,5
+Base,Watts–Strogatz,Baseline,True,2,retention_s0,99.960000000000008,0.08000000000000114,5
+Base,Watts–Strogatz,Baseline,True,2,retention_s1,99.840000000000003,0.31999999999999884,5
+Base,Watts–Strogatz,Baseline,True,2,unfairness,0.0025063735407439892,0.0019509003772785181,5
+Base,Watts–Strogatz,Baseline,True,3,approval_rate_difference,0.68530704627287831,0.15845256933616242,5
+Base,Watts–Strogatz,Baseline,True,3,retention_disparity,0.36000000000000226,0.23323807579380995,5
+Base,Watts–Strogatz,Baseline,True,3,retention_s0,99.960000000000008,0.08000000000000114,5
+Base,Watts–Strogatz,Baseline,True,3,retention_s1,99.599999999999994,0.21908902300206437,5
+Base,Watts–Strogatz,Baseline,True,3,unfairness,0.0031770716629264673,0.0020177758879205056,5
+Base,Watts–Strogatz,Baseline,True,4,approval_rate_difference,1.4919228429183584,0.27605615452470716,5
+Base,Watts–Strogatz,Baseline,True,4,retention_disparity,0.47999999999999832,0.1599999999999959,5
+Base,Watts–Strogatz,Baseline,True,4,retention_s0,99.920000000000002,0.097979589711328516,5
+Base,Watts–Strogatz,Baseline,True,4,retention_s1,99.439999999999998,0.23323807579380898,5
+Base,Watts–Strogatz,Baseline,True,4,unfairness,0.0027069179969635647,0.001521317477648844,5
+Base,Watts–Strogatz,Baseline,True,5,approval_rate_difference,0.9721013595341077,0.90592608339752478,5
+Base,Watts–Strogatz,Baseline,True,5,retention_disparity,0.55999999999999939,0.26532998322843021,5
+Base,Watts–Strogatz,Baseline,True,5,retention_s0,99.840000000000003,0.23323807579380998,5
+Base,Watts–Strogatz,Baseline,True,5,retention_s1,99.280000000000001,0.20396078054370984,5
+Base,Watts–Strogatz,Baseline,True,5,unfairness,0.0026885764829762903,0.0028194961294625491,5
+Base,Watts–Strogatz,DP,False,1,approval_rate_difference,0.52000000000000057,3.0895954427723988,5
+Base,Watts–Strogatz,DP,False,1,retention_disparity,0,0,5
+Base,Watts–Strogatz,DP,False,1,retention_s0,100,0,5
+Base,Watts–Strogatz,DP,False,1,retention_s1,100,0,5
+Base,Watts–Strogatz,DP,False,1,unfairness,0.0011261766189617495,0,5
+Base,Watts–Strogatz,DP,False,2,approval_rate_difference,-1.4799999999999991,1.6228370220080637,5
+Base,Watts–Strogatz,DP,False,2,retention_disparity,0,0,5
+Base,Watts–Strogatz,DP,False,2,retention_s0,100,0,5
+Base,Watts–Strogatz,DP,False,2,retention_s1,100,0,5
+Base,Watts–Strogatz,DP,False,2,unfairness,0.0011263474398002459,3.7407879225095006e-07,5
+Base,Watts–Strogatz,DP,False,3,approval_rate_difference,-2.2399999999999975,1.8391302292116212,5
+Base,Watts–Strogatz,DP,False,3,retention_disparity,0,0,5
+Base,Watts–Strogatz,DP,False,3,retention_s0,100,0,5
+Base,Watts–Strogatz,DP,False,3,retention_s1,100,0,5
+Base,Watts–Strogatz,DP,False,3,unfairness,0.0011264280122507131,3.8584071053396613e-07,5
+Base,Watts–Strogatz,DP,False,4,approval_rate_difference,-0.52000000000000057,3.2877956140855198,5
+Base,Watts–Strogatz,DP,False,4,retention_disparity,0,0,5
+Base,Watts–Strogatz,DP,False,4,retention_s0,100,0,5
+Base,Watts–Strogatz,DP,False,4,retention_s1,100,0,5
+Base,Watts–Strogatz,DP,False,4,unfairness,0.0011263627429834778,4.8991624350447769e-07,5
+Base,Watts–Strogatz,DP,False,5,approval_rate_difference,-2.1999999999999971,3.548520818594695,5
+Base,Watts–Strogatz,DP,False,5,retention_disparity,0,0,5
+Base,Watts–Strogatz,DP,False,5,retention_s0,100,0,5
+Base,Watts–Strogatz,DP,False,5,retention_s1,100,0,5
+Base,Watts–Strogatz,DP,False,5,unfairness,0.0011265241354826427,4.8857709033361777e-07,5
+Base,Watts–Strogatz,DP,True,1,approval_rate_difference,0.52000000000000057,3.0895954427723988,5
+Base,Watts–Strogatz,DP,True,1,retention_disparity,0,0,5
+Base,Watts–Strogatz,DP,True,1,retention_s0,100,0,5
+Base,Watts–Strogatz,DP,True,1,retention_s1,100,0,5
+Base,Watts–Strogatz,DP,True,1,unfairness,0.0011261766189617495,0,5
+Base,Watts–Strogatz,DP,True,2,approval_rate_difference,-1.795130997459329,2.1964940440276313,5
+Base,Watts–Strogatz,DP,True,2,retention_disparity,3.7200000000000015,2.0999047597450722,5
+Base,Watts–Strogatz,DP,True,2,retention_s0,86.439999999999998,1.8736061485808595,5
+Base,Watts–Strogatz,DP,True,2,retention_s1,85.679999999999993,2.4383601046605095,5
+Base,Watts–Strogatz,DP,True,2,unfairness,0.026636558212957316,0.014055512221941568,5
+Base,Watts–Strogatz,DP,True,3,approval_rate_difference,-2.3004556788480279,2.4767637435098568,5
+Base,Watts–Strogatz,DP,True,3,retention_disparity,3.3599999999999968,1.768162888424027,5
+Base,Watts–Strogatz,DP,True,3,retention_s0,70.920000000000002,2.0653329029480942,5
+Base,Watts–Strogatz,DP,True,3,retention_s1,71.320000000000007,2.0183161298468546,5
+Base,Watts–Strogatz,DP,True,3,unfairness,0.022798225946790773,0.013032412408510658,5
+Base,Watts–Strogatz,DP,True,4,approval_rate_difference,2.5048181743388653,3.2839189658981538,5
+Base,Watts–Strogatz,DP,True,4,retention_disparity,3.640000000000005,2.3508296407864222,5
+Base,Watts–Strogatz,DP,True,4,retention_s0,59.319999999999993,1.3833293172632488,5
+Base,Watts–Strogatz,DP,True,4,retention_s1,62.560000000000002,2.781078927322993,5
+Base,Watts–Strogatz,DP,True,4,unfairness,0.024231956340873273,0.015806024412275022,5
+Base,Watts–Strogatz,DP,True,5,approval_rate_difference,-1.5356059260601751,6.6999656053159597,5
+Base,Watts–Strogatz,DP,True,5,retention_disparity,2.7200000000000002,2.3446961423604544,5
+Base,Watts–Strogatz,DP,True,5,retention_s0,50.880000000000003,1.7139428228502842,5
+Base,Watts–Strogatz,DP,True,5,retention_s1,52.960000000000001,3.5897632233895318,5
+Base,Watts–Strogatz,DP,True,5,unfairness,0.017009701460052262,0.015724517464790994,5
+Base,Watts–Strogatz,EO,False,1,approval_rate_difference,0.40000000000000269,3.308171700501652,5
+Base,Watts–Strogatz,EO,False,1,retention_disparity,0,0,5
+Base,Watts–Strogatz,EO,False,1,retention_s0,100,0,5
+Base,Watts–Strogatz,EO,False,1,retention_s1,100,0,5
+Base,Watts–Strogatz,EO,False,1,unfairness,0.00061955845521954878,0,5
+Base,Watts–Strogatz,EO,False,2,approval_rate_difference,-2.1199999999999997,2.3752052542885633,5
+Base,Watts–Strogatz,EO,False,2,retention_disparity,0,0,5
+Base,Watts–Strogatz,EO,False,2,retention_s0,100,0,5
+Base,Watts–Strogatz,EO,False,2,retention_s1,100,0,5
+Base,Watts–Strogatz,EO,False,2,unfairness,0.00061960694405731602,1.0778487189958539e-07,5
+Base,Watts–Strogatz,EO,False,3,approval_rate_difference,-2.48,1.4119490075778216,5
+Base,Watts–Strogatz,EO,False,3,retention_disparity,0,0,5
+Base,Watts–Strogatz,EO,False,3,retention_s0,100,0,5
+Base,Watts–Strogatz,EO,False,3,retention_s1,100,0,5
+Base,Watts–Strogatz,EO,False,3,unfairness,0.00061959555597213001,7.3341796218041352e-08,5
+Base,Watts–Strogatz,EO,False,4,approval_rate_difference,-0.59999999999999598,2.8255972819918949,5
+Base,Watts–Strogatz,EO,False,4,retention_disparity,0,0,5
+Base,Watts–Strogatz,EO,False,4,retention_s0,100,0,5
+Base,Watts–Strogatz,EO,False,4,retention_s1,100,0,5
+Base,Watts–Strogatz,EO,False,4,unfairness,0.00061956504287801199,1.2600195687066378e-07,5
+Base,Watts–Strogatz,EO,False,5,approval_rate_difference,-1.8799999999999994,3.6367018024578228,5
+Base,Watts–Strogatz,EO,False,5,retention_disparity,0,0,5
+Base,Watts–Strogatz,EO,False,5,retention_s0,100,0,5
+Base,Watts–Strogatz,EO,False,5,retention_s1,100,0,5
+Base,Watts–Strogatz,EO,False,5,unfairness,0.00061959951126646653,1.1792652639985602e-07,5
+Base,Watts–Strogatz,EO,True,1,approval_rate_difference,0.40000000000000269,3.308171700501652,5
+Base,Watts–Strogatz,EO,True,1,retention_disparity,0,0,5
+Base,Watts–Strogatz,EO,True,1,retention_s0,100,0,5
+Base,Watts–Strogatz,EO,True,1,retention_s1,100,0,5
+Base,Watts–Strogatz,EO,True,1,unfairness,0.00061955845521954878,0,5
+Base,Watts–Strogatz,EO,True,2,approval_rate_difference,-2.8130639592322089,4.0160479190906315,5
+Base,Watts–Strogatz,EO,True,2,retention_disparity,4.9599999999999991,2.5531157435572713,5
+Base,Watts–Strogatz,EO,True,2,retention_s0,84.920000000000002,2.5755776051208383,5
+Base,Watts–Strogatz,EO,True,2,retention_s1,83.960000000000008,3.2184468303826312,5
+Base,Watts–Strogatz,EO,True,2,unfairness,0.033000798489780034,0.016913682000403801,5
+Base,Watts–Strogatz,EO,True,3,approval_rate_difference,-1.6715988088534715,1.1988035706002993,5
+Base,Watts–Strogatz,EO,True,3,retention_disparity,4.3599999999999941,1.9530488985173913,5
+Base,Watts–Strogatz,EO,True,3,retention_s0,66.560000000000002,1.8478095139921709,5
+Base,Watts–Strogatz,EO,True,3,retention_s1,68.11999999999999,2.8805555019822129,5
+Base,Watts–Strogatz,EO,True,3,unfairness,0.027843945945789983,0.012816242876513706,5
+Base,Watts–Strogatz,EO,True,4,approval_rate_difference,1.300779224714439,3.1851720096017955,5
+Base,Watts–Strogatz,EO,True,4,retention_disparity,4.4399999999999933,1.3108775686539142,5
+Base,Watts–Strogatz,EO,True,4,retention_s0,54.280000000000008,2.0614557962760189,5
+Base,Watts–Strogatz,EO,True,4,retention_s1,57.359999999999992,1.856448221739565,5
+Base,Watts–Strogatz,EO,True,4,unfairness,0.028172784215682291,0.007112742398160077,5
+Base,Watts–Strogatz,EO,True,5,approval_rate_difference,-0.70067227174700708,7.9758104680851725,5
+Base,Watts–Strogatz,EO,True,5,retention_disparity,2.4400000000000004,1.2611106216347592,5
+Base,Watts–Strogatz,EO,True,5,retention_s0,44.799999999999997,2.2485550916088322,5
+Base,Watts–Strogatz,EO,True,5,retention_s1,46.680000000000007,1.5263027222671122,5
+Base,Watts–Strogatz,EO,True,5,unfairness,0.015236361529952924,0.0078597094176976173,5
+Base,Watts–Strogatz,LCF-active,False,1,approval_rate_difference,12.84,1.4164744967700633,5
+Base,Watts–Strogatz,LCF-active,False,1,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-active,False,1,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-active,False,1,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-active,False,1,unfairness,0.0034177410602569402,0,5
+Base,Watts–Strogatz,LCF-active,False,2,approval_rate_difference,8.2399999999999967,1.1551623262554933,5
+Base,Watts–Strogatz,LCF-active,False,2,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-active,False,2,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-active,False,2,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-active,False,2,unfairness,0.0018866799831390279,0.0003671434109239418,5
+Base,Watts–Strogatz,LCF-active,False,3,approval_rate_difference,5.0400000000000045,0.61188234163113464,5
+Base,Watts–Strogatz,LCF-active,False,3,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-active,False,3,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-active,False,3,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-active,False,3,unfairness,0.0013453912019729453,0.00031309637799669011,5
+Base,Watts–Strogatz,LCF-active,False,4,approval_rate_difference,3.4800000000000031,0.37094473981982851,5
+Base,Watts–Strogatz,LCF-active,False,4,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-active,False,4,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-active,False,4,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-active,False,4,unfairness,0.00076063196659090779,0.00020471532774885557,5
+Base,Watts–Strogatz,LCF-active,False,5,approval_rate_difference,2.240000000000002,0.68585712797929055,5
+Base,Watts–Strogatz,LCF-active,False,5,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-active,False,5,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-active,False,5,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-active,False,5,unfairness,0.00041366961002349268,0.00016001057440772251,5
+Base,Watts–Strogatz,LCF-active,True,1,approval_rate_difference,12.84,1.4164744967700633,5
+Base,Watts–Strogatz,LCF-active,True,1,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-active,True,1,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-active,True,1,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-active,True,1,unfairness,0.0034177410602569402,0,5
+Base,Watts–Strogatz,LCF-active,True,2,approval_rate_difference,6.9131459428899715,0.65765413462633349,5
+Base,Watts–Strogatz,LCF-active,True,2,retention_disparity,7.6400000000000006,1.9032603605392493,5
+Base,Watts–Strogatz,LCF-active,True,2,retention_s0,99.599999999999994,0.33466401061362816,5
+Base,Watts–Strogatz,LCF-active,True,2,retention_s1,91.960000000000008,1.8736061485808571,5
+Base,Watts–Strogatz,LCF-active,True,2,unfairness,0.0046170283079147055,0.0031038460116357526,5
+Base,Watts–Strogatz,LCF-active,True,3,approval_rate_difference,3.4060213085140889,0.59797393321575354,5
+Base,Watts–Strogatz,LCF-active,True,3,retention_disparity,10.799999999999997,2.20544780033444,5
+Base,Watts–Strogatz,LCF-active,True,3,retention_s0,99.439999999999998,0.42708313008125237,5
+Base,Watts–Strogatz,LCF-active,True,3,retention_s1,88.640000000000015,2.0450916849862772,5
+Base,Watts–Strogatz,LCF-active,True,3,unfairness,0.0046164000034332629,0.0034741618148332446,5
+Base,Watts–Strogatz,LCF-active,True,4,approval_rate_difference,1.6975304145060721,0.44788468428770656,5
+Base,Watts–Strogatz,LCF-active,True,4,retention_disparity,11.679999999999998,2.0497804760510387,5
+Base,Watts–Strogatz,LCF-active,True,4,retention_s0,99.400000000000006,0.40000000000000002,5
+Base,Watts–Strogatz,LCF-active,True,4,retention_s1,87.719999999999999,1.9208331525668796,5
+Base,Watts–Strogatz,LCF-active,True,4,unfairness,0.0050430040359497053,0.0038126322360460354,5
+Base,Watts–Strogatz,LCF-active,True,5,approval_rate_difference,0.92465286844863426,0.48079273411729662,5
+Base,Watts–Strogatz,LCF-active,True,5,retention_disparity,12,2.0435263639111709,5
+Base,Watts–Strogatz,LCF-active,True,5,retention_s0,99.400000000000006,0.40000000000000002,5
+Base,Watts–Strogatz,LCF-active,True,5,retention_s1,87.400000000000006,1.9390719429665331,5
+Base,Watts–Strogatz,LCF-active,True,5,unfairness,0.0051773701190948266,0.0036792476814895736,5
+Base,Watts–Strogatz,LCF-full,False,1,approval_rate_difference,12.920000000000002,1.3600000000000012,5
+Base,Watts–Strogatz,LCF-full,False,1,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-full,False,1,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-full,False,1,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-full,False,1,unfairness,0.0034433914422988821,0,5
+Base,Watts–Strogatz,LCF-full,False,2,approval_rate_difference,8.3599999999999959,1.2924395537122821,5
+Base,Watts–Strogatz,LCF-full,False,2,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-full,False,2,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-full,False,2,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-full,False,2,unfairness,0.001929458212852464,0.00034400095332929112,5
+Base,Watts–Strogatz,LCF-full,False,3,approval_rate_difference,5.0400000000000045,0.59866518188383111,5
+Base,Watts–Strogatz,LCF-full,False,3,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-full,False,3,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-full,False,3,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-full,False,3,unfairness,0.0013708192348480086,0.00030376296683409348,5
+Base,Watts–Strogatz,LCF-full,False,4,approval_rate_difference,3.5600000000000032,0.44542114902640217,5
+Base,Watts–Strogatz,LCF-full,False,4,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-full,False,4,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-full,False,4,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-full,False,4,unfairness,0.00077675721645353857,0.00020408173539247353,5
+Base,Watts–Strogatz,LCF-full,False,5,approval_rate_difference,2.240000000000002,0.68585712797929055,5
+Base,Watts–Strogatz,LCF-full,False,5,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-full,False,5,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-full,False,5,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-full,False,5,unfairness,0.00042312943935394196,0.00016072085863149302,5
+Base,Watts–Strogatz,LCF-full,True,1,approval_rate_difference,12.920000000000002,1.3600000000000012,5
+Base,Watts–Strogatz,LCF-full,True,1,retention_disparity,0,0,5
+Base,Watts–Strogatz,LCF-full,True,1,retention_s0,100,0,5
+Base,Watts–Strogatz,LCF-full,True,1,retention_s1,100,0,5
+Base,Watts–Strogatz,LCF-full,True,1,unfairness,0.0034433914422988821,0,5
+Base,Watts–Strogatz,LCF-full,True,2,approval_rate_difference,7.0135457692367682,0.81195784529339132,5
+Base,Watts–Strogatz,LCF-full,True,2,retention_disparity,7.7600000000000025,1.7545369759569009,5
+Base,Watts–Strogatz,LCF-full,True,2,retention_s0,99.599999999999994,0.33466401061362816,5
+Base,Watts–Strogatz,LCF-full,True,2,retention_s1,91.840000000000003,1.7315888657530651,5
+Base,Watts–Strogatz,LCF-full,True,2,unfairness,0.0041944956779479846,0.002435807154872086,5
+Base,Watts–Strogatz,LCF-full,True,3,approval_rate_difference,3.3690137659009345,0.53628898186269081,5
+Base,Watts–Strogatz,LCF-full,True,3,retention_disparity,10.879999999999999,2.1188676221038478,5
+Base,Watts–Strogatz,LCF-full,True,3,retention_s0,99.439999999999998,0.42708313008125237,5
+Base,Watts–Strogatz,LCF-full,True,3,retention_s1,88.560000000000002,1.9530488985173939,5
+Base,Watts–Strogatz,LCF-full,True,3,unfairness,0.0042113974332809393,0.0027304931461929003,5
+Base,Watts–Strogatz,LCF-full,True,4,approval_rate_difference,1.7902955344409535,0.5469500830737235,5
+Base,Watts–Strogatz,LCF-full,True,4,retention_disparity,11.76,1.9652989594461239,5
+Base,Watts–Strogatz,LCF-full,True,4,retention_s0,99.400000000000006,0.40000000000000002,5
+Base,Watts–Strogatz,LCF-full,True,4,retention_s1,87.640000000000001,1.8304097901836114,5
+Base,Watts–Strogatz,LCF-full,True,4,unfairness,0.0046369497537612769,0.0031253634960852071,5
+Base,Watts–Strogatz,LCF-full,True,5,approval_rate_difference,0.92595616311735629,0.48112898777555091,5
+Base,Watts–Strogatz,LCF-full,True,5,retention_disparity,12.119999999999999,1.9041008376659097,5
+Base,Watts–Strogatz,LCF-full,True,5,retention_s0,99.400000000000006,0.40000000000000002,5
+Base,Watts–Strogatz,LCF-full,True,5,retention_s1,87.280000000000001,1.8048822676285596,5
+Base,Watts–Strogatz,LCF-full,True,5,unfairness,0.0047743231058120731,0.0029738825295298498,5
+Variant I,Base (80/20),Baseline,False,1,approval_rate_difference,0.64000000000000057,0.32000000000000028,5
+Variant I,Base (80/20),Baseline,False,1,retention_disparity,0,0,5
+Variant I,Base (80/20),Baseline,False,1,retention_s0,100,0,5
+Variant I,Base (80/20),Baseline,False,1,retention_s1,100,0,5
+Variant I,Base (80/20),Baseline,False,1,unfairness,0.0029512137812132133,0,5
+Variant I,Base (80/20),Baseline,False,2,approval_rate_difference,0.48000000000000043,0.41182520563948039,5
+Variant I,Base (80/20),Baseline,False,2,retention_disparity,0,0,5
+Variant I,Base (80/20),Baseline,False,2,retention_s0,100,0,5
+Variant I,Base (80/20),Baseline,False,2,retention_s1,100,0,5
+Variant I,Base (80/20),Baseline,False,2,unfairness,0.0027223623015742771,1.2835708405835293e-05,5
+Variant I,Base (80/20),Baseline,False,3,approval_rate_difference,0.52000000000000046,0.34871191548325414,5
+Variant I,Base (80/20),Baseline,False,3,retention_disparity,0,0,5
+Variant I,Base (80/20),Baseline,False,3,retention_s0,100,0,5
+Variant I,Base (80/20),Baseline,False,3,retention_s1,100,0,5
+Variant I,Base (80/20),Baseline,False,3,unfairness,0.0024427311540473175,2.7610033219191549e-05,5
+Variant I,Base (80/20),Baseline,False,4,approval_rate_difference,0.36000000000000032,0.38781438859330664,5
+Variant I,Base (80/20),Baseline,False,4,retention_disparity,0,0,5
+Variant I,Base (80/20),Baseline,False,4,retention_s0,100,0,5
+Variant I,Base (80/20),Baseline,False,4,retention_s1,100,0,5
+Variant I,Base (80/20),Baseline,False,4,unfairness,0.0021969503109211751,4.7183211152124281e-05,5
+Variant I,Base (80/20),Baseline,False,5,approval_rate_difference,0.20000000000000018,0.75894663844041177,5
+Variant I,Base (80/20),Baseline,False,5,retention_disparity,0,0,5
+Variant I,Base (80/20),Baseline,False,5,retention_s0,100,0,5
+Variant I,Base (80/20),Baseline,False,5,retention_s1,100,0,5
+Variant I,Base (80/20),Baseline,False,5,unfairness,0.0019606175446134078,5.0871962778688047e-05,5
+Variant I,Base (80/20),Baseline,True,1,approval_rate_difference,0.64000000000000057,0.32000000000000028,5
+Variant I,Base (80/20),Baseline,True,1,retention_disparity,0,0,5
+Variant I,Base (80/20),Baseline,True,1,retention_s0,100,0,5
+Variant I,Base (80/20),Baseline,True,1,retention_s1,100,0,5
+Variant I,Base (80/20),Baseline,True,1,unfairness,0.0029512137812132133,0,5
+Variant I,Base (80/20),Baseline,True,2,approval_rate_difference,0.52564093919004407,0.39024469359697994,5
+Variant I,Base (80/20),Baseline,True,2,retention_disparity,0.47999999999999832,0.27129319932500873,5
+Variant I,Base (80/20),Baseline,True,2,retention_s0,99.960000000000008,0.08000000000000114,5
+Variant I,Base (80/20),Baseline,True,2,retention_s1,99.47999999999999,0.2993325909419135,5
+Variant I,Base (80/20),Baseline,True,2,unfairness,0.0078420290736620941,0.0029457718851546742,5
+Variant I,Base (80/20),Baseline,True,3,approval_rate_difference,0.52581263080873075,0.35413143616169285,5
+Variant I,Base (80/20),Baseline,True,3,retention_disparity,0.55999999999999939,0.29393876913398048,5
+Variant I,Base (80/20),Baseline,True,3,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant I,Base (80/20),Baseline,True,3,retention_s1,99.400000000000006,0.35777087639996508,5
+Variant I,Base (80/20),Baseline,True,3,unfairness,0.0075860671072060185,0.0040340951625098837,5
+Variant I,Base (80/20),Baseline,True,4,approval_rate_difference,0.36759143328495281,0.38649151320850345,5
+Variant I,Base (80/20),Baseline,True,4,retention_disparity,0.59999999999999998,0.4381780460041339,5
+Variant I,Base (80/20),Baseline,True,4,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant I,Base (80/20),Baseline,True,4,retention_s1,99.280000000000001,0.37094473981982701,5
+Variant I,Base (80/20),Baseline,True,4,unfairness,0.0093084945030428301,0.0032115142362519528,5
+Variant I,Base (80/20),Baseline,True,5,approval_rate_difference,0.20542913225444659,0.76264506510339791,5
+Variant I,Base (80/20),Baseline,True,5,retention_disparity,0.56000000000000227,0.40792156108742245,5
+Variant I,Base (80/20),Baseline,True,5,retention_s0,99.760000000000005,0.23323807579381095,5
+Variant I,Base (80/20),Baseline,True,5,retention_s1,99.200000000000003,0.4195235392680598,5
+Variant I,Base (80/20),Baseline,True,5,unfairness,0.0086927559887038704,0.0034677307842827954,5
+Variant I,Base (80/20),DP,False,1,approval_rate_difference,-0.87999999999999867,2.869425029513752,5
+Variant I,Base (80/20),DP,False,1,retention_disparity,0,0,5
+Variant I,Base (80/20),DP,False,1,retention_s0,100,0,5
+Variant I,Base (80/20),DP,False,1,retention_s1,100,0,5
+Variant I,Base (80/20),DP,False,1,unfairness,0.001013248346873219,0,5
+Variant I,Base (80/20),DP,False,2,approval_rate_difference,1.839999999999997,2.1666564102321328,5
+Variant I,Base (80/20),DP,False,2,retention_disparity,0,0,5
+Variant I,Base (80/20),DP,False,2,retention_s0,100,0,5
+Variant I,Base (80/20),DP,False,2,retention_s1,100,0,5
+Variant I,Base (80/20),DP,False,2,unfairness,0.0010133578314978741,2.4655614833806028e-07,5
+Variant I,Base (80/20),DP,False,3,approval_rate_difference,1.399999999999999,1.1798304963002111,5
+Variant I,Base (80/20),DP,False,3,retention_disparity,0,0,5
+Variant I,Base (80/20),DP,False,3,retention_s0,100,0,5
+Variant I,Base (80/20),DP,False,3,retention_s1,100,0,5
+Variant I,Base (80/20),DP,False,3,unfairness,0.0010135071291503372,3.7958033360571099e-07,5
+Variant I,Base (80/20),DP,False,4,approval_rate_difference,1.1999999999999966,2.0039960079800552,5
+Variant I,Base (80/20),DP,False,4,retention_disparity,0,0,5
+Variant I,Base (80/20),DP,False,4,retention_s0,100,0,5
+Variant I,Base (80/20),DP,False,4,retention_s1,100,0,5
+Variant I,Base (80/20),DP,False,4,unfairness,0.0010136344159846322,4.5093318657388445e-07,5
+Variant I,Base (80/20),DP,False,5,approval_rate_difference,0.91999999999999849,2.1339165869358601,5
+Variant I,Base (80/20),DP,False,5,retention_disparity,0,0,5
+Variant I,Base (80/20),DP,False,5,retention_s0,100,0,5
+Variant I,Base (80/20),DP,False,5,retention_s1,100,0,5
+Variant I,Base (80/20),DP,False,5,unfairness,0.0010137289866272159,4.1874074509873488e-07,5
+Variant I,Base (80/20),DP,True,1,approval_rate_difference,-0.87999999999999867,2.869425029513752,5
+Variant I,Base (80/20),DP,True,1,retention_disparity,0,0,5
+Variant I,Base (80/20),DP,True,1,retention_s0,100,0,5
+Variant I,Base (80/20),DP,True,1,retention_s1,100,0,5
+Variant I,Base (80/20),DP,True,1,unfairness,0.001013248346873219,0,5
+Variant I,Base (80/20),DP,True,2,approval_rate_difference,1.7032374950302565,2.1932856158092959,5
+Variant I,Base (80/20),DP,True,2,retention_disparity,2.6799999999999984,2.7058455240460457,5
+Variant I,Base (80/20),DP,True,2,retention_s0,85.439999999999998,2.621144788064941,5
+Variant I,Base (80/20),DP,True,2,retention_s1,86.52000000000001,1.7417232845661816,5
+Variant I,Base (80/20),DP,True,2,unfairness,0.017953837588535304,0.019324927182328342,5
+Variant I,Base (80/20),DP,True,3,approval_rate_difference,0.33112702093919716,2.9233457378676029,5
+Variant I,Base (80/20),DP,True,3,retention_disparity,3.6000000000000001,2.1316660151158735,5
+Variant I,Base (80/20),DP,True,3,retention_s0,70.079999999999998,1.8659046063504956,5
+Variant I,Base (80/20),DP,True,3,retention_s1,69.679999999999993,2.3718347328597726,5
+Variant I,Base (80/20),DP,True,3,unfairness,0.025666182607118105,0.014714890630205349,5
+Variant I,Base (80/20),DP,True,4,approval_rate_difference,1.5684131610441998,2.2395736963663322,5
+Variant I,Base (80/20),DP,True,4,retention_disparity,2.7200000000000015,1.6029971927611089,5
+Variant I,Base (80/20),DP,True,4,retention_s0,58.960000000000001,2.0876781361119803,5
+Variant I,Base (80/20),DP,True,4,retention_s1,58.640000000000001,1.7951044537853524,5
+Variant I,Base (80/20),DP,True,4,unfairness,0.01892264588013266,0.012636872857724135,5
+Variant I,Base (80/20),DP,True,5,approval_rate_difference,1.7972663122591737,2.7643957294403396,5
+Variant I,Base (80/20),DP,True,5,retention_disparity,3.3200000000000029,2.1451340284467095,5
+Variant I,Base (80/20),DP,True,5,retention_s0,50.439999999999998,2.4046621384302638,5
+Variant I,Base (80/20),DP,True,5,retention_s1,49.519999999999996,2.6003076741032038,5
+Variant I,Base (80/20),DP,True,5,unfairness,0.022850154431037096,0.015155555619633684,5
+Variant I,Base (80/20),EO,False,1,approval_rate_difference,-0.88000000000000078,2.714700720153147,5
+Variant I,Base (80/20),EO,False,1,retention_disparity,0,0,5
+Variant I,Base (80/20),EO,False,1,retention_s0,100,0,5
+Variant I,Base (80/20),EO,False,1,retention_s1,100,0,5
+Variant I,Base (80/20),EO,False,1,unfairness,0.0005539046922832247,0,5
+Variant I,Base (80/20),EO,False,2,approval_rate_difference,1.7199999999999995,2.3953287874527809,5
+Variant I,Base (80/20),EO,False,2,retention_disparity,0,0,5
+Variant I,Base (80/20),EO,False,2,retention_s0,100,0,5
+Variant I,Base (80/20),EO,False,2,retention_s1,100,0,5
+Variant I,Base (80/20),EO,False,2,unfairness,0.00055393266276839717,6.5133991475327097e-08,5
+Variant I,Base (80/20),EO,False,3,approval_rate_difference,0.12000000000000011,1.8573098825990257,5
+Variant I,Base (80/20),EO,False,3,retention_disparity,0,0,5
+Variant I,Base (80/20),EO,False,3,retention_s0,100,0,5
+Variant I,Base (80/20),EO,False,3,retention_s1,100,0,5
+Variant I,Base (80/20),EO,False,3,unfairness,0.00055397507877350536,1.0107939197762696e-07,5
+Variant I,Base (80/20),EO,False,4,approval_rate_difference,0.76000000000000068,1.9158288023724834,5
+Variant I,Base (80/20),EO,False,4,retention_disparity,0,0,5
+Variant I,Base (80/20),EO,False,4,retention_s0,100,0,5
+Variant I,Base (80/20),EO,False,4,retention_s1,100,0,5
+Variant I,Base (80/20),EO,False,4,unfairness,0.00055397993972710062,8.8606673461732482e-08,5
+Variant I,Base (80/20),EO,False,5,approval_rate_difference,1.3200000000000012,1.4675149062275326,5
+Variant I,Base (80/20),EO,False,5,retention_disparity,0,0,5
+Variant I,Base (80/20),EO,False,5,retention_s0,100,0,5
+Variant I,Base (80/20),EO,False,5,retention_s1,100,0,5
+Variant I,Base (80/20),EO,False,5,unfairness,0.0005539982869579241,7.5932268954030004e-08,5
+Variant I,Base (80/20),EO,True,1,approval_rate_difference,-0.88000000000000078,2.714700720153147,5
+Variant I,Base (80/20),EO,True,1,retention_disparity,0,0,5
+Variant I,Base (80/20),EO,True,1,retention_s0,100,0,5
+Variant I,Base (80/20),EO,True,1,retention_s1,100,0,5
+Variant I,Base (80/20),EO,True,1,unfairness,0.0005539046922832247,0,5
+Variant I,Base (80/20),EO,True,2,approval_rate_difference,1.0754542606767248,2.8273586805982012,5
+Variant I,Base (80/20),EO,True,2,retention_disparity,3.5200000000000045,3.2950872522590329,5
+Variant I,Base (80/20),EO,True,2,retention_s0,84.159999999999997,3.4255510505610611,5
+Variant I,Base (80/20),EO,True,2,retention_s1,85.519999999999996,1.531535177526137,5
+Variant I,Base (80/20),EO,True,2,unfairness,0.023194339894347028,0.02100845509653643,5
+Variant I,Base (80/20),EO,True,3,approval_rate_difference,-1.0910960934858369,2.8728409675244744,5
+Variant I,Base (80/20),EO,True,3,retention_disparity,4.3199999999999976,2.7643444069073588,5
+Variant I,Base (80/20),EO,True,3,retention_s0,66.719999999999999,2.9572960622839233,5
+Variant I,Base (80/20),EO,True,3,retention_s1,66.960000000000008,2.5780612870915207,5
+Variant I,Base (80/20),EO,True,3,unfairness,0.028042020675481748,0.018820696257010945,5
+Variant I,Base (80/20),EO,True,4,approval_rate_difference,1.6538682355641889,2.2660561768602236,5
+Variant I,Base (80/20),EO,True,4,retention_disparity,2.7999999999999945,2.8649607327151987,5
+Variant I,Base (80/20),EO,True,4,retention_s0,54.479999999999997,2.8357714999625738,5
+Variant I,Base (80/20),EO,True,4,retention_s1,56.079999999999998,1.2812493902437534,5
+Variant I,Base (80/20),EO,True,4,unfairness,0.017871893111777004,0.018318250002447935,5
+Variant I,Base (80/20),EO,True,5,approval_rate_difference,2.9016222549539927,3.18662208614843,5
+Variant I,Base (80/20),EO,True,5,retention_disparity,3.1599999999999993,1.0836973747315262,5
+Variant I,Base (80/20),EO,True,5,retention_s0,45.280000000000001,2.2112439937736403,5
+Variant I,Base (80/20),EO,True,5,retention_s1,46.68,1.7417232845661792,5
+Variant I,Base (80/20),EO,True,5,unfairness,0.020407175628809459,0.0058337277825488681,5
+Variant I,Base (80/20),LCF-active,False,1,approval_rate_difference,12.32,0.68818602136341078,5
+Variant I,Base (80/20),LCF-active,False,1,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-active,False,1,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-active,False,1,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-active,False,1,unfairness,0.0029077841043472219,0,5
+Variant I,Base (80/20),LCF-active,False,2,approval_rate_difference,8.0399999999999956,0.83330666623998673,5
+Variant I,Base (80/20),LCF-active,False,2,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-active,False,2,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-active,False,2,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-active,False,2,unfairness,0.0026100353479385553,0.00043256246561387715,5
+Variant I,Base (80/20),LCF-active,False,3,approval_rate_difference,4.6000000000000041,0.68117545463705664,5
+Variant I,Base (80/20),LCF-active,False,3,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-active,False,3,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-active,False,3,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-active,False,3,unfairness,0.0012824976921081532,0.00037966378876958358,5
+Variant I,Base (80/20),LCF-active,False,4,approval_rate_difference,2.5600000000000023,0.6621178142898746,5
+Variant I,Base (80/20),LCF-active,False,4,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-active,False,4,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-active,False,4,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-active,False,4,unfairness,0.00049633252620697734,0.00027244055589642496,5
+Variant I,Base (80/20),LCF-active,False,5,approval_rate_difference,1.7600000000000016,0.46303347611160944,5
+Variant I,Base (80/20),LCF-active,False,5,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-active,False,5,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-active,False,5,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-active,False,5,unfairness,0.00017488021850586843,5.0448005204475769e-05,5
+Variant I,Base (80/20),LCF-active,True,1,approval_rate_difference,12.32,0.68818602136341078,5
+Variant I,Base (80/20),LCF-active,True,1,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-active,True,1,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-active,True,1,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-active,True,1,unfairness,0.0029077841043472219,0,5
+Variant I,Base (80/20),LCF-active,True,2,approval_rate_difference,6.3986737818218362,1.0813888670583065,5
+Variant I,Base (80/20),LCF-active,True,2,retention_disparity,9.7599999999999962,1.1689311356961982,5
+Variant I,Base (80/20),LCF-active,True,2,retention_s0,99.799999999999997,0.40000000000000002,5
+Variant I,Base (80/20),LCF-active,True,2,retention_s1,90.040000000000006,1.3047605144240095,5
+Variant I,Base (80/20),LCF-active,True,2,unfairness,0.005664216566085822,0.0044477785263542366,5
+Variant I,Base (80/20),LCF-active,True,3,approval_rate_difference,2.9469012522187388,0.40370816714433022,5
+Variant I,Base (80/20),LCF-active,True,3,retention_disparity,12.319999999999999,1.0322790320451127,5
+Variant I,Base (80/20),LCF-active,True,3,retention_s0,99.719999999999999,0.37094473981982795,5
+Variant I,Base (80/20),LCF-active,True,3,retention_s1,87.400000000000006,1.1593101396951524,5
+Variant I,Base (80/20),LCF-active,True,3,unfairness,0.0061625628709793155,0.0056475353850462817,5
+Variant I,Base (80/20),LCF-active,True,4,approval_rate_difference,0.95721414762241608,0.58542952231879863,5
+Variant I,Base (80/20),LCF-active,True,4,retention_disparity,13.439999999999998,1.1128342194594865,5
+Variant I,Base (80/20),LCF-active,True,4,retention_s0,99.679999999999993,0.34871191548325325,5
+Variant I,Base (80/20),LCF-active,True,4,retention_s1,86.239999999999995,1.1825396399275592,5
+Variant I,Base (80/20),LCF-active,True,4,unfairness,0.0053874949455261275,0.0047486404703428178,5
+Variant I,Base (80/20),LCF-active,True,5,approval_rate_difference,0.47624712968844518,0.20004672797080908,5
+Variant I,Base (80/20),LCF-active,True,5,retention_disparity,13.559999999999999,0.99919967974374391,5
+Variant I,Base (80/20),LCF-active,True,5,retention_s0,99.679999999999993,0.34871191548325325,5
+Variant I,Base (80/20),LCF-active,True,5,retention_s1,86.120000000000005,1.0925200226998124,5
+Variant I,Base (80/20),LCF-active,True,5,unfairness,0.0052521518707275613,0.0046998033309961842,5
+Variant I,Base (80/20),LCF-full,False,1,approval_rate_difference,12.440000000000001,0.78383671769061736,5
+Variant I,Base (80/20),LCF-full,False,1,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-full,False,1,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-full,False,1,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-full,False,1,unfairness,0.0029729660749435727,0,5
+Variant I,Base (80/20),LCF-full,False,2,approval_rate_difference,8.0799999999999947,0.77562877718661327,5
+Variant I,Base (80/20),LCF-full,False,2,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-full,False,2,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-full,False,2,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-full,False,2,unfairness,0.0026556313514709551,0.00043680379142295125,5
+Variant I,Base (80/20),LCF-full,False,3,approval_rate_difference,4.6400000000000041,0.6621178142898746,5
+Variant I,Base (80/20),LCF-full,False,3,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-full,False,3,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-full,False,3,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-full,False,3,unfairness,0.001309747600555422,0.00038404493037827198,5
+Variant I,Base (80/20),LCF-full,False,4,approval_rate_difference,2.6000000000000023,0.71554175279993337,5
+Variant I,Base (80/20),LCF-full,False,4,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-full,False,4,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-full,False,4,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-full,False,4,unfairness,0.00050078542232512291,0.00028581908203161163,5
+Variant I,Base (80/20),LCF-full,False,5,approval_rate_difference,1.8400000000000016,0.55713553108736524,5
+Variant I,Base (80/20),LCF-full,False,5,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-full,False,5,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-full,False,5,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-full,False,5,unfairness,0.00017666916847227653,5.5285619429688217e-05,5
+Variant I,Base (80/20),LCF-full,True,1,approval_rate_difference,12.440000000000001,0.78383671769061736,5
+Variant I,Base (80/20),LCF-full,True,1,retention_disparity,0,0,5
+Variant I,Base (80/20),LCF-full,True,1,retention_s0,100,0,5
+Variant I,Base (80/20),LCF-full,True,1,retention_s1,100,0,5
+Variant I,Base (80/20),LCF-full,True,1,unfairness,0.0029729660749435727,0,5
+Variant I,Base (80/20),LCF-full,True,2,approval_rate_difference,6.4018259181568169,1.0807518669160256,5
+Variant I,Base (80/20),LCF-full,True,2,retention_disparity,9.7999999999999972,1.186591757935308,5
+Variant I,Base (80/20),LCF-full,True,2,retention_s0,99.799999999999997,0.40000000000000002,5
+Variant I,Base (80/20),LCF-full,True,2,retention_s1,90,1.344618905117732,5
+Variant I,Base (80/20),LCF-full,True,2,unfairness,0.0057072890520095901,0.0044462097865129611,5
+Variant I,Base (80/20),LCF-full,True,3,approval_rate_difference,3.0010041637419249,0.3741186802173555,5
+Variant I,Base (80/20),LCF-full,True,3,retention_disparity,12.359999999999999,1.0537551897855575,5
+Variant I,Base (80/20),LCF-full,True,3,retention_s0,99.719999999999999,0.37094473981982795,5
+Variant I,Base (80/20),LCF-full,True,3,retention_s1,87.359999999999999,1.2026637102698308,5
+Variant I,Base (80/20),LCF-full,True,3,unfairness,0.006172671699523913,0.0056569461551098958,5
+Variant I,Base (80/20),LCF-full,True,4,approval_rate_difference,1.0049357714832285,0.62841437092970354,5
+Variant I,Base (80/20),LCF-full,True,4,retention_disparity,13.479999999999999,1.1285388783732728,5
+Variant I,Base (80/20),LCF-full,True,4,retention_s0,99.679999999999993,0.34871191548325325,5
+Variant I,Base (80/20),LCF-full,True,4,retention_s1,86.200000000000003,1.2198360545581535,5
+Variant I,Base (80/20),LCF-full,True,4,unfairness,0.0053827615976333783,0.0047381054266373932,5
+Variant I,Base (80/20),LCF-full,True,5,approval_rate_difference,0.56972691587748203,0.30752653138409042,5
+Variant I,Base (80/20),LCF-full,True,5,retention_disparity,13.6,1.0198039027185575,5
+Variant I,Base (80/20),LCF-full,True,5,retention_s0,99.679999999999993,0.34871191548325325,5
+Variant I,Base (80/20),LCF-full,True,5,retention_s1,86.079999999999998,1.1356055653262711,5
+Variant I,Base (80/20),LCF-full,True,5,unfairness,0.005250555896759046,0.0046960231374302162,5
+Variant I,Erdős–Rényi,Baseline,False,1,approval_rate_difference,0.64000000000000057,0.32000000000000028,5
+Variant I,Erdős–Rényi,Baseline,False,1,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,Baseline,False,1,retention_s0,100,0,5
+Variant I,Erdős–Rényi,Baseline,False,1,retention_s1,100,0,5
+Variant I,Erdős–Rényi,Baseline,False,1,unfairness,0.0029258707788977212,0,5
+Variant I,Erdős–Rényi,Baseline,False,2,approval_rate_difference,0.48000000000000043,0.41182520563948039,5
+Variant I,Erdős–Rényi,Baseline,False,2,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,Baseline,False,2,retention_s0,100,0,5
+Variant I,Erdős–Rényi,Baseline,False,2,retention_s1,100,0,5
+Variant I,Erdős–Rényi,Baseline,False,2,unfairness,0.0027002325640438142,1.2648734032578708e-05,5
+Variant I,Erdős–Rényi,Baseline,False,3,approval_rate_difference,0.52000000000000046,0.34871191548325414,5
+Variant I,Erdős–Rényi,Baseline,False,3,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,Baseline,False,3,retention_s0,100,0,5
+Variant I,Erdős–Rényi,Baseline,False,3,retention_s1,100,0,5
+Variant I,Erdős–Rényi,Baseline,False,3,unfairness,0.0024234126989801652,2.6343444898834199e-05,5
+Variant I,Erdős–Rényi,Baseline,False,4,approval_rate_difference,0.36000000000000032,0.38781438859330664,5
+Variant I,Erdős–Rényi,Baseline,False,4,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,Baseline,False,4,retention_s0,100,0,5
+Variant I,Erdős–Rényi,Baseline,False,4,retention_s1,100,0,5
+Variant I,Erdős–Rényi,Baseline,False,4,unfairness,0.0021809421481752802,4.5227087272913755e-05,5
+Variant I,Erdős–Rényi,Baseline,False,5,approval_rate_difference,0.24000000000000021,0.79397732965116907,5
+Variant I,Erdős–Rényi,Baseline,False,5,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,Baseline,False,5,retention_s0,100,0,5
+Variant I,Erdős–Rényi,Baseline,False,5,retention_s1,100,0,5
+Variant I,Erdős–Rényi,Baseline,False,5,unfairness,0.0019476451839137709,4.9361877744329304e-05,5
+Variant I,Erdős–Rényi,Baseline,True,1,approval_rate_difference,0.64000000000000057,0.32000000000000028,5
+Variant I,Erdős–Rényi,Baseline,True,1,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,Baseline,True,1,retention_s0,100,0,5
+Variant I,Erdős–Rényi,Baseline,True,1,retention_s1,100,0,5
+Variant I,Erdős–Rényi,Baseline,True,1,unfairness,0.0029258707788977212,0,5
+Variant I,Erdős–Rényi,Baseline,True,2,approval_rate_difference,0.52143930560953233,0.39124220746257982,5
+Variant I,Erdős–Rényi,Baseline,True,2,retention_disparity,0.24000000000000057,0.19595917942265473,5
+Variant I,Erdős–Rényi,Baseline,True,2,retention_s0,99.840000000000003,0.31999999999999884,5
+Variant I,Erdős–Rényi,Baseline,True,2,retention_s1,99.759999999999991,0.19595917942265703,5
+Variant I,Erdős–Rényi,Baseline,True,2,unfairness,0.0039743342939589478,0.0022052333800442179,5
+Variant I,Erdős–Rényi,Baseline,True,3,approval_rate_difference,0.52112318683148695,0.34833878357727693,5
+Variant I,Erdős–Rényi,Baseline,True,3,retention_disparity,0.28000000000000397,0.097979589711328516,5
+Variant I,Erdős–Rényi,Baseline,True,3,retention_s0,99.640000000000001,0.34409301068170467,5
+Variant I,Erdős–Rényi,Baseline,True,3,retention_s1,99.599999999999994,0.25298221281346944,5
+Variant I,Erdős–Rényi,Baseline,True,3,unfairness,0.0033911401173928545,0.0021606919615195837,5
+Variant I,Erdős–Rényi,Baseline,True,4,approval_rate_difference,0.36305834681454874,0.3901693900268684,5
+Variant I,Erdős–Rényi,Baseline,True,4,retention_disparity,0.20000000000000284,0.12649110640673697,5
+Variant I,Erdős–Rényi,Baseline,True,4,retention_s0,99.560000000000002,0.344093010681704,5
+Variant I,Erdős–Rényi,Baseline,True,4,retention_s1,99.52000000000001,0.20396078054370817,5
+Variant I,Erdős–Rényi,Baseline,True,4,unfairness,0.0025674133628629026,0.002272695958780302,5
+Variant I,Erdős–Rényi,Baseline,True,5,approval_rate_difference,0.23974881729040165,0.79780157886131342,5
+Variant I,Erdős–Rényi,Baseline,True,5,retention_disparity,0.20000000000000284,0.12649110640673697,5
+Variant I,Erdős–Rényi,Baseline,True,5,retention_s0,99.52000000000001,0.32496153618543744,5
+Variant I,Erdős–Rényi,Baseline,True,5,retention_s1,99.47999999999999,0.23999999999999677,5
+Variant I,Erdős–Rényi,Baseline,True,5,unfairness,0.0023657215914657526,0.0022504134255104816,5
+Variant I,Erdős–Rényi,DP,False,1,approval_rate_difference,-0.87999999999999867,2.869425029513752,5
+Variant I,Erdős–Rényi,DP,False,1,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,DP,False,1,retention_s0,100,0,5
+Variant I,Erdős–Rényi,DP,False,1,retention_s1,100,0,5
+Variant I,Erdős–Rényi,DP,False,1,unfairness,0.0010081518437671244,0,5
+Variant I,Erdős–Rényi,DP,False,2,approval_rate_difference,1.839999999999997,2.1666564102321328,5
+Variant I,Erdős–Rényi,DP,False,2,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,DP,False,2,retention_s0,100,0,5
+Variant I,Erdős–Rényi,DP,False,2,retention_s1,100,0,5
+Variant I,Erdős–Rényi,DP,False,2,unfairness,0.001008260349552681,2.4432481341412679e-07,5
+Variant I,Erdős–Rényi,DP,False,3,approval_rate_difference,1.399999999999999,1.1798304963002111,5
+Variant I,Erdős–Rényi,DP,False,3,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,DP,False,3,retention_s0,100,0,5
+Variant I,Erdős–Rényi,DP,False,3,retention_s1,100,0,5
+Variant I,Erdős–Rényi,DP,False,3,unfairness,0.0010084083081521422,3.761447552264529e-07,5
+Variant I,Erdős–Rényi,DP,False,4,approval_rate_difference,1.2399999999999967,1.9241621553289103,5
+Variant I,Erdős–Rényi,DP,False,4,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,DP,False,4,retention_s0,100,0,5
+Variant I,Erdős–Rényi,DP,False,4,retention_s1,100,0,5
+Variant I,Erdős–Rényi,DP,False,4,unfairness,0.0010085344563766307,4.4685085294138535e-07,5
+Variant I,Erdős–Rényi,DP,False,5,approval_rate_difference,0.91999999999999849,2.1339165869358601,5
+Variant I,Erdős–Rényi,DP,False,5,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,DP,False,5,retention_s0,100,0,5
+Variant I,Erdős–Rényi,DP,False,5,retention_s1,100,0,5
+Variant I,Erdős–Rényi,DP,False,5,unfairness,0.0010086317697486802,4.1544277214105382e-07,5
+Variant I,Erdős–Rényi,DP,True,1,approval_rate_difference,-0.87999999999999867,2.869425029513752,5
+Variant I,Erdős–Rényi,DP,True,1,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,DP,True,1,retention_s0,100,0,5
+Variant I,Erdős–Rényi,DP,True,1,retention_s1,100,0,5
+Variant I,Erdős–Rényi,DP,True,1,unfairness,0.0010081518437671244,0,5
+Variant I,Erdős–Rényi,DP,True,2,approval_rate_difference,1.288879328507091,2.4274922320633823,5
+Variant I,Erdős–Rényi,DP,True,2,retention_disparity,3.1600000000000024,2.7753198013922598,5
+Variant I,Erdős–Rényi,DP,True,2,retention_s0,85.359999999999999,2.8267295590487591,5
+Variant I,Erdős–Rényi,DP,True,2,retention_s1,86.760000000000005,1.5969971822141724,5
+Variant I,Erdős–Rényi,DP,True,2,unfairness,0.021958107308484555,0.019206504572920936,5
+Variant I,Erdős–Rényi,DP,True,3,approval_rate_difference,0.43274067441429809,2.3816044027611825,5
+Variant I,Erdős–Rényi,DP,True,3,retention_disparity,4.2800000000000011,1.9374209661299702,5
+Variant I,Erdős–Rényi,DP,True,3,retention_s0,71.920000000000002,2.9627014699425933,5
+Variant I,Erdős–Rényi,DP,True,3,retention_s1,72.280000000000001,1.7825823964125744,5
+Variant I,Erdős–Rényi,DP,True,3,unfairness,0.031531429529229882,0.013033566936046036,5
+Variant I,Erdős–Rényi,DP,True,4,approval_rate_difference,1.209675569771409,3.660608603629222,5
+Variant I,Erdős–Rényi,DP,True,4,retention_disparity,2.5599999999999996,1.6704490414256894,5
+Variant I,Erdős–Rényi,DP,True,4,retention_s0,61.520000000000003,1.933287355775132,5
+Variant I,Erdős–Rényi,DP,True,4,retention_s1,61.760000000000005,1.4772948250095517,5
+Variant I,Erdős–Rényi,DP,True,4,unfairness,0.019207418810019427,0.009489055974573727,5
+Variant I,Erdős–Rényi,DP,True,5,approval_rate_difference,0.32133497061309202,3.2505245679821511,5
+Variant I,Erdős–Rényi,DP,True,5,retention_disparity,2.8400000000000021,1.0983624174196776,5
+Variant I,Erdős–Rényi,DP,True,5,retention_s0,52.760000000000005,1.1689311356961969,5
+Variant I,Erdős–Rényi,DP,True,5,retention_s1,52.799999999999997,2.4265201420964981,5
+Variant I,Erdős–Rényi,DP,True,5,unfairness,0.020616129693212637,0.0093810982388840575,5
+Variant I,Erdős–Rényi,EO,False,1,approval_rate_difference,-0.88000000000000078,2.714700720153147,5
+Variant I,Erdős–Rényi,EO,False,1,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,EO,False,1,retention_s0,100,0,5
+Variant I,Erdős–Rényi,EO,False,1,retention_s1,100,0,5
+Variant I,Erdős–Rényi,EO,False,1,unfairness,0.00055108946004123194,0,5
+Variant I,Erdős–Rényi,EO,False,2,approval_rate_difference,1.7199999999999995,2.3953287874527809,5
+Variant I,Erdős–Rényi,EO,False,2,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,EO,False,2,retention_s0,100,0,5
+Variant I,Erdős–Rényi,EO,False,2,retention_s1,100,0,5
+Variant I,Erdős–Rényi,EO,False,2,unfairness,0.00055111717358944377,6.4536333347633273e-08,5
+Variant I,Erdős–Rényi,EO,False,3,approval_rate_difference,0.12000000000000011,1.8573098825990257,5
+Variant I,Erdős–Rényi,EO,False,3,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,EO,False,3,retention_s0,100,0,5
+Variant I,Erdős–Rényi,EO,False,3,retention_s1,100,0,5
+Variant I,Erdős–Rényi,EO,False,3,unfairness,0.00055115920010688772,1.0015191842635952e-07,5
+Variant I,Erdős–Rényi,EO,False,4,approval_rate_difference,0.76000000000000068,1.9158288023724834,5
+Variant I,Erdős–Rényi,EO,False,4,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,EO,False,4,retention_s0,100,0,5
+Variant I,Erdős–Rényi,EO,False,4,retention_s1,100,0,5
+Variant I,Erdős–Rényi,EO,False,4,unfairness,0.00055116401614254686,8.7793670523013483e-08,5
+Variant I,Erdős–Rényi,EO,False,5,approval_rate_difference,1.3200000000000012,1.4675149062275326,5
+Variant I,Erdős–Rényi,EO,False,5,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,EO,False,5,retention_s0,100,0,5
+Variant I,Erdős–Rényi,EO,False,5,retention_s1,100,0,5
+Variant I,Erdős–Rényi,EO,False,5,unfairness,0.00055118219467875651,7.5235504957560755e-08,5
+Variant I,Erdős–Rényi,EO,True,1,approval_rate_difference,-0.88000000000000078,2.714700720153147,5
+Variant I,Erdős–Rényi,EO,True,1,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,EO,True,1,retention_s0,100,0,5
+Variant I,Erdős–Rényi,EO,True,1,retention_s1,100,0,5
+Variant I,Erdős–Rényi,EO,True,1,unfairness,0.00055108946004123194,0,5
+Variant I,Erdős–Rényi,EO,True,2,approval_rate_difference,0.93171461804230749,2.9055142822699711,5
+Variant I,Erdős–Rényi,EO,True,2,retention_disparity,2.2799999999999985,2.8187940683916599,5
+Variant I,Erdős–Rényi,EO,True,2,retention_s0,83.120000000000005,2.8102668912400479,5
+Variant I,Erdős–Rényi,EO,True,2,retention_s1,84.11999999999999,1.2302845199383796,5
+Variant I,Erdős–Rényi,EO,True,2,unfairness,0.014971848525112862,0.017913003514334315,5
+Variant I,Erdős–Rényi,EO,True,3,approval_rate_difference,-0.69478570041697996,3.2042717295094749,5
+Variant I,Erdős–Rényi,EO,True,3,retention_disparity,3.839999999999999,1.4221111067704906,5
+Variant I,Erdős–Rényi,EO,True,3,retention_s0,67.239999999999995,2.540551121312066,5
+Variant I,Erdős–Rényi,EO,True,3,retention_s1,67.560000000000002,2.364402672981059,5
+Variant I,Erdős–Rényi,EO,True,3,unfairness,0.024066961613873082,0.011414745803125462,5
+Variant I,Erdős–Rényi,EO,True,4,approval_rate_difference,0.71657686285789823,3.0879583343214594,5
+Variant I,Erdős–Rényi,EO,True,4,retention_disparity,1.759999999999998,1.6942254867637858,5
+Variant I,Erdős–Rényi,EO,True,4,retention_s0,56.160000000000004,1.5460918472070129,5
+Variant I,Erdős–Rényi,EO,True,4,retention_s1,56.320000000000007,1.9579581200832645,5
+Variant I,Erdős–Rényi,EO,True,4,unfairness,0.011736970484301468,0.011266335303623204,5
+Variant I,Erdős–Rényi,EO,True,5,approval_rate_difference,1.9849694528552142,3.1640138126067825,5
+Variant I,Erdős–Rényi,EO,True,5,retention_disparity,1.9600000000000022,1.5094369811290562,5
+Variant I,Erdős–Rényi,EO,True,5,retention_s0,46.960000000000001,0.92433760066330706,5
+Variant I,Erdős–Rényi,EO,True,5,retention_s1,47.079999999999998,2.0730653631759894,5
+Variant I,Erdős–Rényi,EO,True,5,unfairness,0.014092528992340859,0.0099022651872514751,5
+Variant I,Erdős–Rényi,LCF-active,False,1,approval_rate_difference,12.359999999999999,0.67409198185410935,5
+Variant I,Erdős–Rényi,LCF-active,False,1,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-active,False,1,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-active,False,1,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-active,False,1,unfairness,0.0029070339202881268,0,5
+Variant I,Erdős–Rényi,LCF-active,False,2,approval_rate_difference,8.0399999999999956,0.83330666623998673,5
+Variant I,Erdős–Rényi,LCF-active,False,2,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-active,False,2,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-active,False,2,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-active,False,2,unfairness,0.0026078983545303469,0.00042734034399876476,5
+Variant I,Erdős–Rényi,LCF-active,False,3,approval_rate_difference,4.6000000000000041,0.68117545463705664,5
+Variant I,Erdős–Rényi,LCF-active,False,3,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-active,False,3,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-active,False,3,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-active,False,3,unfairness,0.0012807187080383421,0.00038046074054027634,5
+Variant I,Erdős–Rényi,LCF-active,False,4,approval_rate_difference,2.5600000000000023,0.6621178142898746,5
+Variant I,Erdős–Rényi,LCF-active,False,4,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-active,False,4,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-active,False,4,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-active,False,4,unfairness,0.00049533038139344394,0.00027166479802014348,5
+Variant I,Erdős–Rényi,LCF-active,False,5,approval_rate_difference,1.7600000000000016,0.46303347611160944,5
+Variant I,Erdős–Rényi,LCF-active,False,5,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-active,False,5,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-active,False,5,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-active,False,5,unfairness,0.00017437615394593208,5.046179103330024e-05,5
+Variant I,Erdős–Rényi,LCF-active,True,1,approval_rate_difference,12.359999999999999,0.67409198185410935,5
+Variant I,Erdős–Rényi,LCF-active,True,1,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-active,True,1,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-active,True,1,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-active,True,1,unfairness,0.0029070339202881268,0,5
+Variant I,Erdős–Rényi,LCF-active,True,2,approval_rate_difference,6.9588085650879474,0.86548392513577643,5
+Variant I,Erdős–Rényi,LCF-active,True,2,retention_disparity,6.9999999999999947,0.70427267446635911,5
+Variant I,Erdős–Rényi,LCF-active,True,2,retention_s0,99.879999999999995,0.097979589711328516,5
+Variant I,Erdős–Rényi,LCF-active,True,2,retention_s1,92.88000000000001,0.69971422738143474,5
+Variant I,Erdős–Rényi,LCF-active,True,2,unfairness,0.0049477717876434289,0.0021012694566164541,5
+Variant I,Erdős–Rényi,LCF-active,True,3,approval_rate_difference,2.9122219153550333,0.28564978084566661,5
+Variant I,Erdős–Rényi,LCF-active,True,3,retention_disparity,9.9599999999999937,0.89799777282574578,5
+Variant I,Erdős–Rényi,LCF-active,True,3,retention_s0,99.640000000000001,0.19595917942265356,5
+Variant I,Erdős–Rényi,LCF-active,True,3,retention_s1,89.680000000000007,0.92606695222321689,5
+Variant I,Erdős–Rényi,LCF-active,True,3,unfairness,0.0043062762737274161,0.0017105343431178454,5
+Variant I,Erdős–Rényi,LCF-active,True,4,approval_rate_difference,1.1071721997241624,0.42578228331010098,5
+Variant I,Erdős–Rényi,LCF-active,True,4,retention_disparity,10.879999999999999,0.87269696917086237,5
+Variant I,Erdős–Rényi,LCF-active,True,4,retention_s0,99.599999999999994,0.12649110640673247,5
+Variant I,Erdős–Rényi,LCF-active,True,4,retention_s1,88.719999999999999,0.91738759529437996,5
+Variant I,Erdős–Rényi,LCF-active,True,4,unfairness,0.003695248913764959,0.00071847100245228657,5
+Variant I,Erdős–Rényi,LCF-active,True,5,approval_rate_difference,0.68930612168975447,0.20172297425464894,5
+Variant I,Erdős–Rényi,LCF-active,True,5,retention_disparity,11.079999999999993,0.82559069762201664,5
+Variant I,Erdős–Rényi,LCF-active,True,5,retention_s0,99.599999999999994,0.12649110640673247,5
+Variant I,Erdős–Rényi,LCF-active,True,5,retention_s1,88.52000000000001,0.86348132579691816,5
+Variant I,Erdős–Rényi,LCF-active,True,5,unfairness,0.0036245556592941152,0.00071257051601160209,5
+Variant I,Erdős–Rényi,LCF-full,False,1,approval_rate_difference,12.52,0.7222188034107121,5
+Variant I,Erdős–Rényi,LCF-full,False,1,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-full,False,1,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-full,False,1,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-full,False,1,unfairness,0.0033805735111236412,0,5
+Variant I,Erdős–Rényi,LCF-full,False,2,approval_rate_difference,8.9199999999999964,0.68818602136341078,5
+Variant I,Erdős–Rényi,LCF-full,False,2,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-full,False,2,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-full,False,2,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-full,False,2,unfairness,0.0029893042802810578,0.00039388643104834597,5
+Variant I,Erdős–Rényi,LCF-full,False,3,approval_rate_difference,5.6000000000000032,0.93808315196468317,5
+Variant I,Erdős–Rényi,LCF-full,False,3,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-full,False,3,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-full,False,3,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-full,False,3,unfairness,0.0015533825635909882,0.00042280179285714159,5
+Variant I,Erdős–Rényi,LCF-full,False,4,approval_rate_difference,2.9600000000000026,0.74188947963965701,5
+Variant I,Erdős–Rényi,LCF-full,False,4,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-full,False,4,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-full,False,4,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-full,False,4,unfairness,0.00075613751411438555,0.00034324388272487152,5
+Variant I,Erdős–Rényi,LCF-full,False,5,approval_rate_difference,2.0400000000000018,0.42708313008125287,5
+Variant I,Erdős–Rényi,LCF-full,False,5,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-full,False,5,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-full,False,5,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-full,False,5,unfairness,0.00026327514648436521,0.00011222462437048355,5
+Variant I,Erdős–Rényi,LCF-full,True,1,approval_rate_difference,12.52,0.7222188034107121,5
+Variant I,Erdős–Rényi,LCF-full,True,1,retention_disparity,0,0,5
+Variant I,Erdős–Rényi,LCF-full,True,1,retention_s0,100,0,5
+Variant I,Erdős–Rényi,LCF-full,True,1,retention_s1,100,0,5
+Variant I,Erdős–Rényi,LCF-full,True,1,unfairness,0.0033805735111236412,0,5
+Variant I,Erdős–Rényi,LCF-full,True,2,approval_rate_difference,7.9322641168476142,0.85043821238937245,5
+Variant I,Erdős–Rényi,LCF-full,True,2,retention_disparity,7.599999999999997,0.7155417527999326,5
+Variant I,Erdős–Rényi,LCF-full,True,2,retention_s0,99.879999999999995,0.097979589711328516,5
+Variant I,Erdős–Rényi,LCF-full,True,2,retention_s1,92.280000000000001,0.73321211119293428,5
+Variant I,Erdős–Rényi,LCF-full,True,2,unfairness,0.0053190365076065229,0.0028555559342563863,5
+Variant I,Erdős–Rényi,LCF-full,True,3,approval_rate_difference,3.8665697007497934,0.54595526081122614,5
+Variant I,Erdős–Rényi,LCF-full,True,3,retention_disparity,11.159999999999993,0.85229103010650242,5
+Variant I,Erdős–Rényi,LCF-full,True,3,retention_s0,99.640000000000001,0.08000000000000114,5
+Variant I,Erdős–Rényi,LCF-full,True,3,retention_s1,88.47999999999999,0.87269696917085893,5
+Variant I,Erdős–Rényi,LCF-full,True,3,unfairness,0.0051023081302642879,0.0023454835110242279,5
+Variant I,Erdős–Rényi,LCF-full,True,4,approval_rate_difference,1.2855897634681912,0.44923139054597344,5
+Variant I,Erdős–Rényi,LCF-full,True,4,retention_disparity,12.479999999999995,0.96829747495281993,5
+Variant I,Erdős–Rényi,LCF-full,True,4,retention_s0,99.559999999999988,0.07999999999999545,5
+Variant I,Erdős–Rényi,LCF-full,True,4,retention_s1,87.079999999999998,1.0007996802557462,5
+Variant I,Erdős–Rényi,LCF-full,True,4,unfairness,0.0048757262229919499,0.0015542680930203058,5
+Variant I,Erdős–Rényi,LCF-full,True,5,approval_rate_difference,1.0398061069072373,0.34481382314014075,5
+Variant I,Erdős–Rényi,LCF-full,True,5,retention_disparity,12.759999999999996,0.98305645819556253,5
+Variant I,Erdős–Rényi,LCF-full,True,5,retention_s0,99.559999999999988,0.07999999999999545,5
+Variant I,Erdős–Rényi,LCF-full,True,5,retention_s1,86.799999999999997,1.0039920318408913,5
+Variant I,Erdős–Rényi,LCF-full,True,5,unfairness,0.0048180553197860517,0.0011763505747687561,5
+Variant I,Watts–Strogatz,Baseline,False,1,approval_rate_difference,0.64000000000000057,0.32000000000000028,5
+Variant I,Watts–Strogatz,Baseline,False,1,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,Baseline,False,1,retention_s0,100,0,5
+Variant I,Watts–Strogatz,Baseline,False,1,retention_s1,100,0,5
+Variant I,Watts–Strogatz,Baseline,False,1,unfairness,0.0029338215030014769,0,5
+Variant I,Watts–Strogatz,Baseline,False,2,approval_rate_difference,0.48000000000000043,0.41182520563948039,5
+Variant I,Watts–Strogatz,Baseline,False,2,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,Baseline,False,2,retention_s0,100,0,5
+Variant I,Watts–Strogatz,Baseline,False,2,retention_s1,100,0,5
+Variant I,Watts–Strogatz,Baseline,False,2,unfairness,0.0027076510973535139,1.2675323197666546e-05,5
+Variant I,Watts–Strogatz,Baseline,False,3,approval_rate_difference,0.52000000000000046,0.34871191548325414,5
+Variant I,Watts–Strogatz,Baseline,False,3,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,Baseline,False,3,retention_s0,100,0,5
+Variant I,Watts–Strogatz,Baseline,False,3,retention_s1,100,0,5
+Variant I,Watts–Strogatz,Baseline,False,3,unfairness,0.0024311806806356141,2.7307965024089767e-05,5
+Variant I,Watts–Strogatz,Baseline,False,4,approval_rate_difference,0.36000000000000032,0.38781438859330664,5
+Variant I,Watts–Strogatz,Baseline,False,4,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,Baseline,False,4,retention_s0,100,0,5
+Variant I,Watts–Strogatz,Baseline,False,4,retention_s1,100,0,5
+Variant I,Watts–Strogatz,Baseline,False,4,unfairness,0.0021880236259227857,4.6687654146980882e-05,5
+Variant I,Watts–Strogatz,Baseline,False,5,approval_rate_difference,0.24000000000000021,0.79397732965116907,5
+Variant I,Watts–Strogatz,Baseline,False,5,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,Baseline,False,5,retention_s0,100,0,5
+Variant I,Watts–Strogatz,Baseline,False,5,retention_s1,100,0,5
+Variant I,Watts–Strogatz,Baseline,False,5,unfairness,0.0019540586977761843,5.0375502428789773e-05,5
+Variant I,Watts–Strogatz,Baseline,True,1,approval_rate_difference,0.64000000000000057,0.32000000000000028,5
+Variant I,Watts–Strogatz,Baseline,True,1,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,Baseline,True,1,retention_s0,100,0,5
+Variant I,Watts–Strogatz,Baseline,True,1,retention_s1,100,0,5
+Variant I,Watts–Strogatz,Baseline,True,1,unfairness,0.0029338215030014769,0,5
+Variant I,Watts–Strogatz,Baseline,True,2,approval_rate_difference,0.52257351013064834,0.38989987201159182,5
+Variant I,Watts–Strogatz,Baseline,True,2,retention_disparity,0.24000000000000057,0.23323807579381095,5
+Variant I,Watts–Strogatz,Baseline,True,2,retention_s0,99.960000000000008,0.08000000000000114,5
+Variant I,Watts–Strogatz,Baseline,True,2,retention_s1,99.719999999999999,0.2399999999999996,5
+Variant I,Watts–Strogatz,Baseline,True,2,unfairness,0.0050753038706536913,0.0022966457311078079,5
+Variant I,Watts–Strogatz,Baseline,True,3,approval_rate_difference,0.52330370949297045,0.34933638918269128,5
+Variant I,Watts–Strogatz,Baseline,True,3,retention_disparity,0.48000000000000115,0.27129319932501,5
+Variant I,Watts–Strogatz,Baseline,True,3,retention_s0,99.799999999999997,0.17888543819998573,5
+Variant I,Watts–Strogatz,Baseline,True,3,retention_s1,99.47999999999999,0.34871191548325264,5
+Variant I,Watts–Strogatz,Baseline,True,3,unfairness,0.0062092915097940789,0.003502779183989745,5
+Variant I,Watts–Strogatz,Baseline,True,4,approval_rate_difference,0.36492697677140029,0.39096283701492912,5
+Variant I,Watts–Strogatz,Baseline,True,4,retention_disparity,0.5999999999999972,0.25298221281347172,5
+Variant I,Watts–Strogatz,Baseline,True,4,retention_s0,99.799999999999997,0.17888543819998573,5
+Variant I,Watts–Strogatz,Baseline,True,4,retention_s1,99.359999999999999,0.34409301068170473,5
+Variant I,Watts–Strogatz,Baseline,True,4,unfairness,0.007247333782636289,0.0035438217111883764,5
+Variant I,Watts–Strogatz,Baseline,True,5,approval_rate_difference,0.24307489398081028,0.7958867388910803,5
+Variant I,Watts–Strogatz,Baseline,True,5,retention_disparity,0.6799999999999955,0.24000000000000341,5
+Variant I,Watts–Strogatz,Baseline,True,5,retention_s0,99.719999999999999,0.29933259094191461,5
+Variant I,Watts–Strogatz,Baseline,True,5,retention_s1,99.359999999999999,0.34409301068170473,5
+Variant I,Watts–Strogatz,Baseline,True,5,unfairness,0.0078971142523368565,0.0024519476053271533,5
+Variant I,Watts–Strogatz,DP,False,1,approval_rate_difference,-0.87999999999999867,2.869425029513752,5
+Variant I,Watts–Strogatz,DP,False,1,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,DP,False,1,retention_s0,100,0,5
+Variant I,Watts–Strogatz,DP,False,1,retention_s1,100,0,5
+Variant I,Watts–Strogatz,DP,False,1,unfairness,0.0010091538594094729,0,5
+Variant I,Watts–Strogatz,DP,False,2,approval_rate_difference,1.839999999999997,2.1666564102321328,5
+Variant I,Watts–Strogatz,DP,False,2,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,DP,False,2,retention_s0,100,0,5
+Variant I,Watts–Strogatz,DP,False,2,retention_s1,100,0,5
+Variant I,Watts–Strogatz,DP,False,2,unfairness,0.0010092626141106509,2.4488983050924895e-07,5
+Variant I,Watts–Strogatz,DP,False,3,approval_rate_difference,1.399999999999999,1.1798304963002111,5
+Variant I,Watts–Strogatz,DP,False,3,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,DP,False,3,retention_s0,100,0,5
+Variant I,Watts–Strogatz,DP,False,3,retention_s1,100,0,5
+Variant I,Watts–Strogatz,DP,False,3,unfairness,0.0010094109129003882,3.7701451368349314e-07,5
+Variant I,Watts–Strogatz,DP,False,4,approval_rate_difference,1.2399999999999967,1.9241621553289103,5
+Variant I,Watts–Strogatz,DP,False,4,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,DP,False,4,retention_s0,100,0,5
+Variant I,Watts–Strogatz,DP,False,4,retention_s1,100,0,5
+Variant I,Watts–Strogatz,DP,False,4,unfairness,0.0010095373506233906,4.4788440754709287e-07,5
+Variant I,Watts–Strogatz,DP,False,5,approval_rate_difference,0.91999999999999849,2.1339165869358601,5
+Variant I,Watts–Strogatz,DP,False,5,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,DP,False,5,retention_s0,100,0,5
+Variant I,Watts–Strogatz,DP,False,5,retention_s1,100,0,5
+Variant I,Watts–Strogatz,DP,False,5,unfairness,0.0010096348868291916,4.1640344652497392e-07,5
+Variant I,Watts–Strogatz,DP,True,1,approval_rate_difference,-0.87999999999999867,2.869425029513752,5
+Variant I,Watts–Strogatz,DP,True,1,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,DP,True,1,retention_s0,100,0,5
+Variant I,Watts–Strogatz,DP,True,1,retention_s1,100,0,5
+Variant I,Watts–Strogatz,DP,True,1,unfairness,0.0010091538594094729,0,5
+Variant I,Watts–Strogatz,DP,True,2,approval_rate_difference,1.7489362101094663,2.4817786065577745,5
+Variant I,Watts–Strogatz,DP,True,2,retention_disparity,2.7999999999999998,2.4819347291981755,5
+Variant I,Watts–Strogatz,DP,True,2,retention_s0,85.679999999999993,2.4019991673603927,5
+Variant I,Watts–Strogatz,DP,True,2,retention_s1,86.960000000000008,1.6267759526130185,5
+Variant I,Watts–Strogatz,DP,True,2,unfairness,0.019716112072283565,0.016961523471041341,5
+Variant I,Watts–Strogatz,DP,True,3,approval_rate_difference,2.0517938083897125,2.8267221359682435,5
+Variant I,Watts–Strogatz,DP,True,3,retention_disparity,4.6000000000000059,1.7064583206161252,5
+Variant I,Watts–Strogatz,DP,True,3,retention_s0,72.879999999999995,2.448182999695899,5
+Variant I,Watts–Strogatz,DP,True,3,retention_s1,71,2.4915858403835935,5
+Variant I,Watts–Strogatz,DP,True,3,unfairness,0.033176571196653258,0.013915427214597495,5
+Variant I,Watts–Strogatz,DP,True,4,approval_rate_difference,2.230265398349216,3.1011083537864921,5
+Variant I,Watts–Strogatz,DP,True,4,retention_disparity,3.6800000000000042,1.9332873557751316,5
+Variant I,Watts–Strogatz,DP,True,4,retention_s0,62.439999999999998,2.0645580640902317,5
+Variant I,Watts–Strogatz,DP,True,4,retention_s1,59.960000000000001,1.9489484344127734,5
+Variant I,Watts–Strogatz,DP,True,4,unfairness,0.026396225770815719,0.01552928640397788,5
+Variant I,Watts–Strogatz,DP,True,5,approval_rate_difference,-0.030919910238309624,3.2094930488972819,5
+Variant I,Watts–Strogatz,DP,True,5,retention_disparity,5.0000000000000018,3.368085509603338,5
+Variant I,Watts–Strogatz,DP,True,5,retention_s0,54.160000000000004,2.5531157435572709,5
+Variant I,Watts–Strogatz,DP,True,5,retention_s1,49.960000000000001,2.7082097407697221,5
+Variant I,Watts–Strogatz,DP,True,5,unfairness,0.035311672162489705,0.025819646026748549,5
+Variant I,Watts–Strogatz,EO,False,1,approval_rate_difference,-0.88000000000000078,2.714700720153147,5
+Variant I,Watts–Strogatz,EO,False,1,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,EO,False,1,retention_s0,100,0,5
+Variant I,Watts–Strogatz,EO,False,1,retention_s1,100,0,5
+Variant I,Watts–Strogatz,EO,False,1,unfairness,0.00055164615987157717,0,5
+Variant I,Watts–Strogatz,EO,False,2,approval_rate_difference,1.7199999999999995,2.3953287874527809,5
+Variant I,Watts–Strogatz,EO,False,2,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,EO,False,2,retention_s0,100,0,5
+Variant I,Watts–Strogatz,EO,False,2,retention_s1,100,0,5
+Variant I,Watts–Strogatz,EO,False,2,unfairness,0.00055167393907560312,6.4689020540202473e-08,5
+Variant I,Watts–Strogatz,EO,False,3,approval_rate_difference,0.12000000000000011,1.8573098825990257,5
+Variant I,Watts–Strogatz,EO,False,3,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,EO,False,3,retention_s0,100,0,5
+Variant I,Watts–Strogatz,EO,False,3,retention_s1,100,0,5
+Variant I,Watts–Strogatz,EO,False,3,unfairness,0.00055171606510862059,1.00388864638055e-07,5
+Variant I,Watts–Strogatz,EO,False,4,approval_rate_difference,0.76000000000000068,1.9158288023724834,5
+Variant I,Watts–Strogatz,EO,False,4,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,EO,False,4,retention_s0,100,0,5
+Variant I,Watts–Strogatz,EO,False,4,retention_s1,100,0,5
+Variant I,Watts–Strogatz,EO,False,4,unfairness,0.00055172089263493267,8.8001365568739209e-08,5
+Variant I,Watts–Strogatz,EO,False,5,approval_rate_difference,1.3200000000000012,1.4675149062275326,5
+Variant I,Watts–Strogatz,EO,False,5,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,EO,False,5,retention_s0,100,0,5
+Variant I,Watts–Strogatz,EO,False,5,retention_s1,100,0,5
+Variant I,Watts–Strogatz,EO,False,5,unfairness,0.00055173911428130218,7.5413507912444538e-08,5
+Variant I,Watts–Strogatz,EO,True,1,approval_rate_difference,-0.88000000000000078,2.714700720153147,5
+Variant I,Watts–Strogatz,EO,True,1,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,EO,True,1,retention_s0,100,0,5
+Variant I,Watts–Strogatz,EO,True,1,retention_s1,100,0,5
+Variant I,Watts–Strogatz,EO,True,1,unfairness,0.00055164615987157717,0,5
+Variant I,Watts–Strogatz,EO,True,2,approval_rate_difference,0.98333500939061802,2.7460168921342878,5
+Variant I,Watts–Strogatz,EO,True,2,retention_disparity,2.2399999999999975,2.6150334605889811,5
+Variant I,Watts–Strogatz,EO,True,2,retention_s0,83.560000000000002,1.869331431287665,5
+Variant I,Watts–Strogatz,EO,True,2,retention_s1,84.919999999999987,1.9863534428696228,5
+Variant I,Watts–Strogatz,EO,True,2,unfairness,0.014124757223027262,0.015436950622345444,5
+Variant I,Watts–Strogatz,EO,True,3,approval_rate_difference,1.1711138819312805,3.403441486743473,5
+Variant I,Watts–Strogatz,EO,True,3,retention_disparity,4.0000000000000018,2.9772470505485438,5
+Variant I,Watts–Strogatz,EO,True,3,retention_s0,69,2.349468024894148,5
+Variant I,Watts–Strogatz,EO,True,3,retention_s1,67.239999999999995,3.2084887408248739,5
+Variant I,Watts–Strogatz,EO,True,3,unfairness,0.025082760773657353,0.021125649938537806,5
+Variant I,Watts–Strogatz,EO,True,4,approval_rate_difference,1.5199729247561145,2.2948283509557834,5
+Variant I,Watts–Strogatz,EO,True,4,retention_disparity,2.4799999999999955,2.320689552697643,5
+Variant I,Watts–Strogatz,EO,True,4,retention_s0,57.200000000000003,1.2457929201917923,5
+Variant I,Watts–Strogatz,EO,True,4,retention_s1,54.720000000000006,1.6569852141766364,5
+Variant I,Watts–Strogatz,EO,True,4,unfairness,0.018333998991960733,0.014709949586598749,5
+Variant I,Watts–Strogatz,EO,True,5,approval_rate_difference,1.951795996329333,2.5738856875627345,5
+Variant I,Watts–Strogatz,EO,True,5,retention_disparity,3.7599999999999993,2.0372530525194921,5
+Variant I,Watts–Strogatz,EO,True,5,retention_s0,48.399999999999999,1.1171392035015171,5
+Variant I,Watts–Strogatz,EO,True,5,retention_s1,44.640000000000001,2.1181123671797959,5
+Variant I,Watts–Strogatz,EO,True,5,unfairness,0.027029069520158357,0.013713760068542332,5
+Variant I,Watts–Strogatz,LCF-active,False,1,approval_rate_difference,12.359999999999999,0.67409198185410935,5
+Variant I,Watts–Strogatz,LCF-active,False,1,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-active,False,1,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-active,False,1,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-active,False,1,unfairness,0.0029203983545303958,0,5
+Variant I,Watts–Strogatz,LCF-active,False,2,approval_rate_difference,8.0399999999999956,0.83330666623998673,5
+Variant I,Watts–Strogatz,LCF-active,False,2,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-active,False,2,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-active,False,2,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-active,False,2,unfairness,0.0026198687076568693,0.00043367620309263242,5
+Variant I,Watts–Strogatz,LCF-active,False,3,approval_rate_difference,4.6000000000000041,0.68117545463705664,5
+Variant I,Watts–Strogatz,LCF-active,False,3,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-active,False,3,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-active,False,3,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-active,False,3,unfairness,0.0012874655246734256,0.00038085905465115257,5
+Variant I,Watts–Strogatz,LCF-active,False,4,approval_rate_difference,2.5600000000000023,0.6621178142898746,5
+Variant I,Watts–Strogatz,LCF-active,False,4,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-active,False,4,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-active,False,4,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-active,False,4,unfairness,0.00049905278682709224,0.00027428501752950588,5
+Variant I,Watts–Strogatz,LCF-active,False,5,approval_rate_difference,1.7600000000000016,0.46303347611160944,5
+Variant I,Watts–Strogatz,LCF-active,False,5,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-active,False,5,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-active,False,5,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-active,False,5,unfairness,0.00017573745250702987,5.0930248909524226e-05,5
+Variant I,Watts–Strogatz,LCF-active,True,1,approval_rate_difference,12.359999999999999,0.67409198185410935,5
+Variant I,Watts–Strogatz,LCF-active,True,1,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-active,True,1,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-active,True,1,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-active,True,1,unfairness,0.0029203983545303958,0,5
+Variant I,Watts–Strogatz,LCF-active,True,2,approval_rate_difference,6.6802041427916503,1.0216222571567946,5
+Variant I,Watts–Strogatz,LCF-active,True,2,retention_disparity,7.3199999999999932,0.75471849056452878,5
+Variant I,Watts–Strogatz,LCF-active,True,2,retention_s0,99.960000000000008,0.08000000000000114,5
+Variant I,Watts–Strogatz,LCF-active,True,2,retention_s1,92.640000000000015,0.77356318423254955,5
+Variant I,Watts–Strogatz,LCF-active,True,2,unfairness,0.0064550197124481293,0.0035800014932746756,5
+Variant I,Watts–Strogatz,LCF-active,True,3,approval_rate_difference,2.9168250201943002,0.50052855101147065,5
+Variant I,Watts–Strogatz,LCF-active,True,3,retention_disparity,10.119999999999996,1.1070682002478451,5
+Variant I,Watts–Strogatz,LCF-active,True,3,retention_s0,99.679999999999993,0.27129319932500956,5
+Variant I,Watts–Strogatz,LCF-active,True,3,retention_s1,89.560000000000002,1.155162326255494,5
+Variant I,Watts–Strogatz,LCF-active,True,3,unfairness,0.0064301773309707322,0.0029980867932162063,5
+Variant I,Watts–Strogatz,LCF-active,True,4,approval_rate_difference,1.2912419726282742,0.46450718873927066,5
+Variant I,Watts–Strogatz,LCF-active,True,4,retention_disparity,10.959999999999999,1.1757550765359266,5
+Variant I,Watts–Strogatz,LCF-active,True,4,retention_s0,99.640000000000001,0.23323807579380995,5
+Variant I,Watts–Strogatz,LCF-active,True,4,retention_s1,88.679999999999993,1.1838918869558996,5
+Variant I,Watts–Strogatz,LCF-active,True,4,unfairness,0.0055664473056793225,0.0028127536280824214,5
+Variant I,Watts–Strogatz,LCF-active,True,5,approval_rate_difference,0.6429250298756406,0.37943473002233535,5
+Variant I,Watts–Strogatz,LCF-active,True,5,retention_disparity,11.16,1.2289833196589786,5
+Variant I,Watts–Strogatz,LCF-active,True,5,retention_s0,99.640000000000001,0.23323807579380995,5
+Variant I,Watts–Strogatz,LCF-active,True,5,retention_s1,88.47999999999999,1.2302845199383765,5
+Variant I,Watts–Strogatz,LCF-active,True,5,unfairness,0.0053100872278213588,0.0029227575728575828,5
+Variant I,Watts–Strogatz,LCF-full,False,1,approval_rate_difference,12.68,0.65238025721200399,5
+Variant I,Watts–Strogatz,LCF-full,False,1,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-full,False,1,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-full,False,1,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-full,False,1,unfairness,0.0034086370468139338,0,5
+Variant I,Watts–Strogatz,LCF-full,False,2,approval_rate_difference,9.3199999999999967,0.78587530817554097,5
+Variant I,Watts–Strogatz,LCF-full,False,2,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-full,False,2,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-full,False,2,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-full,False,2,unfairness,0.002987588381767292,0.00041128355495311794,5
+Variant I,Watts–Strogatz,LCF-full,False,3,approval_rate_difference,5.8800000000000008,1.0166612021711032,5
+Variant I,Watts–Strogatz,LCF-full,False,3,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-full,False,3,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-full,False,3,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-full,False,3,unfairness,0.0015859135627746435,0.00043938144005126851,5
+Variant I,Watts–Strogatz,LCF-full,False,4,approval_rate_difference,3.2000000000000028,0.70427267446636099,5
+Variant I,Watts–Strogatz,LCF-full,False,4,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-full,False,4,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-full,False,4,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-full,False,4,unfairness,0.00079737951755520786,0.00035785534495450677,5
+Variant I,Watts–Strogatz,LCF-full,False,5,approval_rate_difference,2.3600000000000021,0.36660605559646753,5
+Variant I,Watts–Strogatz,LCF-full,False,5,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-full,False,5,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-full,False,5,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-full,False,5,unfairness,0.00028551497459412546,0.00013262887563123346,5
+Variant I,Watts–Strogatz,LCF-full,True,1,approval_rate_difference,12.68,0.65238025721200399,5
+Variant I,Watts–Strogatz,LCF-full,True,1,retention_disparity,0,0,5
+Variant I,Watts–Strogatz,LCF-full,True,1,retention_s0,100,0,5
+Variant I,Watts–Strogatz,LCF-full,True,1,retention_s1,100,0,5
+Variant I,Watts–Strogatz,LCF-full,True,1,unfairness,0.0034086370468139338,0,5
+Variant I,Watts–Strogatz,LCF-full,True,2,approval_rate_difference,7.8226444343364321,0.86862615927296827,5
+Variant I,Watts–Strogatz,LCF-full,True,2,retention_disparity,8.2399999999999984,0.94148818367518483,5
+Variant I,Watts–Strogatz,LCF-full,True,2,retention_s0,99.960000000000008,0.08000000000000114,5
+Variant I,Watts–Strogatz,LCF-full,True,2,retention_s1,91.719999999999999,1.0007996802557442,5
+Variant I,Watts–Strogatz,LCF-full,True,2,unfairness,0.0064813765287399464,0.0031191735411005873,5
+Variant I,Watts–Strogatz,LCF-full,True,3,approval_rate_difference,4.1695626970499919,0.79767726220669555,5
+Variant I,Watts–Strogatz,LCF-full,True,3,retention_disparity,11.519999999999996,0.63999999999999879,5
+Variant I,Watts–Strogatz,LCF-full,True,3,retention_s0,99.559999999999988,0.38781438859330625,5
+Variant I,Watts–Strogatz,LCF-full,True,3,retention_s1,88.039999999999992,0.79397732965116741,5
+Variant I,Watts–Strogatz,LCF-full,True,3,unfairness,0.0069932785511016785,0.0027540792612917721,5
+Variant I,Watts–Strogatz,LCF-full,True,4,approval_rate_difference,1.8531521693037489,0.57939258575944286,5
+Variant I,Watts–Strogatz,LCF-full,True,4,retention_disparity,12.880000000000001,1.0166612021711074,5
+Variant I,Watts–Strogatz,LCF-full,True,4,retention_s0,99.47999999999999,0.34871191548325325,5
+Variant I,Watts–Strogatz,LCF-full,True,4,retention_s1,86.599999999999994,1.3023056476879771,5
+Variant I,Watts–Strogatz,LCF-full,True,4,unfairness,0.0064882155895233055,0.0020664652230113511,5
+Variant I,Watts–Strogatz,LCF-full,True,5,approval_rate_difference,1.1863192805659417,0.50317702499019878,5
+Variant I,Watts–Strogatz,LCF-full,True,5,retention_disparity,13.199999999999998,0.97159662411928938,5
+Variant I,Watts–Strogatz,LCF-full,True,5,retention_s0,99.47999999999999,0.34871191548325325,5
+Variant I,Watts–Strogatz,LCF-full,True,5,retention_s1,86.280000000000001,1.2367699866992232,5
+Variant I,Watts–Strogatz,LCF-full,True,5,unfairness,0.006174913978576657,0.0021243962039012459,5
+Variant II,Base (80/20),Baseline,False,1,approval_rate_difference,1.2000000000000011,0.40000000000000041,5
+Variant II,Base (80/20),Baseline,False,1,retention_disparity,0,0,5
+Variant II,Base (80/20),Baseline,False,1,retention_s0,100,0,5
+Variant II,Base (80/20),Baseline,False,1,retention_s1,100,0,5
+Variant II,Base (80/20),Baseline,False,1,unfairness,0.0013508004471117774,0,5
+Variant II,Base (80/20),Baseline,False,2,approval_rate_difference,1.2800000000000011,0.84474848327771579,5
+Variant II,Base (80/20),Baseline,False,2,retention_disparity,0,0,5
+Variant II,Base (80/20),Baseline,False,2,retention_s0,100,0,5
+Variant II,Base (80/20),Baseline,False,2,retention_s1,100,0,5
+Variant II,Base (80/20),Baseline,False,2,unfairness,0.0012798174629275571,3.3941646535956391e-06,5
+Variant II,Base (80/20),Baseline,False,3,approval_rate_difference,0.40000000000000036,0.40000000000000036,5
+Variant II,Base (80/20),Baseline,False,3,retention_disparity,0,0,5
+Variant II,Base (80/20),Baseline,False,3,retention_s0,100,0,5
+Variant II,Base (80/20),Baseline,False,3,retention_s1,100,0,5
+Variant II,Base (80/20),Baseline,False,3,unfairness,0.0011717687588137736,6.9333242840193468e-06,5
+Variant II,Base (80/20),Baseline,False,4,approval_rate_difference,1.2800000000000011,0.37094473981982845,5
+Variant II,Base (80/20),Baseline,False,4,retention_disparity,0,0,5
+Variant II,Base (80/20),Baseline,False,4,retention_s0,100,0,5
+Variant II,Base (80/20),Baseline,False,4,retention_s1,100,0,5
+Variant II,Base (80/20),Baseline,False,4,unfairness,0.0010864224679325574,1.3366866350171472e-05,5
+Variant II,Base (80/20),Baseline,False,5,approval_rate_difference,0.64000000000000057,0.63749509802036963,5
+Variant II,Base (80/20),Baseline,False,5,retention_disparity,0,0,5
+Variant II,Base (80/20),Baseline,False,5,retention_s0,100,0,5
+Variant II,Base (80/20),Baseline,False,5,retention_s1,100,0,5
+Variant II,Base (80/20),Baseline,False,5,unfairness,0.0010062126011286753,1.1815541843254577e-05,5
+Variant II,Base (80/20),Baseline,True,1,approval_rate_difference,1.2000000000000011,0.40000000000000041,5
+Variant II,Base (80/20),Baseline,True,1,retention_disparity,0,0,5
+Variant II,Base (80/20),Baseline,True,1,retention_s0,100,0,5
+Variant II,Base (80/20),Baseline,True,1,retention_s1,100,0,5
+Variant II,Base (80/20),Baseline,True,1,unfairness,0.0013508004471117774,0,5
+Variant II,Base (80/20),Baseline,True,2,approval_rate_difference,1.2812043344403778,0.84429682111128168,5
+Variant II,Base (80/20),Baseline,True,2,retention_disparity,0.20000000000000001,0.25298221281346944,5
+Variant II,Base (80/20),Baseline,True,2,retention_s0,99.879999999999995,0.23999999999999772,5
+Variant II,Base (80/20),Baseline,True,2,retention_s1,99.920000000000002,0.16000000000000228,5
+Variant II,Base (80/20),Baseline,True,2,unfairness,0.0019563860047270287,0.0013551965161563509,5
+Variant II,Base (80/20),Baseline,True,3,approval_rate_difference,0.40411665429258781,0.40368296618471988,5
+Variant II,Base (80/20),Baseline,True,3,retention_disparity,0.40000000000000285,0.25298221281346944,5
+Variant II,Base (80/20),Baseline,True,3,retention_s0,99.799999999999997,0.25298221281346944,5
+Variant II,Base (80/20),Baseline,True,3,retention_s1,99.560000000000002,0.40792156108742217,5
+Variant II,Base (80/20),Baseline,True,3,unfairness,0.0026157569998194186,0.0014630542881733249,5
+Variant II,Base (80/20),Baseline,True,4,approval_rate_difference,1.2874245878842361,0.37446461403201092,5
+Variant II,Base (80/20),Baseline,True,4,retention_disparity,0.40000000000000285,0.25298221281346944,5
+Variant II,Base (80/20),Baseline,True,4,retention_s0,99.799999999999997,0.25298221281346944,5
+Variant II,Base (80/20),Baseline,True,4,retention_s1,99.560000000000002,0.40792156108742217,5
+Variant II,Base (80/20),Baseline,True,4,unfairness,0.0026001311168876162,0.0014792929369297787,5
+Variant II,Base (80/20),Baseline,True,5,approval_rate_difference,0.6464646681557018,0.64364278604936287,5
+Variant II,Base (80/20),Baseline,True,5,retention_disparity,0.60000000000000286,0.21908902300206437,5
+Variant II,Base (80/20),Baseline,True,5,retention_s0,99.799999999999997,0.25298221281346944,5
+Variant II,Base (80/20),Baseline,True,5,retention_s1,99.359999999999999,0.42708313008125265,5
+Variant II,Base (80/20),Baseline,True,5,unfairness,0.0025835305257524864,0.0014975890428419493,5
+Variant II,Base (80/20),DP,False,1,approval_rate_difference,0.2400000000000003,2.954048070021877,5
+Variant II,Base (80/20),DP,False,1,retention_disparity,0,0,5
+Variant II,Base (80/20),DP,False,1,retention_s0,100,0,5
+Variant II,Base (80/20),DP,False,1,retention_s1,100,0,5
+Variant II,Base (80/20),DP,False,1,unfairness,0.00083710912761525424,0,5
+Variant II,Base (80/20),DP,False,2,approval_rate_difference,-1.399999999999999,1.4366627996854371,5
+Variant II,Base (80/20),DP,False,2,retention_disparity,0,0,5
+Variant II,Base (80/20),DP,False,2,retention_s0,100,0,5
+Variant II,Base (80/20),DP,False,2,retention_s1,100,0,5
+Variant II,Base (80/20),DP,False,2,unfairness,0.00083742186027961911,2.8084656279393314e-07,5
+Variant II,Base (80/20),DP,False,3,approval_rate_difference,-2.2399999999999975,2.0489997559785094,5
+Variant II,Base (80/20),DP,False,3,retention_disparity,0,0,5
+Variant II,Base (80/20),DP,False,3,retention_s0,100,0,5
+Variant II,Base (80/20),DP,False,3,retention_s1,100,0,5
+Variant II,Base (80/20),DP,False,3,unfairness,0.00083741250235211948,2.8812295517697672e-07,5
+Variant II,Base (80/20),DP,False,4,approval_rate_difference,-0.44000000000000028,3.4765500140225196,5
+Variant II,Base (80/20),DP,False,4,retention_disparity,0,0,5
+Variant II,Base (80/20),DP,False,4,retention_s0,100,0,5
+Variant II,Base (80/20),DP,False,4,retention_s1,100,0,5
+Variant II,Base (80/20),DP,False,4,unfairness,0.00083739627695387229,3.9175712841558138e-07,5
+Variant II,Base (80/20),DP,False,5,approval_rate_difference,-1.9599999999999973,3.3452055243288066,5
+Variant II,Base (80/20),DP,False,5,retention_disparity,0,0,5
+Variant II,Base (80/20),DP,False,5,retention_s0,100,0,5
+Variant II,Base (80/20),DP,False,5,retention_s1,100,0,5
+Variant II,Base (80/20),DP,False,5,unfairness,0.00083751639965354838,2.9110441487596206e-07,5
+Variant II,Base (80/20),DP,True,1,approval_rate_difference,0.2400000000000003,2.954048070021877,5
+Variant II,Base (80/20),DP,True,1,retention_disparity,0,0,5
+Variant II,Base (80/20),DP,True,1,retention_s0,100,0,5
+Variant II,Base (80/20),DP,True,1,retention_s1,100,0,5
+Variant II,Base (80/20),DP,True,1,unfairness,0.00083710912761525424,0,5
+Variant II,Base (80/20),DP,True,2,approval_rate_difference,-2.5710335167013909,1.8200514843814377,5
+Variant II,Base (80/20),DP,True,2,retention_disparity,2.6400000000000006,1.9241621553289121,5
+Variant II,Base (80/20),DP,True,2,retention_s0,85.280000000000001,2.0063897926375147,5
+Variant II,Base (80/20),DP,True,2,retention_s1,84.799999999999997,1.7933209417167901,5
+Variant II,Base (80/20),DP,True,2,unfairness,0.020055080595327991,0.012354681128173289,5
+Variant II,Base (80/20),DP,True,3,approval_rate_difference,-1.5575837684281613,2.7148301602260823,5
+Variant II,Base (80/20),DP,True,3,retention_disparity,2.6399999999999979,1.9489484344127699,5
+Variant II,Base (80/20),DP,True,3,retention_s0,68.799999999999997,1.761817243643613,5
+Variant II,Base (80/20),DP,True,3,retention_s1,70.799999999999997,1.1384199576606162,5
+Variant II,Base (80/20),DP,True,3,unfairness,0.016724861173919157,0.013207683889274404,5
+Variant II,Base (80/20),DP,True,4,approval_rate_difference,0.26714972005228876,4.1869704638266869,5
+Variant II,Base (80/20),DP,True,4,retention_disparity,3.5999999999999988,1.7663521732655667,5
+Variant II,Base (80/20),DP,True,4,retention_s0,57.120000000000005,1.7092688495377153,5
+Variant II,Base (80/20),DP,True,4,retention_s1,59.919999999999995,1.5625619987699699,5
+Variant II,Base (80/20),DP,True,4,unfairness,0.023511944730576904,0.011340716528136478,5
+Variant II,Base (80/20),DP,True,5,approval_rate_difference,-2.3641520446752851,5.8071104108372307,5
+Variant II,Base (80/20),DP,True,5,retention_disparity,2.5600000000000009,1.9365949499056327,5
+Variant II,Base (80/20),DP,True,5,retention_s0,48.880000000000003,1.6277591959500648,5
+Variant II,Base (80/20),DP,True,5,retention_s1,51.439999999999998,1.1551623262554922,5
+Variant II,Base (80/20),DP,True,5,unfairness,0.015009753533162074,0.012924911732213603,5
+Variant II,Base (80/20),EO,False,1,approval_rate_difference,0.40000000000000246,3.4339481650135597,5
+Variant II,Base (80/20),EO,False,1,retention_disparity,0,0,5
+Variant II,Base (80/20),EO,False,1,retention_s0,100,0,5
+Variant II,Base (80/20),EO,False,1,retention_s1,100,0,5
+Variant II,Base (80/20),EO,False,1,unfairness,0.00045737543328550068,0,5
+Variant II,Base (80/20),EO,False,2,approval_rate_difference,-2.0799999999999996,2.4935115800813916,5
+Variant II,Base (80/20),EO,False,2,retention_disparity,0,0,5
+Variant II,Base (80/20),EO,False,2,retention_s0,100,0,5
+Variant II,Base (80/20),EO,False,2,retention_s1,100,0,5
+Variant II,Base (80/20),EO,False,2,unfairness,0.00045744916143997116,8.6377512237179758e-08,5
+Variant II,Base (80/20),EO,False,3,approval_rate_difference,-2.3199999999999998,1.3833293172632446,5
+Variant II,Base (80/20),EO,False,3,retention_disparity,0,0,5
+Variant II,Base (80/20),EO,False,3,retention_s0,100,0,5
+Variant II,Base (80/20),EO,False,3,retention_s1,100,0,5
+Variant II,Base (80/20),EO,False,3,unfairness,0.00045742308081235804,7.4824009657625463e-08,5
+Variant II,Base (80/20),EO,False,4,approval_rate_difference,-0.63999999999999624,2.8883213117657092,5
+Variant II,Base (80/20),EO,False,4,retention_disparity,0,0,5
+Variant II,Base (80/20),EO,False,4,retention_s0,100,0,5
+Variant II,Base (80/20),EO,False,4,retention_s1,100,0,5
+Variant II,Base (80/20),EO,False,4,unfairness,0.00045741472118072669,1.2143215351885712e-07,5
+Variant II,Base (80/20),EO,False,5,approval_rate_difference,-1.9599999999999997,3.8479085228211933,5
+Variant II,Base (80/20),EO,False,5,retention_disparity,0,0,5
+Variant II,Base (80/20),EO,False,5,retention_s0,100,0,5
+Variant II,Base (80/20),EO,False,5,retention_s1,100,0,5
+Variant II,Base (80/20),EO,False,5,unfairness,0.00045744274235781646,8.6285488224701937e-08,5
+Variant II,Base (80/20),EO,True,1,approval_rate_difference,0.40000000000000246,3.4339481650135597,5
+Variant II,Base (80/20),EO,True,1,retention_disparity,0,0,5
+Variant II,Base (80/20),EO,True,1,retention_s0,100,0,5
+Variant II,Base (80/20),EO,True,1,retention_s1,100,0,5
+Variant II,Base (80/20),EO,True,1,unfairness,0.00045737543328550068,0,5
+Variant II,Base (80/20),EO,True,2,approval_rate_difference,-2.8157059911779858,2.8965315911035936,5
+Variant II,Base (80/20),EO,True,2,retention_disparity,3.4399999999999951,2.6785070468453096,5
+Variant II,Base (80/20),EO,True,2,retention_s0,83.760000000000005,2.6211447880649361,5
+Variant II,Base (80/20),EO,True,2,retention_s1,83.599999999999994,1.8198901065723703,5
+Variant II,Base (80/20),EO,True,2,unfairness,0.022775451210520159,0.017027698582411269,5
+Variant II,Base (80/20),EO,True,3,approval_rate_difference,-0.99612201513397558,1.7674136502258213,5
+Variant II,Base (80/20),EO,True,3,retention_disparity,3.6799999999999984,2.2328457179124555,5
+Variant II,Base (80/20),EO,True,3,retention_s0,65.120000000000005,1.9863534428696201,5
+Variant II,Base (80/20),EO,True,3,retention_s1,67.280000000000001,1.7825823964125735,5
+Variant II,Base (80/20),EO,True,3,unfairness,0.023508852206031085,0.014161100818188468,5
+Variant II,Base (80/20),EO,True,4,approval_rate_difference,-0.82350716534100843,3.6998028684799964,5
+Variant II,Base (80/20),EO,True,4,retention_disparity,3.8399999999999976,1.1056219968868211,5
+Variant II,Base (80/20),EO,True,4,retention_s0,52.720000000000006,1.4176036117335484,5
+Variant II,Base (80/20),EO,True,4,retention_s1,55.520000000000003,1.8137254478007399,5
+Variant II,Base (80/20),EO,True,4,unfairness,0.025041079178382265,0.006825511311948607,5
+Variant II,Base (80/20),EO,True,5,approval_rate_difference,-2.3105983624811799,6.5437628739716072,5
+Variant II,Base (80/20),EO,True,5,retention_disparity,3.5199999999999974,1.6326665305566834,5
+Variant II,Base (80/20),EO,True,5,retention_s0,43.600000000000001,1.080740486888504,5
+Variant II,Base (80/20),EO,True,5,retention_s1,46.959999999999994,1.2419339757008003,5
+Variant II,Base (80/20),EO,True,5,unfairness,0.022947429485534,0.010466504188503136,5
+Variant II,Base (80/20),LCF-active,False,1,approval_rate_difference,13.320000000000002,1.7825823964125773,5
+Variant II,Base (80/20),LCF-active,False,1,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-active,False,1,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-active,False,1,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-active,False,1,unfairness,0.0019736331701278864,0,5
+Variant II,Base (80/20),LCF-active,False,2,approval_rate_difference,8.4399999999999959,0.46303347611160944,5
+Variant II,Base (80/20),LCF-active,False,2,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-active,False,2,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-active,False,2,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-active,False,2,unfairness,0.001704021644592335,0.00032092448188202223,5
+Variant II,Base (80/20),LCF-active,False,3,approval_rate_difference,4.2400000000000038,0.6974238309665084,5
+Variant II,Base (80/20),LCF-active,False,3,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-active,False,3,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-active,False,3,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-active,False,3,unfairness,0.00095837643146514664,0.00040642324696180154,5
+Variant II,Base (80/20),LCF-active,False,4,approval_rate_difference,3.400000000000003,0.65726706900619991,5
+Variant II,Base (80/20),LCF-active,False,4,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-active,False,4,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-active,False,4,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-active,False,4,unfairness,0.00054344336986540394,0.00036380747059103951,5
+Variant II,Base (80/20),LCF-active,False,5,approval_rate_difference,1.9200000000000017,0.6764613810115111,5
+Variant II,Base (80/20),LCF-active,False,5,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-active,False,5,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-active,False,5,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-active,False,5,unfairness,0.00032871620655061662,0.00036811756246016628,5
+Variant II,Base (80/20),LCF-active,True,1,approval_rate_difference,13.320000000000002,1.7825823964125773,5
+Variant II,Base (80/20),LCF-active,True,1,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-active,True,1,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-active,True,1,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-active,True,1,unfairness,0.0019736331701278864,0,5
+Variant II,Base (80/20),LCF-active,True,2,approval_rate_difference,6.8476461104705537,0.63131338171904094,5
+Variant II,Base (80/20),LCF-active,True,2,retention_disparity,10.039999999999996,1.3290598180668918,5
+Variant II,Base (80/20),LCF-active,True,2,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant II,Base (80/20),LCF-active,True,2,retention_s1,89.840000000000003,1.4388884598883973,5
+Variant II,Base (80/20),LCF-active,True,2,unfairness,0.0036668130636215547,0.0018224518418251871,5
+Variant II,Base (80/20),LCF-active,True,3,approval_rate_difference,2.0148555958015146,0.61804689763237786,5
+Variant II,Base (80/20),LCF-active,True,3,retention_disparity,13.6,1.5388307249337105,5
+Variant II,Base (80/20),LCF-active,True,3,retention_s0,99.840000000000003,0.19595917942265703,5
+Variant II,Base (80/20),LCF-active,True,3,retention_s1,86.239999999999995,1.6414627622946598,5
+Variant II,Base (80/20),LCF-active,True,3,unfairness,0.0056454777240753321,0.0035696085245494748,5
+Variant II,Base (80/20),LCF-active,True,4,approval_rate_difference,1.8224131764389795,0.71124898896845001,5
+Variant II,Base (80/20),LCF-active,True,4,retention_disparity,13.999999999999996,1.7343586710943051,5
+Variant II,Base (80/20),LCF-active,True,4,retention_s0,99.840000000000003,0.19595917942265703,5
+Variant II,Base (80/20),LCF-active,True,4,retention_s1,85.840000000000003,1.8260339536821344,5
+Variant II,Base (80/20),LCF-active,True,4,unfairness,0.0055557935237884101,0.0036800052507887557,5
+Variant II,Base (80/20),LCF-active,True,5,approval_rate_difference,0.51935288299886917,0.27996152535199159,5
+Variant II,Base (80/20),LCF-active,True,5,retention_disparity,14.519999999999996,1.966112916391122,5
+Variant II,Base (80/20),LCF-active,True,5,retention_s0,99.840000000000003,0.19595917942265703,5
+Variant II,Base (80/20),LCF-active,True,5,retention_s1,85.320000000000007,2.0458738964071093,5
+Variant II,Base (80/20),LCF-active,True,5,unfairness,0.0056633143424987594,0.0038327082969438005,5
+Variant II,Base (80/20),LCF-full,False,1,approval_rate_difference,13.320000000000002,1.7417232845661812,5
+Variant II,Base (80/20),LCF-full,False,1,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-full,False,1,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-full,False,1,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-full,False,1,unfairness,0.0020167038440704887,0,5
+Variant II,Base (80/20),LCF-full,False,2,approval_rate_difference,8.4799999999999969,0.41182520563948011,5
+Variant II,Base (80/20),LCF-full,False,2,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-full,False,2,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-full,False,2,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-full,False,2,unfairness,0.0017377659320831241,0.00032792457098488557,5
+Variant II,Base (80/20),LCF-full,False,3,approval_rate_difference,4.3200000000000038,0.6764613810115111,5
+Variant II,Base (80/20),LCF-full,False,3,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-full,False,3,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-full,False,3,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-full,False,3,unfairness,0.00097828266620634272,0.00040983689640750482,5
+Variant II,Base (80/20),LCF-full,False,4,approval_rate_difference,3.4400000000000035,0.68585712797929055,5
+Variant II,Base (80/20),LCF-full,False,4,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-full,False,4,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-full,False,4,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-full,False,4,unfairness,0.00055427112579344853,0.00036544621924616773,5
+Variant II,Base (80/20),LCF-full,False,5,approval_rate_difference,1.9200000000000017,0.6764613810115111,5
+Variant II,Base (80/20),LCF-full,False,5,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-full,False,5,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-full,False,5,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-full,False,5,unfairness,0.00033561437129974169,0.00036880905809805051,5
+Variant II,Base (80/20),LCF-full,True,1,approval_rate_difference,13.320000000000002,1.7417232845661812,5
+Variant II,Base (80/20),LCF-full,True,1,retention_disparity,0,0,5
+Variant II,Base (80/20),LCF-full,True,1,retention_s0,100,0,5
+Variant II,Base (80/20),LCF-full,True,1,retention_s1,100,0,5
+Variant II,Base (80/20),LCF-full,True,1,unfairness,0.0020167038440704887,0,5
+Variant II,Base (80/20),LCF-full,True,2,approval_rate_difference,6.8998292037516027,0.66676551537093864,5
+Variant II,Base (80/20),LCF-full,True,2,retention_disparity,10.119999999999996,1.3600000000000001,5
+Variant II,Base (80/20),LCF-full,True,2,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant II,Base (80/20),LCF-full,True,2,retention_s1,89.760000000000005,1.4718695594379296,5
+Variant II,Base (80/20),LCF-full,True,2,unfairness,0.0036861207723617451,0.0018360518383093072,5
+Variant II,Base (80/20),LCF-full,True,3,approval_rate_difference,2.0647767233381886,0.59741711423168076,5
+Variant II,Base (80/20),LCF-full,True,3,retention_disparity,13.719999999999995,1.6029971927611111,5
+Variant II,Base (80/20),LCF-full,True,3,retention_s0,99.840000000000003,0.19595917942265703,5
+Variant II,Base (80/20),LCF-full,True,3,retention_s1,86.120000000000005,1.709268849537722,5
+Variant II,Base (80/20),LCF-full,True,3,unfairness,0.0056526643991470227,0.0035665657392839243,5
+Variant II,Base (80/20),LCF-full,True,4,approval_rate_difference,1.8733503198320789,0.75596531119277999,5
+Variant II,Base (80/20),LCF-full,True,4,retention_disparity,14.119999999999999,1.7825823964125769,5
+Variant II,Base (80/20),LCF-full,True,4,retention_s0,99.840000000000003,0.19595917942265703,5
+Variant II,Base (80/20),LCF-full,True,4,retention_s1,85.719999999999999,1.8787229705307833,5
+Variant II,Base (80/20),LCF-full,True,4,unfairness,0.0055608699798583624,0.0036780948268491185,5
+Variant II,Base (80/20),LCF-full,True,5,approval_rate_difference,0.52048559647122072,0.28112845314675433,5
+Variant II,Base (80/20),LCF-full,True,5,retention_disparity,14.639999999999997,2.0333224043422153,5
+Variant II,Base (80/20),LCF-full,True,5,retention_s0,99.840000000000003,0.19595917942265703,5
+Variant II,Base (80/20),LCF-full,True,5,retention_s1,85.200000000000003,2.1166010488516749,5
+Variant II,Base (80/20),LCF-full,True,5,unfairness,0.0056638426542282129,0.0038304754389677335,5
+Variant II,Erdős–Rényi,Baseline,False,1,approval_rate_difference,1.2000000000000011,0.40000000000000041,5
+Variant II,Erdős–Rényi,Baseline,False,1,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,Baseline,False,1,retention_s0,100,0,5
+Variant II,Erdős–Rényi,Baseline,False,1,retention_s1,100,0,5
+Variant II,Erdős–Rényi,Baseline,False,1,unfairness,0.0013479805372826892,0,5
+Variant II,Erdős–Rényi,Baseline,False,2,approval_rate_difference,1.2800000000000011,0.84474848327771579,5
+Variant II,Erdős–Rényi,Baseline,False,2,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,Baseline,False,2,retention_s0,100,0,5
+Variant II,Erdős–Rényi,Baseline,False,2,retention_s1,100,0,5
+Variant II,Erdős–Rényi,Baseline,False,2,unfairness,0.0012773831563873683,3.3774929353078772e-06,5
+Variant II,Erdős–Rényi,Baseline,False,3,approval_rate_difference,0.40000000000000036,0.40000000000000036,5
+Variant II,Erdős–Rényi,Baseline,False,3,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,Baseline,False,3,retention_s0,100,0,5
+Variant II,Erdős–Rényi,Baseline,False,3,retention_s1,100,0,5
+Variant II,Erdős–Rényi,Baseline,False,3,unfairness,0.0011698695471062059,6.9091777797079466e-06,5
+Variant II,Erdős–Rényi,Baseline,False,4,approval_rate_difference,1.2800000000000011,0.37094473981982845,5
+Variant II,Erdős–Rényi,Baseline,False,4,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,Baseline,False,4,retention_s0,100,0,5
+Variant II,Erdős–Rényi,Baseline,False,4,retention_s1,100,0,5
+Variant II,Erdős–Rényi,Baseline,False,4,unfairness,0.0010849273181893881,1.3319683108410602e-05,5
+Variant II,Erdős–Rényi,Baseline,False,5,approval_rate_difference,0.64000000000000057,0.63749509802036963,5
+Variant II,Erdős–Rényi,Baseline,False,5,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,Baseline,False,5,retention_s0,100,0,5
+Variant II,Erdős–Rényi,Baseline,False,5,retention_s1,100,0,5
+Variant II,Erdős–Rényi,Baseline,False,5,unfairness,0.0010050748684338195,1.1775493734379315e-05,5
+Variant II,Erdős–Rényi,Baseline,True,1,approval_rate_difference,1.2000000000000011,0.40000000000000041,5
+Variant II,Erdős–Rényi,Baseline,True,1,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,Baseline,True,1,retention_s0,100,0,5
+Variant II,Erdős–Rényi,Baseline,True,1,retention_s1,100,0,5
+Variant II,Erdős–Rényi,Baseline,True,1,unfairness,0.0013479805372826892,0,5
+Variant II,Erdős–Rényi,Baseline,True,2,approval_rate_difference,1.2846784478047013,0.84581446421833251,5
+Variant II,Erdős–Rényi,Baseline,True,2,retention_disparity,0.24000000000000057,0.3878143885933063,5
+Variant II,Erdős–Rényi,Baseline,True,2,retention_s0,100,0,5
+Variant II,Erdős–Rényi,Baseline,True,2,retention_s1,99.760000000000005,0.38781438859330625,5
+Variant II,Erdős–Rényi,Baseline,True,2,unfairness,0.0016715059042989421,0.00079029737620660886,5
+Variant II,Erdős–Rényi,Baseline,True,3,approval_rate_difference,0.40655241787670438,0.40630295745394174,5
+Variant II,Erdős–Rényi,Baseline,True,3,retention_disparity,0.60000000000000286,0.47328638264797007,5
+Variant II,Erdős–Rényi,Baseline,True,3,retention_s0,100,0,5
+Variant II,Erdős–Rényi,Baseline,True,3,retention_s1,99.400000000000006,0.47328638264797002,5
+Variant II,Erdős–Rényi,Baseline,True,3,unfairness,0.0043444632075972048,0.0015908340555855955,5
+Variant II,Erdős–Rényi,Baseline,True,4,approval_rate_difference,1.2905863643016713,0.37591212016061221,5
+Variant II,Erdős–Rényi,Baseline,True,4,retention_disparity,0.60000000000000286,0.47328638264797007,5
+Variant II,Erdős–Rényi,Baseline,True,4,retention_s0,100,0,5
+Variant II,Erdős–Rényi,Baseline,True,4,retention_s1,99.400000000000006,0.47328638264797002,5
+Variant II,Erdős–Rényi,Baseline,True,4,unfairness,0.004261931652656625,0.0015958922670603075,5
+Variant II,Erdős–Rényi,Baseline,True,5,approval_rate_difference,0.6548881209526769,0.6532706806947709,5
+Variant II,Erdős–Rényi,Baseline,True,5,retention_disparity,0.92000000000000171,0.89977775033616225,5
+Variant II,Erdős–Rényi,Baseline,True,5,retention_s0,100,0,5
+Variant II,Erdős–Rényi,Baseline,True,5,retention_s1,99.079999999999998,0.89977775033616225,5
+Variant II,Erdős–Rényi,Baseline,True,5,unfairness,0.004975595185350068,0.0021771278319182006,5
+Variant II,Erdős–Rényi,DP,False,1,approval_rate_difference,0.2400000000000003,2.954048070021877,5
+Variant II,Erdős–Rényi,DP,False,1,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,DP,False,1,retention_s0,100,0,5
+Variant II,Erdős–Rényi,DP,False,1,retention_s1,100,0,5
+Variant II,Erdős–Rényi,DP,False,1,unfairness,0.0008337875380226567,0,5
+Variant II,Erdős–Rényi,DP,False,2,approval_rate_difference,-1.399999999999999,1.4366627996854371,5
+Variant II,Erdős–Rényi,DP,False,2,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,DP,False,2,retention_s0,100,0,5
+Variant II,Erdős–Rényi,DP,False,2,retention_s1,100,0,5
+Variant II,Erdős–Rényi,DP,False,2,unfairness,0.00083409769888891376,2.7853061042994893e-07,5
+Variant II,Erdős–Rényi,DP,False,3,approval_rate_difference,-2.2399999999999975,2.0489997559785094,5
+Variant II,Erdős–Rényi,DP,False,3,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,DP,False,3,retention_s0,100,0,5
+Variant II,Erdős–Rényi,DP,False,3,retention_s1,100,0,5
+Variant II,Erdős–Rényi,DP,False,3,unfairness,0.00083408842659442599,2.8574680343933436e-07,5
+Variant II,Erdős–Rényi,DP,False,4,approval_rate_difference,-0.44000000000000028,3.4765500140225196,5
+Variant II,Erdős–Rényi,DP,False,4,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,DP,False,4,retention_s0,100,0,5
+Variant II,Erdős–Rényi,DP,False,4,retention_s1,100,0,5
+Variant II,Erdős–Rényi,DP,False,4,unfairness,0.00083407234300378883,3.8852564909936003e-07,5
+Variant II,Erdős–Rényi,DP,False,5,approval_rate_difference,-1.9599999999999973,3.3452055243288066,5
+Variant II,Erdős–Rényi,DP,False,5,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,DP,False,5,retention_s0,100,0,5
+Variant II,Erdős–Rényi,DP,False,5,retention_s1,100,0,5
+Variant II,Erdős–Rényi,DP,False,5,unfairness,0.00083419148332364301,2.8870415099032075e-07,5
+Variant II,Erdős–Rényi,DP,True,1,approval_rate_difference,0.2400000000000003,2.954048070021877,5
+Variant II,Erdős–Rényi,DP,True,1,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,DP,True,1,retention_s0,100,0,5
+Variant II,Erdős–Rényi,DP,True,1,retention_s1,100,0,5
+Variant II,Erdős–Rényi,DP,True,1,unfairness,0.0008337875380226567,0,5
+Variant II,Erdős–Rényi,DP,True,2,approval_rate_difference,-1.9118694433235817,2.1072246965261883,5
+Variant II,Erdős–Rényi,DP,True,2,retention_disparity,3.5600000000000023,2.3610167301397929,5
+Variant II,Erdős–Rényi,DP,True,2,retention_s0,87.719999999999999,1.4565713164826526,5
+Variant II,Erdős–Rényi,DP,True,2,retention_s1,85.760000000000005,2.8744390757154719,5
+Variant II,Erdős–Rényi,DP,True,2,unfairness,0.025101576981765895,0.018575526589720892,5
+Variant II,Erdős–Rényi,DP,True,3,approval_rate_difference,-2.7968802284835426,2.8276665585036014,5
+Variant II,Erdős–Rényi,DP,True,3,retention_disparity,2.960000000000008,1.7408044117591159,5
+Variant II,Erdős–Rényi,DP,True,3,retention_s0,71.560000000000002,1.0384603988597769,5
+Variant II,Erdős–Rényi,DP,True,3,retention_s1,72.039999999999992,2.7375901811629935,5
+Variant II,Erdős–Rényi,DP,True,3,unfairness,0.021185920432108263,0.011794106765419202,5
+Variant II,Erdős–Rényi,DP,True,4,approval_rate_difference,1.065763023551267,3.175269889716938,5
+Variant II,Erdős–Rényi,DP,True,4,retention_disparity,2.9200000000000044,1.6228370220080668,5
+Variant II,Erdős–Rényi,DP,True,4,retention_s0,60.679999999999993,0.43081318457075962,5
+Variant II,Erdős–Rényi,DP,True,4,retention_s1,62.239999999999995,2.7141112725899839,5
+Variant II,Erdős–Rényi,DP,True,4,unfairness,0.021784029653512858,0.0092470338763507715,5
+Variant II,Erdős–Rényi,DP,True,5,approval_rate_difference,-2.3361589345422962,6.8480287862774603,5
+Variant II,Erdős–Rényi,DP,True,5,retention_disparity,2.8000000000000016,1.2649110640673544,5
+Variant II,Erdős–Rényi,DP,True,5,retention_s0,51.520000000000003,0.75471849056452867,5
+Variant II,Erdős–Rényi,DP,True,5,retention_s1,52.560000000000002,2.3542302351299473,5
+Variant II,Erdős–Rényi,DP,True,5,unfairness,0.01623076384496238,0.0097799765936976753,5
+Variant II,Erdős–Rényi,EO,False,1,approval_rate_difference,0.40000000000000246,3.4339481650135597,5
+Variant II,Erdős–Rényi,EO,False,1,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,EO,False,1,retention_s0,100,0,5
+Variant II,Erdős–Rényi,EO,False,1,retention_s1,100,0,5
+Variant II,Erdős–Rényi,EO,False,1,unfairness,0.00045553834550482453,0,5
+Variant II,Erdős–Rényi,EO,False,2,approval_rate_difference,-2.0799999999999996,2.4935115800813916,5
+Variant II,Erdős–Rényi,EO,False,2,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,EO,False,2,retention_s0,100,0,5
+Variant II,Erdős–Rényi,EO,False,2,retention_s1,100,0,5
+Variant II,Erdős–Rényi,EO,False,2,unfairness,0.00045561145564136928,8.5653673974071861e-08,5
+Variant II,Erdős–Rényi,EO,False,3,approval_rate_difference,-2.3199999999999998,1.3833293172632446,5
+Variant II,Erdős–Rényi,EO,False,3,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,EO,False,3,retention_s0,100,0,5
+Variant II,Erdős–Rényi,EO,False,3,retention_s1,100,0,5
+Variant II,Erdős–Rényi,EO,False,3,unfairness,0.00045558559335643343,7.4196994826757629e-08,5
+Variant II,Erdős–Rényi,EO,False,4,approval_rate_difference,-0.63999999999999624,2.8883213117657092,5
+Variant II,Erdős–Rényi,EO,False,4,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,EO,False,4,retention_s0,100,0,5
+Variant II,Erdős–Rényi,EO,False,4,retention_s1,100,0,5
+Variant II,Erdős–Rényi,EO,False,4,unfairness,0.00045557730358443128,1.204145717222401e-07,5
+Variant II,Erdős–Rényi,EO,False,5,approval_rate_difference,-1.9599999999999997,3.8479085228211933,5
+Variant II,Erdős–Rényi,EO,False,5,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,EO,False,5,retention_s0,100,0,5
+Variant II,Erdős–Rényi,EO,False,5,retention_s1,100,0,5
+Variant II,Erdős–Rényi,EO,False,5,unfairness,0.00045560508975266422,8.5562424575004357e-08,5
+Variant II,Erdős–Rényi,EO,True,1,approval_rate_difference,0.40000000000000246,3.4339481650135597,5
+Variant II,Erdős–Rényi,EO,True,1,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,EO,True,1,retention_s0,100,0,5
+Variant II,Erdős–Rényi,EO,True,1,retention_s1,100,0,5
+Variant II,Erdős–Rényi,EO,True,1,unfairness,0.00045553834550482453,0,5
+Variant II,Erdős–Rényi,EO,True,2,approval_rate_difference,-2.7197244174252022,3.2806538020390992,5
+Variant II,Erdős–Rényi,EO,True,2,retention_disparity,4.6800000000000015,1.8998947339260679,5
+Variant II,Erdős–Rényi,EO,True,2,retention_s0,85.960000000000008,1.3588230201170441,5
+Variant II,Erdős–Rényi,EO,True,2,retention_s1,83.52000000000001,3.5113530155767596,5
+Variant II,Erdős–Rényi,EO,True,2,unfairness,0.031015681547244833,0.012407201661940653,5
+Variant II,Erdős–Rényi,EO,True,3,approval_rate_difference,-1.5755295164238459,1.632869792922407,5
+Variant II,Erdős–Rényi,EO,True,3,retention_disparity,3.7999999999999914,1.8242806801586211,5
+Variant II,Erdős–Rényi,EO,True,3,retention_s0,66.640000000000015,2.0915066339842161,5
+Variant II,Erdős–Rényi,EO,True,3,retention_s1,68.359999999999999,3.0734996339677632,5
+Variant II,Erdős–Rényi,EO,True,3,unfairness,0.023704783027845289,0.013462540185033987,5
+Variant II,Erdős–Rényi,EO,True,4,approval_rate_difference,0.98085491937459623,2.516551869200375,5
+Variant II,Erdős–Rényi,EO,True,4,retention_disparity,3.6799999999999926,1.8399999999999956,5
+Variant II,Erdős–Rényi,EO,True,4,retention_s0,54.88000000000001,1.1634431657799156,5
+Variant II,Erdős–Rényi,EO,True,4,retention_s1,56.640000000000001,3.6951860575619162,5
+Variant II,Erdős–Rényi,EO,True,4,unfairness,0.022536891868808452,0.012650830091598807,5
+Variant II,Erdős–Rényi,EO,True,5,approval_rate_difference,-2.6406072201146769,6.8566297614253582,5
+Variant II,Erdős–Rényi,EO,True,5,retention_disparity,2.9999999999999987,1.4142135623730989,5
+Variant II,Erdős–Rényi,EO,True,5,retention_s0,45.719999999999999,1.1634431657799196,5
+Variant II,Erdős–Rényi,EO,True,5,retention_s1,46.560000000000002,2.8688673723265783,5
+Variant II,Erdős–Rényi,EO,True,5,unfairness,0.018827084043767171,0.0084877206353882375,5
+Variant II,Erdős–Rényi,LCF-active,False,1,approval_rate_difference,13.320000000000002,1.7825823964125773,5
+Variant II,Erdős–Rényi,LCF-active,False,1,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-active,False,1,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-active,False,1,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-active,False,1,unfairness,0.0019758735895156754,0,5
+Variant II,Erdős–Rényi,LCF-active,False,2,approval_rate_difference,8.3999999999999968,0.41952353926806119,5
+Variant II,Erdős–Rényi,LCF-active,False,2,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-active,False,2,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-active,False,2,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-active,False,2,unfairness,0.0017071573019027618,0.00032241664298255285,5
+Variant II,Erdős–Rényi,LCF-active,False,3,approval_rate_difference,4.2400000000000038,0.6974238309665084,5
+Variant II,Erdős–Rényi,LCF-active,False,3,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-active,False,3,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-active,False,3,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-active,False,3,unfairness,0.00095912783145908338,0.00040821687352415019,5
+Variant II,Erdős–Rényi,LCF-active,False,4,approval_rate_difference,3.400000000000003,0.65726706900619991,5
+Variant II,Erdős–Rényi,LCF-active,False,4,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-active,False,4,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-active,False,4,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-active,False,4,unfairness,0.00054331383705141789,0.0003650716663990886,5
+Variant II,Erdős–Rényi,LCF-active,False,5,approval_rate_difference,1.8800000000000019,0.71105555338524773,5
+Variant II,Erdős–Rényi,LCF-active,False,5,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-active,False,5,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-active,False,5,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-active,False,5,unfairness,0.00032862002849576299,0.00036954932279827096,5
+Variant II,Erdős–Rényi,LCF-active,True,1,approval_rate_difference,13.320000000000002,1.7825823964125773,5
+Variant II,Erdős–Rényi,LCF-active,True,1,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-active,True,1,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-active,True,1,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-active,True,1,unfairness,0.0019758735895156754,0,5
+Variant II,Erdős–Rényi,LCF-active,True,2,approval_rate_difference,6.7096159416278223,0.17492412760066625,5
+Variant II,Erdős–Rényi,LCF-active,True,2,retention_disparity,8.2799999999999976,1.5574337867145389,5
+Variant II,Erdős–Rényi,LCF-active,True,2,retention_s0,99.920000000000002,0.16000000000000228,5
+Variant II,Erdős–Rényi,LCF-active,True,2,retention_s1,91.640000000000001,1.5919798993705887,5
+Variant II,Erdős–Rényi,LCF-active,True,2,unfairness,0.0064333749532699217,0.0054912148459455041,5
+Variant II,Erdős–Rényi,LCF-active,True,3,approval_rate_difference,2.4429620290228038,0.74505888269881437,5
+Variant II,Erdős–Rényi,LCF-active,True,3,retention_disparity,11.199999999999998,1.9266551326067685,5
+Variant II,Erdős–Rényi,LCF-active,True,3,retention_s0,99.920000000000002,0.16000000000000228,5
+Variant II,Erdős–Rényi,LCF-active,True,3,retention_s1,88.719999999999999,1.9903768487399587,5
+Variant II,Erdős–Rényi,LCF-active,True,3,unfairness,0.0080481005430221852,0.0060769956215379877,5
+Variant II,Erdős–Rényi,LCF-active,True,4,approval_rate_difference,1.8237736724056774,0.58931457940002907,5
+Variant II,Erdős–Rényi,LCF-active,True,4,retention_disparity,11.919999999999998,1.7508854902591462,5
+Variant II,Erdős–Rényi,LCF-active,True,4,retention_s0,99.920000000000002,0.16000000000000228,5
+Variant II,Erdős–Rényi,LCF-active,True,4,retention_s1,88,1.7888543819998353,5
+Variant II,Erdős–Rényi,LCF-active,True,4,unfairness,0.0079580469846725725,0.0059580155239830025,5
+Variant II,Erdős–Rényi,LCF-active,True,5,approval_rate_difference,0.50740193915532306,0.34405709216766978,5
+Variant II,Erdős–Rényi,LCF-active,True,5,retention_disparity,12.559999999999997,1.9895728184713435,5
+Variant II,Erdős–Rényi,LCF-active,True,5,retention_s0,99.920000000000002,0.16000000000000228,5
+Variant II,Erdős–Rényi,LCF-active,True,5,retention_s1,87.359999999999999,2.021484602958926,5
+Variant II,Erdős–Rényi,LCF-active,True,5,unfairness,0.0080636164188384821,0.0060933914375208712,5
+Variant II,Erdős–Rényi,LCF-full,False,1,approval_rate_difference,13.320000000000002,1.7417232845661812,5
+Variant II,Erdős–Rényi,LCF-full,False,1,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-full,False,1,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-full,False,1,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-full,False,1,unfairness,0.00201619589328772,0,5
+Variant II,Erdős–Rényi,LCF-full,False,2,approval_rate_difference,8.4799999999999969,0.41182520563948011,5
+Variant II,Erdős–Rényi,LCF-full,False,2,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-full,False,2,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-full,False,2,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-full,False,2,unfairness,0.0017373953580856138,0.00032798072826030299,5
+Variant II,Erdős–Rényi,LCF-full,False,3,approval_rate_difference,4.3200000000000038,0.6764613810115111,5
+Variant II,Erdős–Rényi,LCF-full,False,3,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-full,False,3,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-full,False,3,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-full,False,3,unfairness,0.00097790091037750502,0.0004099636555650338,5
+Variant II,Erdős–Rényi,LCF-full,False,4,approval_rate_difference,3.4400000000000035,0.68585712797929055,5
+Variant II,Erdős–Rényi,LCF-full,False,4,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-full,False,4,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-full,False,4,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-full,False,4,unfairness,0.00055400958061218035,0.00036554770478197662,5
+Variant II,Erdős–Rényi,LCF-full,False,5,approval_rate_difference,1.9200000000000017,0.6764613810115111,5
+Variant II,Erdős–Rényi,LCF-full,False,5,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-full,False,5,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-full,False,5,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-full,False,5,unfairness,0.00033547935485840342,0.00036893917214279707,5
+Variant II,Erdős–Rényi,LCF-full,True,1,approval_rate_difference,13.320000000000002,1.7417232845661812,5
+Variant II,Erdős–Rényi,LCF-full,True,1,retention_disparity,0,0,5
+Variant II,Erdős–Rényi,LCF-full,True,1,retention_s0,100,0,5
+Variant II,Erdős–Rényi,LCF-full,True,1,retention_s1,100,0,5
+Variant II,Erdős–Rényi,LCF-full,True,1,unfairness,0.00201619589328772,0,5
+Variant II,Erdős–Rényi,LCF-full,True,2,approval_rate_difference,6.7978189154392199,0.194565669717053,5
+Variant II,Erdős–Rényi,LCF-full,True,2,retention_disparity,8.2799999999999976,1.5574337867145389,5
+Variant II,Erdős–Rényi,LCF-full,True,2,retention_s0,99.920000000000002,0.16000000000000228,5
+Variant II,Erdős–Rényi,LCF-full,True,2,retention_s1,91.640000000000001,1.5919798993705887,5
+Variant II,Erdős–Rényi,LCF-full,True,2,unfairness,0.0064502052545547753,0.0055011862279207759,5
+Variant II,Erdős–Rényi,LCF-full,True,3,approval_rate_difference,2.4912266781932191,0.68358413119730044,5
+Variant II,Erdős–Rényi,LCF-full,True,3,retention_disparity,11.279999999999998,1.970177656963962,5
+Variant II,Erdős–Rényi,LCF-full,True,3,retention_s0,99.920000000000002,0.16000000000000228,5
+Variant II,Erdős–Rényi,LCF-full,True,3,retention_s1,88.640000000000001,2.0372530525194974,5
+Variant II,Erdős–Rényi,LCF-full,True,3,unfairness,0.0080551000356673848,0.0060831365310162304,5
+Variant II,Erdős–Rényi,LCF-full,True,4,approval_rate_difference,1.872086209020587,0.61748799151699985,5
+Variant II,Erdős–Rényi,LCF-full,True,4,retention_disparity,12,1.7977764043395421,5
+Variant II,Erdős–Rényi,LCF-full,True,4,retention_s0,99.920000000000002,0.16000000000000228,5
+Variant II,Erdős–Rényi,LCF-full,True,4,retention_s1,87.920000000000002,1.8400000000000041,5
+Variant II,Erdős–Rényi,LCF-full,True,4,unfairness,0.0079628621578216492,0.0059611702348865729,5
+Variant II,Erdős–Rényi,LCF-full,True,5,approval_rate_difference,0.55446028070714748,0.28354112932132208,5
+Variant II,Erdős–Rényi,LCF-full,True,5,retention_disparity,12.639999999999995,2.0450916849862737,5
+Variant II,Erdős–Rényi,LCF-full,True,5,retention_s0,99.920000000000002,0.16000000000000228,5
+Variant II,Erdős–Rényi,LCF-full,True,5,retention_s1,87.280000000000001,2.0807690885823922,5
+Variant II,Erdős–Rényi,LCF-full,True,5,unfairness,0.0080645397901535354,0.006095638406844588,5
+Variant II,Watts–Strogatz,Baseline,False,1,approval_rate_difference,1.2000000000000011,0.40000000000000041,5
+Variant II,Watts–Strogatz,Baseline,False,1,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,Baseline,False,1,retention_s0,100,0,5
+Variant II,Watts–Strogatz,Baseline,False,1,retention_s1,100,0,5
+Variant II,Watts–Strogatz,Baseline,False,1,unfairness,0.0013458701689228469,0,5
+Variant II,Watts–Strogatz,Baseline,False,2,approval_rate_difference,1.2800000000000011,0.84474848327771579,5
+Variant II,Watts–Strogatz,Baseline,False,2,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,Baseline,False,2,retention_s0,100,0,5
+Variant II,Watts–Strogatz,Baseline,False,2,retention_s1,100,0,5
+Variant II,Watts–Strogatz,Baseline,False,2,unfairness,0.0012755758216752345,3.3631116442811564e-06,5
+Variant II,Watts–Strogatz,Baseline,False,3,approval_rate_difference,0.40000000000000036,0.40000000000000036,5
+Variant II,Watts–Strogatz,Baseline,False,3,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,Baseline,False,3,retention_s0,100,0,5
+Variant II,Watts–Strogatz,Baseline,False,3,retention_s1,100,0,5
+Variant II,Watts–Strogatz,Baseline,False,3,unfairness,0.0011685302722216572,6.8943705673515653e-06,5
+Variant II,Watts–Strogatz,Baseline,False,4,approval_rate_difference,1.2800000000000011,0.37094473981982845,5
+Variant II,Watts–Strogatz,Baseline,False,4,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,Baseline,False,4,retention_s0,100,0,5
+Variant II,Watts–Strogatz,Baseline,False,4,retention_s1,100,0,5
+Variant II,Watts–Strogatz,Baseline,False,4,unfairness,0.00108394097096991,1.3285656897966145e-05,5
+Variant II,Watts–Strogatz,Baseline,False,5,approval_rate_difference,0.64000000000000057,0.63749509802036963,5
+Variant II,Watts–Strogatz,Baseline,False,5,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,Baseline,False,5,retention_s0,100,0,5
+Variant II,Watts–Strogatz,Baseline,False,5,retention_s1,100,0,5
+Variant II,Watts–Strogatz,Baseline,False,5,unfairness,0.0010044103351756427,1.174943966659975e-05,5
+Variant II,Watts–Strogatz,Baseline,True,1,approval_rate_difference,1.2000000000000011,0.40000000000000041,5
+Variant II,Watts–Strogatz,Baseline,True,1,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,Baseline,True,1,retention_s0,100,0,5
+Variant II,Watts–Strogatz,Baseline,True,1,retention_s1,100,0,5
+Variant II,Watts–Strogatz,Baseline,True,1,unfairness,0.0013458701689228469,0,5
+Variant II,Watts–Strogatz,Baseline,True,2,approval_rate_difference,1.2800000000000011,0.84474848327771579,5
+Variant II,Watts–Strogatz,Baseline,True,2,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,Baseline,True,2,retention_s0,100,0,5
+Variant II,Watts–Strogatz,Baseline,True,2,retention_s1,100,0,5
+Variant II,Watts–Strogatz,Baseline,True,2,unfairness,0.0012755758216752345,3.3631116442811564e-06,5
+Variant II,Watts–Strogatz,Baseline,True,3,approval_rate_difference,0.40104434155779467,0.3993965376564183,5
+Variant II,Watts–Strogatz,Baseline,True,3,retention_disparity,0.24000000000000057,0.23323807579381095,5
+Variant II,Watts–Strogatz,Baseline,True,3,retention_s0,100,0,5
+Variant II,Watts–Strogatz,Baseline,True,3,retention_s1,99.760000000000005,0.23323807579381095,5
+Variant II,Watts–Strogatz,Baseline,True,3,unfairness,0.001565818270747621,0.00080084344421223197,5
+Variant II,Watts–Strogatz,Baseline,True,4,approval_rate_difference,1.2837768846137321,0.3689638966492127,5
+Variant II,Watts–Strogatz,Baseline,True,4,retention_disparity,0.24000000000000057,0.23323807579381095,5
+Variant II,Watts–Strogatz,Baseline,True,4,retention_s0,100,0,5
+Variant II,Watts–Strogatz,Baseline,True,4,retention_s1,99.760000000000005,0.23323807579381095,5
+Variant II,Watts–Strogatz,Baseline,True,4,unfairness,0.0014814870979172445,0.0008053988186287397,5
+Variant II,Watts–Strogatz,Baseline,True,5,approval_rate_difference,0.64507696073818677,0.63730571675001257,5
+Variant II,Watts–Strogatz,Baseline,True,5,retention_disparity,0.48000000000000115,0.37094473981982701,5
+Variant II,Watts–Strogatz,Baseline,True,5,retention_s0,100,0,5
+Variant II,Watts–Strogatz,Baseline,True,5,retention_s1,99.52000000000001,0.37094473981982701,5
+Variant II,Watts–Strogatz,Baseline,True,5,unfairness,0.0025896296598074686,0.0019399167669708691,5
+Variant II,Watts–Strogatz,DP,False,1,approval_rate_difference,0.2400000000000003,2.954048070021877,5
+Variant II,Watts–Strogatz,DP,False,1,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,DP,False,1,retention_s0,100,0,5
+Variant II,Watts–Strogatz,DP,False,1,retention_s1,100,0,5
+Variant II,Watts–Strogatz,DP,False,1,unfairness,0.00083356390124245117,0,5
+Variant II,Watts–Strogatz,DP,False,2,approval_rate_difference,-1.399999999999999,1.4366627996854371,5
+Variant II,Watts–Strogatz,DP,False,2,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,DP,False,2,retention_s0,100,0,5
+Variant II,Watts–Strogatz,DP,False,2,retention_s1,100,0,5
+Variant II,Watts–Strogatz,DP,False,2,unfairness,0.00083387292202887766,2.7750695323469966e-07,5
+Variant II,Watts–Strogatz,DP,False,3,approval_rate_difference,-2.2399999999999975,2.0489997559785094,5
+Variant II,Watts–Strogatz,DP,False,3,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,DP,False,3,retention_s0,100,0,5
+Variant II,Watts–Strogatz,DP,False,3,retention_s1,100,0,5
+Variant II,Watts–Strogatz,DP,False,3,unfairness,0.00083386368399414042,2.8469679129782023e-07,5
+Variant II,Watts–Strogatz,DP,False,4,approval_rate_difference,-0.44000000000000028,3.4765500140225196,5
+Variant II,Watts–Strogatz,DP,False,4,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,DP,False,4,retention_s0,100,0,5
+Variant II,Watts–Strogatz,DP,False,4,retention_s1,100,0,5
+Variant II,Watts–Strogatz,DP,False,4,unfairness,0.00083384765925553772,3.8709782963751239e-07,5
+Variant II,Watts–Strogatz,DP,False,5,approval_rate_difference,-1.9599999999999973,3.3452055243288066,5
+Variant II,Watts–Strogatz,DP,False,5,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,DP,False,5,retention_s0,100,0,5
+Variant II,Watts–Strogatz,DP,False,5,retention_s1,100,0,5
+Variant II,Watts–Strogatz,DP,False,5,unfairness,0.00083396636192549782,2.8764279379027636e-07,5
+Variant II,Watts–Strogatz,DP,True,1,approval_rate_difference,0.2400000000000003,2.954048070021877,5
+Variant II,Watts–Strogatz,DP,True,1,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,DP,True,1,retention_s0,100,0,5
+Variant II,Watts–Strogatz,DP,True,1,retention_s1,100,0,5
+Variant II,Watts–Strogatz,DP,True,1,unfairness,0.00083356390124245117,0,5
+Variant II,Watts–Strogatz,DP,True,2,approval_rate_difference,-1.424295219203271,2.2133052854254238,5
+Variant II,Watts–Strogatz,DP,True,2,retention_disparity,3.3600000000000052,2.0606794995826028,5
+Variant II,Watts–Strogatz,DP,True,2,retention_s0,86.400000000000006,1.9266551326067685,5
+Variant II,Watts–Strogatz,DP,True,2,retention_s1,85.760000000000005,2.1143320458244048,5
+Variant II,Watts–Strogatz,DP,True,2,unfairness,0.02398003578182175,0.011310033353738171,5
+Variant II,Watts–Strogatz,DP,True,3,approval_rate_difference,-2.2579462232889669,2.507384276834971,5
+Variant II,Watts–Strogatz,DP,True,3,retention_disparity,3.0399999999999978,2.2321290285285906,5
+Variant II,Watts–Strogatz,DP,True,3,retention_s0,71.039999999999992,1.9199999999999982,5
+Variant II,Watts–Strogatz,DP,True,3,retention_s1,71.200000000000003,2.190890230020663,5
+Variant II,Watts–Strogatz,DP,True,3,unfairness,0.0197575280419535,0.015873584021031031,5
+Variant II,Watts–Strogatz,DP,True,4,approval_rate_difference,2.0951615334573703,3.5901913736639517,5
+Variant II,Watts–Strogatz,DP,True,4,retention_disparity,3.1200000000000019,2.2719154913860686,5
+Variant II,Watts–Strogatz,DP,True,4,retention_s0,59.600000000000001,1.0807404868885047,5
+Variant II,Watts–Strogatz,DP,True,4,retention_s1,62.320000000000007,2.8833314065504188,5
+Variant II,Watts–Strogatz,DP,True,4,unfairness,0.02014765142419982,0.013521637790139217,5
+Variant II,Watts–Strogatz,DP,True,5,approval_rate_difference,-1.2035351281258988,7.1435825086893328,5
+Variant II,Watts–Strogatz,DP,True,5,retention_disparity,2.3999999999999986,2.5298221281347022,5
+Variant II,Watts–Strogatz,DP,True,5,retention_s0,51.079999999999998,1.5879546593023379,5
+Variant II,Watts–Strogatz,DP,True,5,retention_s1,52.520000000000003,3.7812167353908714,5
+Variant II,Watts–Strogatz,DP,True,5,unfairness,0.015903530922014686,0.013897768205160537,5
+Variant II,Watts–Strogatz,EO,False,1,approval_rate_difference,0.40000000000000246,3.4339481650135597,5
+Variant II,Watts–Strogatz,EO,False,1,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,EO,False,1,retention_s0,100,0,5
+Variant II,Watts–Strogatz,EO,False,1,retention_s1,100,0,5
+Variant II,Watts–Strogatz,EO,False,1,unfairness,0.00045541475826960109,0,5
+Variant II,Watts–Strogatz,EO,False,2,approval_rate_difference,-2.0799999999999996,2.4935115800813916,5
+Variant II,Watts–Strogatz,EO,False,2,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,EO,False,2,retention_s0,100,0,5
+Variant II,Watts–Strogatz,EO,False,2,retention_s1,100,0,5
+Variant II,Watts–Strogatz,EO,False,2,unfairness,0.00045548759434048679,8.5332614659201409e-08,5
+Variant II,Watts–Strogatz,EO,False,3,approval_rate_difference,-2.3199999999999998,1.3833293172632446,5
+Variant II,Watts–Strogatz,EO,False,3,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,EO,False,3,retention_s0,100,0,5
+Variant II,Watts–Strogatz,EO,False,3,retention_s1,100,0,5
+Variant II,Watts–Strogatz,EO,False,3,unfairness,0.00045546182896170071,7.3918879077088402e-08,5
+Variant II,Watts–Strogatz,EO,False,4,approval_rate_difference,-0.63999999999999624,2.8883213117657092,5
+Variant II,Watts–Strogatz,EO,False,4,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,EO,False,4,retention_s0,100,0,5
+Variant II,Watts–Strogatz,EO,False,4,retention_s1,100,0,5
+Variant II,Watts–Strogatz,EO,False,4,unfairness,0.00045545357023237811,1.1996322014956016e-07,5
+Variant II,Watts–Strogatz,EO,False,5,approval_rate_difference,-1.9599999999999997,3.8479085228211933,5
+Variant II,Watts–Strogatz,EO,False,5,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,EO,False,5,retention_s0,100,0,5
+Variant II,Watts–Strogatz,EO,False,5,retention_s1,100,0,5
+Variant II,Watts–Strogatz,EO,False,5,unfairness,0.00045548125220722379,8.5241699242314841e-08,5
+Variant II,Watts–Strogatz,EO,True,1,approval_rate_difference,0.40000000000000246,3.4339481650135597,5
+Variant II,Watts–Strogatz,EO,True,1,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,EO,True,1,retention_s0,100,0,5
+Variant II,Watts–Strogatz,EO,True,1,retention_s1,100,0,5
+Variant II,Watts–Strogatz,EO,True,1,unfairness,0.00045541475826960109,0,5
+Variant II,Watts–Strogatz,EO,True,2,approval_rate_difference,-2.5998046665809094,4.0784451154690577,5
+Variant II,Watts–Strogatz,EO,True,2,retention_disparity,4.9599999999999991,2.5780612870915229,5
+Variant II,Watts–Strogatz,EO,True,2,retention_s0,85.120000000000005,2.7293955374771142,5
+Variant II,Watts–Strogatz,EO,True,2,retention_s1,83.760000000000005,2.9621613730517806,5
+Variant II,Watts–Strogatz,EO,True,2,unfairness,0.032975134769357185,0.01717390151867966,5
+Variant II,Watts–Strogatz,EO,True,3,approval_rate_difference,-1.5188478610908085,1.3110358688669905,5
+Variant II,Watts–Strogatz,EO,True,3,retention_disparity,3.7199999999999918,2.1226398658274537,5
+Variant II,Watts–Strogatz,EO,True,3,retention_s0,66.760000000000005,1.6169106345126127,5
+Variant II,Watts–Strogatz,EO,True,3,retention_s1,67.760000000000005,2.8323841547360753,5
+Variant II,Watts–Strogatz,EO,True,3,unfairness,0.023428465889403928,0.014175589672388817,5
+Variant II,Watts–Strogatz,EO,True,4,approval_rate_difference,1.0768498557663975,3.5868759070848677,5
+Variant II,Watts–Strogatz,EO,True,4,retention_disparity,3.7999999999999945,1.564608577248634,5
+Variant II,Watts–Strogatz,EO,True,4,retention_s0,54.560000000000002,1.9032603605392504,5
+Variant II,Watts–Strogatz,EO,True,4,retention_s1,57.079999999999998,1.8872201779336681,5
+Variant II,Watts–Strogatz,EO,True,4,unfairness,0.023708060496196982,0.0099126709284306832,5
+Variant II,Watts–Strogatz,EO,True,5,approval_rate_difference,-1.1615658215738112,7.6246094219215994,5
+Variant II,Watts–Strogatz,EO,True,5,retention_disparity,1.8800000000000012,0.72221880341071254,5
+Variant II,Watts–Strogatz,EO,True,5,retention_s0,45.040000000000006,2.1105449533236675,5
+Variant II,Watts–Strogatz,EO,True,5,retention_s1,46.520000000000003,1.5104966070799357,5
+Variant II,Watts–Strogatz,EO,True,5,unfairness,0.011559474921221991,0.0043725285426805434,5
+Variant II,Watts–Strogatz,LCF-active,False,1,approval_rate_difference,13.360000000000003,1.7681628884240292,5
+Variant II,Watts–Strogatz,LCF-active,False,1,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-active,False,1,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-active,False,1,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-active,False,1,unfairness,0.0019728684425354137,0,5
+Variant II,Watts–Strogatz,LCF-active,False,2,approval_rate_difference,8.4399999999999959,0.46303347611160944,5
+Variant II,Watts–Strogatz,LCF-active,False,2,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-active,False,2,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-active,False,2,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-active,False,2,unfairness,0.001704711246490498,0.00032232001918309561,5
+Variant II,Watts–Strogatz,LCF-active,False,3,approval_rate_difference,4.2400000000000038,0.6974238309665084,5
+Variant II,Watts–Strogatz,LCF-active,False,3,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-active,False,3,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-active,False,3,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-active,False,3,unfairness,0.00095728895664217719,0.0004083722903985237,5
+Variant II,Watts–Strogatz,LCF-active,False,4,approval_rate_difference,3.400000000000003,0.65726706900619991,5
+Variant II,Watts–Strogatz,LCF-active,False,4,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-active,False,4,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-active,False,4,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-active,False,4,unfairness,0.00054220426082614011,0.00036523504928269663,5
+Variant II,Watts–Strogatz,LCF-active,False,5,approval_rate_difference,1.9200000000000017,0.6764613810115111,5
+Variant II,Watts–Strogatz,LCF-active,False,5,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-active,False,5,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-active,False,5,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-active,False,5,unfairness,0.00032806279659272077,0.00036979230317560764,5
+Variant II,Watts–Strogatz,LCF-active,True,1,approval_rate_difference,13.360000000000003,1.7681628884240292,5
+Variant II,Watts–Strogatz,LCF-active,True,1,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-active,True,1,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-active,True,1,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-active,True,1,unfairness,0.0019728684425354137,0,5
+Variant II,Watts–Strogatz,LCF-active,True,2,approval_rate_difference,6.8367037256725096,0.71957417140768598,5
+Variant II,Watts–Strogatz,LCF-active,True,2,retention_disparity,7.7599999999999962,1.3529227620230166,5
+Variant II,Watts–Strogatz,LCF-active,True,2,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant II,Watts–Strogatz,LCF-active,True,2,retention_s1,92.120000000000005,1.4455448799674091,5
+Variant II,Watts–Strogatz,LCF-active,True,2,unfairness,0.0025550199747085721,0.0018864337549796891,5
+Variant II,Watts–Strogatz,LCF-active,True,3,approval_rate_difference,2.3888164056156591,0.79034622197397786,5
+Variant II,Watts–Strogatz,LCF-active,True,3,retention_disparity,10.879999999999995,0.78587530817553775,5
+Variant II,Watts–Strogatz,LCF-active,True,3,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant II,Watts–Strogatz,LCF-active,True,3,retention_s1,89,0.86717933554715121,5
+Variant II,Watts–Strogatz,LCF-active,True,3,unfairness,0.0032869031667709381,0.0024021983097321001,5
+Variant II,Watts–Strogatz,LCF-active,True,4,approval_rate_difference,1.4980274149583872,0.59000587290642392,5
+Variant II,Watts–Strogatz,LCF-active,True,4,retention_disparity,11.559999999999997,0.63749509802036763,5
+Variant II,Watts–Strogatz,LCF-active,True,4,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant II,Watts–Strogatz,LCF-active,True,4,retention_s1,88.320000000000007,0.72221880341071132,5
+Variant II,Watts–Strogatz,LCF-active,True,4,unfairness,0.0031697977542877397,0.0022599701840364484,5
+Variant II,Watts–Strogatz,LCF-active,True,5,approval_rate_difference,0.4568630722323519,0.29159842766033151,5
+Variant II,Watts–Strogatz,LCF-active,True,5,retention_disparity,11.919999999999998,0.79598994968529513,5
+Variant II,Watts–Strogatz,LCF-active,True,5,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant II,Watts–Strogatz,LCF-active,True,5,retention_s1,87.960000000000008,0.85229103010650076,5
+Variant II,Watts–Strogatz,LCF-active,True,5,unfairness,0.0032669975042343368,0.0024218302678650321,5
+Variant II,Watts–Strogatz,LCF-full,False,1,approval_rate_difference,13.320000000000002,1.7417232845661812,5
+Variant II,Watts–Strogatz,LCF-full,False,1,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-full,False,1,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-full,False,1,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-full,False,1,unfairness,0.002016983032226527,0,5
+Variant II,Watts–Strogatz,LCF-full,False,2,approval_rate_difference,8.4799999999999969,0.41182520563948011,5
+Variant II,Watts–Strogatz,LCF-full,False,2,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-full,False,2,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-full,False,2,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-full,False,2,unfairness,0.0017379238843918232,0.00032777779155021428,5
+Variant II,Watts–Strogatz,LCF-full,False,3,approval_rate_difference,4.3200000000000038,0.6764613810115111,5
+Variant II,Watts–Strogatz,LCF-full,False,3,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-full,False,3,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-full,False,3,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-full,False,3,unfairness,0.00097861762046813627,0.00040959950779935695,5
+Variant II,Watts–Strogatz,LCF-full,False,4,approval_rate_difference,3.4400000000000035,0.68585712797929055,5
+Variant II,Watts–Strogatz,LCF-full,False,4,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-full,False,4,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-full,False,4,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-full,False,4,unfairness,0.0005545446157455558,0.0003652617229104551,5
+Variant II,Watts–Strogatz,LCF-full,False,5,approval_rate_difference,1.9200000000000017,0.6764613810115111,5
+Variant II,Watts–Strogatz,LCF-full,False,5,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-full,False,5,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-full,False,5,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-full,False,5,unfairness,0.00033575098514557753,0.00036858035601575629,5
+Variant II,Watts–Strogatz,LCF-full,True,1,approval_rate_difference,13.320000000000002,1.7417232845661812,5
+Variant II,Watts–Strogatz,LCF-full,True,1,retention_disparity,0,0,5
+Variant II,Watts–Strogatz,LCF-full,True,1,retention_s0,100,0,5
+Variant II,Watts–Strogatz,LCF-full,True,1,retention_s1,100,0,5
+Variant II,Watts–Strogatz,LCF-full,True,1,unfairness,0.002016983032226527,0,5
+Variant II,Watts–Strogatz,LCF-full,True,2,approval_rate_difference,6.880467401821309,0.69697123872124811,5
+Variant II,Watts–Strogatz,LCF-full,True,2,retention_disparity,7.7599999999999962,1.3529227620230166,5
+Variant II,Watts–Strogatz,LCF-full,True,2,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant II,Watts–Strogatz,LCF-full,True,2,retention_s1,92.120000000000005,1.4455448799674091,5
+Variant II,Watts–Strogatz,LCF-full,True,2,unfairness,0.002575401020050072,0.0019000869043719428,5
+Variant II,Watts–Strogatz,LCF-full,True,3,approval_rate_difference,2.4796280410497196,0.75883211979629961,5
+Variant II,Watts–Strogatz,LCF-full,True,3,retention_disparity,10.879999999999995,0.78587530817553775,5
+Variant II,Watts–Strogatz,LCF-full,True,3,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant II,Watts–Strogatz,LCF-full,True,3,retention_s1,89,0.86717933554715121,5
+Variant II,Watts–Strogatz,LCF-full,True,3,unfairness,0.0032960269451141055,0.002410492400188151,5
+Variant II,Watts–Strogatz,LCF-full,True,4,approval_rate_difference,1.5452813959628409,0.63840645030034615,5
+Variant II,Watts–Strogatz,LCF-full,True,4,retention_disparity,11.639999999999997,0.77356318423254922,5
+Variant II,Watts–Strogatz,LCF-full,True,4,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant II,Watts–Strogatz,LCF-full,True,4,retention_s1,88.239999999999995,0.85229103010650231,5
+Variant II,Watts–Strogatz,LCF-full,True,4,unfairness,0.0031756628274917098,0.0022634801318844287,5
+Variant II,Watts–Strogatz,LCF-full,True,5,approval_rate_difference,0.4575031131949725,0.29211523192007177,5
+Variant II,Watts–Strogatz,LCF-full,True,5,retention_disparity,11.999999999999996,0.91214034007930722,5
+Variant II,Watts–Strogatz,LCF-full,True,5,retention_s0,99.879999999999995,0.16000000000000228,5
+Variant II,Watts–Strogatz,LCF-full,True,5,retention_s1,87.879999999999995,0.96829747495281404,5
+Variant II,Watts–Strogatz,LCF-full,True,5,unfairness,0.0032686282157897927,0.0024240878662700267,5

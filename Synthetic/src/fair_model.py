@@ -137,20 +137,29 @@ class FairModel(nn.Module):
         
         return torch.relu(fair_cons1)
 
-    def train(self, s, OXs, OYs, Xs, Ys, epochs=0, plot=True, tol=1e-7, short_type='pos'):
+    def train(self, s, OXs, OYs, Xs, Ys, epochs=0, plot=True, tol=1e-7, short_type='pos',
+              long_rollout=None):
         
-        long_probs = compute_post_long_cond_probs(s, Xs, Ys, clip=self.probability_clip)
+        # The BAF notebook supplies a directly simulated, frozen RRM rollout.
+        # Keep the legacy estimator only for explicitly unchanged callers.
+        from direct_fairness import direct_long_term_loss
+        if long_rollout is not None:
+            if len(long_rollout.Xs) != len(Xs) or not np.array_equal(long_rollout.s, s):
+                raise ValueError('Intervention must match the training cohort and horizon.')
+        long_probs = None
+        if long_rollout is None:
+            long_probs = compute_post_long_cond_probs(s, Xs, Ys, clip=self.probability_clip)
         losses, o_losses, s_fairs, l_fairs = [], [], [], []
 
+        # Fixed data are converted once per inner optimization call.
+        batches = [(to_tensor(OX), to_tensor(Oy), to_tensor(X))
+                   for OX, Oy, X, _ in zip(OXs, OYs, Xs, Ys)]
         gap = 1e30
         pre_loss = 1e30
         while gap > tol or epochs > 0:
 
             loss, o_loss, s_fair = 0, 0, 0
-            for i, (OX, Oy, X, y) in enumerate(zip(OXs, OYs, Xs, Ys)):
-                Oy = to_tensor(Oy)
-                y = to_tensor(y)
-                
+            for OX, Oy, X in batches:
                 o_loss += self.compute_loss(s, OX, Oy)
                 s_fair_pos, s_fair_neg = self.compute_short_fairness_from_cond_dist(s, X)
                 if short_type == 'pos':
@@ -158,7 +167,10 @@ class FairModel(nn.Module):
                 if short_type == 'neg':
                     s_fair += s_fair_neg
 
-            l_fair = self.compute_post_long_fairness_from_cond_dist(s, Xs, Ys, long_probs)
+            if long_rollout is not None:
+                l_fair = direct_long_term_loss(self, long_rollout)
+            else:
+                l_fair = self.compute_post_long_fairness_from_cond_dist(s, Xs, Ys, long_probs)
             
             loss = o_loss + self.sf_reg * s_fair + self.lf_reg * l_fair
 
@@ -168,13 +180,19 @@ class FairModel(nn.Module):
             l_fairs.append(l_fair.item())
 
             self.optimizer.zero_grad()
-            loss.backward(retain_graph=True)
+            loss.backward()
             self.optimizer.step()
 
             gap = pre_loss - loss
             pre_loss = loss
             epochs -= 1
 
+        if losses:
+            self.last_training_summary = dict(
+                long_term_estimator=('direct_reference_policy_initial_cohort'
+                                     if long_rollout is not None else 'legacy_conditional_ratio'),
+                utility_loss=o_losses[-1], short_term_loss=s_fairs[-1],
+                long_term_loss=l_fairs[-1], total_loss=losses[-1], inner_steps=len(losses))
         self.save_params()
         if plot:
             self.plot_data(losses, o_losses, s_fairs, l_fairs)

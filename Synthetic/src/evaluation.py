@@ -55,13 +55,28 @@ def validate_probability_clip(clip):
 
 
 def compute_post_long_cond_probs(s, Xs, Ys, clip=0.05):
-    """Shared conditional-ratio estimator for training and evaluation.
+    """Legacy ratio estimator; invalid label support raises instead of returning NaN.
 
-    Ys retains the caller's label semantics (BAF supplies repayment labels).
-    Only denominator probabilities are clipped, as in the former notebook patch.
+    BAF uses direct intervention simulation and does not call this estimator.
     """
     validate_probability_clip(clip)
     s = np.asarray(s)
+    if len(Xs) != len(Ys) or not len(Xs):
+        raise ValueError('Xs and Ys must have the same nonzero horizon.')
+    if not all(np.any(s == group) for group in (0, 1)):
+        raise ValueError('Legacy ratio estimation requires both groups.')
+    issues = []
+    for i in range(len(Xs) - 1):
+        y = np.asarray(Ys[i])
+        if y.shape != s.shape or not np.isin(y, [0, 1]).all():
+            raise ValueError('Repayment labels must be aligned binary arrays.')
+        for group in (0, 1):
+            counts = np.bincount(y[s == group].astype(int), minlength=2)
+            if np.any(counts == 0):
+                issues.append(f't={i+1}, S={group}: n(Y=0)={counts[0]}, n(Y=1)={counts[1]}')
+    if issues:
+        raise ValueError('Legacy ratio estimation requires both labels in each group/time slice ('
+                         + '; '.join(issues) + '). Use direct intervention simulation for BAF.')
     probs = {}
     for i in range(len(Xs) - 1):
         for group, label in [(1, 'pos'), (0, 'neg')]:
@@ -81,6 +96,11 @@ def compute_post_long_cond_probs(s, Xs, Ys, clip=0.05):
 
 def compute_post_long_cond_fairness(s, Xs, model, prob=None):
     """Signed path-specific gap using policy probabilities, not hard predictions."""
+    s = np.asarray(s)
+    if not np.any(s == 0) or not np.any(s == 1):
+        raise ValueError('Legacy fairness requires both groups.')
+    if prob is not None and any(not np.isfinite(value).all() for value in prob.values()):
+        raise ValueError('Legacy probability ratios must be finite.')
     outputs = {}
     for i in range(len(Xs)-1):
         _, y_pos = model.predict(s[s == 1], Xs[i][s == 1])
@@ -117,9 +137,15 @@ def compute_post_long_cond_fairness(s, Xs, model, prob=None):
     return fairness
 
 
-def compute_statistics(s, Xs, Ys, model, OYs=None, As=None, clip=0.05):
+def compute_statistics(s, Xs, Ys, model, OYs=None, As=None, clip=0.05, long_rollout=None):
 
     records = []
+    direct_gaps = None
+    if long_rollout is not None:
+        from direct_fairness import direct_fairness_series
+        if len(long_rollout.Xs) != len(Xs):
+            raise ValueError('Factual and intervention horizons must match.')
+        direct_gaps = direct_fairness_series(model, long_rollout)
     retention = compute_retention_rate(Xs, As)
     ret_disparity = compute_retention_disparity(s, As) if As is not None else np.array([])
 
@@ -146,7 +172,9 @@ def compute_statistics(s, Xs, Ys, model, OYs=None, As=None, clip=0.05):
         short_fair_cond = compute_short_cond_fairness(s, X, model)
         print(f"Short Fairness: {abs(short_fair_cond):.3f}")
 
-        if i == 0:
+        if direct_gaps is not None:
+            post_long_cond_fairness = direct_gaps[i]
+        elif i == 0:
             post_long_cond_fairness = compute_post_long_cond_fairness(s, Xs[:i+1], model)
         else:
             post_long_cond_prob = compute_post_long_cond_probs(s, Xs[:i+1], (OYs if OYs is not None else Ys)[:i+1], clip=clip)
