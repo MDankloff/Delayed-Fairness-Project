@@ -236,6 +236,8 @@ def run_simulation(
         - With opt-out enabled, active denied applicants with Y=0 also exit,
           independently of perceived unfairness U.
         - enable_opt_out=False disables both exit mechanisms.
+        - If agent.gen_init_profile() sets initial_repayment_labels, reuse these
+          observed binary labels at t=1; otherwise sample them from the bank.
         - feature_update(s, X, Y, D, continue_mask, agent, decision_model, rng)
           replaces the default feature transition and must return an array with
           the same shape as X. It runs before next-step repayment sampling.
@@ -283,8 +285,15 @@ def run_simulation(
         )
 
     # Agents get (X_1, Y_1)
-    _, p_y = repayment_model.predict(s, X)
-    Y = sampling(np.asarray(p_y, dtype=float), values=[0.0, 1.0], coef=float(repayment_coef)).astype(int)
+    initial_labels = getattr(agent, 'initial_repayment_labels', None)
+    if initial_labels is None:
+        _, p_y = repayment_model.predict(s, X)
+        Y = sampling(np.asarray(p_y, dtype=float), values=[0.0, 1.0], coef=float(repayment_coef)).astype(int)
+    else:
+        initial_labels = np.asarray(initial_labels)
+        if initial_labels.shape != (n,) or not np.isin(initial_labels, [0, 1]).all():
+            raise ValueError('Initial repayment labels must be aligned and binary.')
+        Y = initial_labels.astype(int).copy()
 
     active = np.ones(n, dtype=int)        # A_1
     prev_denied = np.zeros(n, dtype=int)  # P_1
