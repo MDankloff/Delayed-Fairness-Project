@@ -5,6 +5,83 @@ from sklearn.linear_model import LogisticRegression
 
 eps = 1e-8
 
+
+def _conditional_mean(values, mask):
+    return float(np.mean(values[mask])) if np.any(mask) else np.nan
+
+
+def compute_step_metrics(s, y, decisions, active):
+    """Factual metrics in fractions for an aligned initial cohort.
+
+    EO conditions on the stored Y_t=1 label, including exited applicants for
+    the initial-cohort denominator. Exited applicants contribute zero approvals.
+    Active variants condition additionally on A_t=1. Undefined rates and
+    relative retention with zero denominator are NaN. Decisions are sampled
+    0/1 approvals (inactive entries may be -1).
+    """
+    s, y, decisions, active = map(np.asarray, (s, y, decisions, active))
+    if s.ndim != 1 or any(a.shape != s.shape for a in (y, decisions, active)):
+        raise ValueError('Groups, labels, decisions and activity must be aligned vectors.')
+    if not all(np.isin(a, [0, 1]).all() for a in (s, y, active)):
+        raise ValueError('Groups, repayment labels and activity must be binary.')
+    applying = active == 1
+    if not np.isin(decisions[applying], [0, 1]).all():
+        raise ValueError('Active decisions must use 0/1 encoding.')
+    approved = applying & (decisions == 1)
+    result = {'retention': _conditional_mean(applying, np.ones(s.shape, dtype=bool))}
+    for g in (0, 1):
+        group = s == g
+        result[f'retention_group{g}'] = _conditional_mean(applying, group)
+        for suffix, selected in [('initial', group), ('active', group & applying)]:
+            result[f'approval_{suffix}_group{g}'] = _conditional_mean(approved, selected)
+            result[f'tpr_{suffix}_group{g}'] = _conditional_mean(approved, selected & (y == 1))
+    for suffix in ('initial', 'active'):
+        result[f'dp_{suffix}'] = abs(result[f'approval_{suffix}_group0'] - result[f'approval_{suffix}_group1'])
+        result[f'eo_{suffix}'] = abs(result[f'tpr_{suffix}_group0'] - result[f'tpr_{suffix}_group1'])
+    r0, r1 = result['retention_group0'], result['retention_group1']
+    result['relative_retention'] = r0 / r1 if r1 > 0 else np.nan
+    return result
+
+
+def compute_metric_series(s, Xs, Ys, Ds, As, model, long_rollout=None):
+    """All table metrics at every step; no simulation or decision resampling.
+
+    LTF uses the reference-policy intervention: mean A^I*p(0,X^I) over
+    each initial group, or mean p(0,X^I) among its intervention survivors.
+    Missing intervention trajectories give NaN LTF, never a factual substitute.
+    """
+    s = np.asarray(s)
+    horizon = len(Xs)
+    if not horizon or any(len(history) != horizon for history in (Ys, Ds, As)):
+        raise ValueError('All factual histories must have the same nonzero horizon.')
+    if any(len(X) != len(s) for X in Xs):
+        raise ValueError('Feature histories must retain the initial cohort.')
+    if long_rollout is None:
+        long_rollout = getattr(Xs, 'intervention', None)
+    if long_rollout is not None:
+        if (not np.array_equal(s, long_rollout.s)
+                or len(long_rollout.Xs) != horizon or len(long_rollout.As) != horizon):
+            raise ValueError('Intervention must match the factual cohort and horizon.')
+    series = {}
+    for t in range(horizon):
+        row = compute_step_metrics(s, Ys[t], Ds[t], As[t])
+        row.update(ltf_initial=np.nan, ltf_active=np.nan)
+        if long_rollout is not None:
+            activity = np.asarray(long_rollout.As[t])
+            _, p = model.predict(np.zeros_like(s), long_rollout.Xs[t])
+            p = np.asarray(p, dtype=float)
+            if (activity.shape != s.shape or not np.isin(activity, [0, 1]).all()
+                    or p.shape != s.shape or not np.isfinite(p).all()
+                    or np.any((p < 0) | (p > 1))):
+                raise ValueError('Intervention activity/probabilities must be aligned and valid.')
+            initial = [_conditional_mean(activity * p, s == g) for g in (0, 1)]
+            survivors = [_conditional_mean(p, (s == g) & (activity == 1)) for g in (0, 1)]
+            row['ltf_initial'] = abs(initial[0] - initial[1])
+            row['ltf_active'] = abs(survivors[0] - survivors[1])
+        for name, value in row.items():
+            series.setdefault(name, []).append(value)
+    return series
+
 def compute_accuracy(s, X, y, model):
     pred_y, _ = model.predict(s, X)
     acc = sum(pred_y == y) / len(y)
@@ -12,8 +89,11 @@ def compute_accuracy(s, X, y, model):
 
 
 def compute_equal_opportunity(s, X, y, model): 
-    X_pos = X[(y == 1) == (s == 1)]
-    X_neg = X[(y == 1) == (s == 0)]
+    s, X, y = map(np.asarray, (s, X, y))
+    X_pos = X[(y == 1) & (s == 1)]
+    X_neg = X[(y == 1) & (s == 0)]
+    if not len(X_pos) or not len(X_neg):
+        return np.nan
     s_pos = np.ones(len(X_pos))
     s_neg = np.zeros(len(X_neg))
 
@@ -137,9 +217,14 @@ def compute_post_long_cond_fairness(s, Xs, model, prob=None):
     return fairness
 
 
-def compute_statistics(s, Xs, Ys, model, OYs=None, As=None, clip=0.05, long_rollout=None):
+def compute_statistics(s, Xs, Ys, model, OYs=None, As=None, clip=0.05, long_rollout=None, Ds=None):
 
     records = []
+    table_metrics = None
+    if Ds is not None:
+        activity = As if As is not None else [np.ones(len(s), dtype=int) for _ in Xs]
+        table_metrics = compute_metric_series(
+            s, Xs, OYs if OYs is not None else Ys, Ds, activity, model, long_rollout)
     direct_gaps = None
     if long_rollout is not None:
         from direct_fairness import direct_fairness_series
@@ -184,6 +269,8 @@ def compute_statistics(s, Xs, Ys, model, OYs=None, As=None, clip=0.05, long_roll
         records.append(dict(step=i + 1, accuracy=acc,
                             short_fairness=abs(short_fair_cond),
                             long_fairness=abs(post_long_cond_fairness)))
+        if table_metrics is not None:
+            records[-1].update({key: values[i] for key, values in table_metrics.items()})
     print("\n")
     return records
 
