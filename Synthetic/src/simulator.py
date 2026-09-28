@@ -337,7 +337,7 @@ def run_simulation(
         A_next = A_t.copy()
         A_next[(U_t == 1) & (A_t == 1)] = 0
         if enable_opt_out:
-            correctly_identified_fraud = (A_t == 1) & (D_t == 0) & (Y_t == 0)
+            correctly_identified_fraud = (A_t == 1) & (D_t == 0) & (Y_t <= 0) #change this from (Y_t == 0) to (Y_t <= 0) to make it label agnostic for synthetic (-1) and BAF (0)
             A_next[correctly_identified_fraud] = 0
 
         # transition (X_{t+1}, Y_{t+1}) for continuing agents
