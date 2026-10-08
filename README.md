@@ -29,7 +29,9 @@ The repository is structured as follows:
 
   utils.py   # helpers
 
-  graph_sensitivity.py   #  graph sensitivity sweeps
+  graph_sensitivity.py   #  network generators 
+
+  generator.py # synthetic data and agent generation (initial profiles, trajectories)
 
 
 * Synthetic_final_results.ipynb      # RQ1: synthetic setting
